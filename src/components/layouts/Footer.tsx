@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css"; // Assuming you have a CSS file for Footer styles
-import  { defaultContactInfo, defaultBrandName } from "../Navbar/types";
+import { defaultContactInfo, defaultBrandName } from "../Navbar/types";
 import Logo from "../Navbar/Logo";
 
 interface FooterProps {
@@ -10,7 +10,6 @@ const contact = defaultContactInfo;
 const brandName = defaultBrandName;
 
 const Footer: React.FC<FooterProps> = ({ className = "" }) => {
-  
   return (
     <footer className={`footer ${className}`}>
       <div className="footer-content">
@@ -18,15 +17,10 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
         <div className="footer-section company-info">
           <Logo brandName={brandName} />
 
-          <p className="company-description">
-            With over 30 years of experience, Jani Queen is a locally owned and
-            operated professional cleaning service for commercial and janitorial
-            services across the Ottawa region.
-          </p>
+          <p className="company-description">{contact.companyDescription}</p>
 
           <p className="company-cta">
-            Explore our various services or contact us today to get started.
-            Customer Satisfaction is our guarantee!
+            {contact.companyCuenta}
           </p>
         </div>
 

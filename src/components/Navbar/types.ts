@@ -18,6 +18,8 @@ export interface ContactInfo {
   socialLinks: {
     facebook: string;
   };
+  companyDescription?: string;
+  companyCuenta?: string;
 }
 
 export interface NavbarProps {
@@ -70,4 +72,10 @@ export const defaultContactInfo: ContactInfo = {
   socialLinks: {
     facebook: "https://www.facebook.com/profile.php?id=100064625636217",
   },
+  companyDescription:
+  " With over 30 years of experience, Jani Queen is a locally owned and " +
+  "operated professional cleaning service for commercial and janitorial" +
+  "services across the Ottawa region.",
+  companyCuenta: "Explore our various services or contact us today to get started." +
+            " Customer Satisfaction is our guarantee!",
 };
