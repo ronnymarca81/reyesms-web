@@ -18,6 +18,7 @@ export interface ContactInfo {
   socialLinks: {
     facebook: string;
   };
+  webSite:string;
   companyDescription?: string;
   companyCuenta?: string;
 }
@@ -26,6 +27,9 @@ export interface NavbarProps {
   brandName?: string;
   contactInfo?: ContactInfo;
   navItems?: NavItem[];
+}
+export interface SafetyFeature {
+  text: string;
 }
 
 // Default data
@@ -72,10 +76,17 @@ export const defaultContactInfo: ContactInfo = {
   socialLinks: {
     facebook: "https://www.facebook.com/profile.php?id=100064625636217",
   },
+  webSite: "www.reyesms.ca",
   companyDescription:
-  " With over 30 years of experience, Jani Queen is a locally owned and " +
+  ` With over 30 years of experience, ${defaultBrandName} is a locally owned and ` +
   "operated professional cleaning service for commercial and janitorial" +
   "services across the Ottawa region.",
   companyCuenta: "Explore our various services or contact us today to get started." +
             " Customer Satisfaction is our guarantee!",
 };
+ export const safetyFeatures: SafetyFeature[] = [
+   { text: "Sanitize and disinfect" },
+   { text: "Make sure you wear a mask" },
+   { text: "Wears gloves at all times" },
+   { text: "Rinsing our hands" }
+ ];

@@ -21,9 +21,6 @@ export const Contact: React.FC<ContactButtonsProps> = ({ contactInfo }) => {
       console.log("Email click disabled");
     }
   };
-
-
-
     //(window.location.href = `mailto:${contactInfo.email}`);
   const handleSocialClick = () =>
     window.open(

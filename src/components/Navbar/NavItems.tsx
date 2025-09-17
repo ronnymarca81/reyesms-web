@@ -22,10 +22,8 @@ export const NavItems: React.FC<NavItemProps> = ({
   };
    const navigate = useNavigate();
    const handleClick = (e: React.MouseEvent) => {
-    console.log("NavItem clicked2:", item.onClick);
      if (item.onClick) {
        e.preventDefault(); // prevent default link behavior if custom click provided
-       console.log("NavItem clicked:", item.label);
        item.onClick();
      } else if (item.href.startsWith("/")) {
        e.preventDefault(); // prevent default link behavior
