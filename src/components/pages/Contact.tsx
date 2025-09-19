@@ -1,5 +1,4 @@
-import  Process  from "../Contact/Process"
-
+import Process from "../Contact/Process";
 
 export const Contact = () => {
   return (
@@ -21,9 +20,9 @@ export const Contact = () => {
         </div>
       </div>
       {/* steps process Content Section */}
-      <div className="container mx-auto mt-8">
+      <div className="container mx-auto mt-2 mb-2">
         <Process />
       </div>
     </div>
   );
-}
+};
