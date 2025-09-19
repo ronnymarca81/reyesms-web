@@ -22,20 +22,20 @@ export const Contact = () => {
           </h1>
         </div>
       </div>
-
-      <div className="container mx-auto px-1 py-8">
+      {/* steps process Content Section */}
+      <div className="container mx-auto mt-8">
         <Process />
       </div>
 
-      {/* Main Content Section */}
-      <div className="container mx-auto px-4 py-1 mb-8">
+      {/* contact and request a quote Section */}
+      <div className="bg-sky-100 container mx-auto px-2 py-1 mb-8">
         <div className="flex flex-col md:flex-row gap-8 md:gap-12 max-w-7xl mx-auto items-start">
           {/* Simple Steps Component - Equal width on desktop */}
-          <div className="w-full md:w-1/2 md:sticky md:top-8">
+          <div className="w-full md:w-1/2 md:sticky md:top-8 mb-8">
             <Info />
           </div>
           {/* Get Estimate Form Component - Equal width on desktop */}
-          <div className="w-full md:w-1/2 md:sticky md:top-8">
+          <div className="w-full md:w-1/2 md:sticky md:top-8 mb-8">
             <Quote />
           </div>
         </div>

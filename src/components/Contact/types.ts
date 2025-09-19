@@ -16,7 +16,8 @@ export const defaultSteps: Steps[] = [
     number: "01",
     title: "Book Your Package",
     description:
-      "Contact us through email or call us directly to book our service.",
+      "Contact us through email or call us directly to book our service.", 
+      
     showArrow: true
   },
   {
