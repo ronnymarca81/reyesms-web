@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.css"; // Assuming you have a CSS file for Footer styles
 import { defaultContactInfo, defaultBrandName } from "../Navbar/types";
 import Logo from "../Navbar/Logo";
+import { PhoneCall, Mail, Globe } from "lucide-react";
 
 interface FooterProps {
   className?: string;
@@ -19,9 +20,7 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
 
           <p className="company-description">{contact.companyDescription}</p>
 
-          <p className="company-cta">
-            {contact.companyCuenta}
-          </p>
+          <p className="company-cta">{contact.companyCuenta}</p>
         </div>
 
         {/* Helpful Links Section */}
@@ -79,19 +78,25 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
           <h3 className="section-title">Contact Us</h3>
           <div className="contact-info">
             <div className="contact-item">
-              <div className="contact-icon phone-icon">📞</div>
+              <div className="contact-icon phone-icon">
+                <PhoneCall className="text-white stroke-3"/>
+              </div>
               <a href="tel:613-209-8861" className="contact-link">
                 {contact.phone}
               </a>
             </div>
             <div className="contact-item">
-              <div className="contact-icon email-icon">✉️</div>
+              <div className="contact-icon email-icon">
+                <Mail className="text-white stroke-3" />
+              </div>
               <a href={`mailto:${contact.email}`} className="contact-link">
                 {brandName}
               </a>
             </div>
             <div className="contact-item">
-              <div className="contact-icon social-icon">👤</div>
+              <div className="contact-icon social-icon">
+                <Globe />
+              </div>
               <a
                 href={contact.socialLinks.facebook}
                 className="contact-link"

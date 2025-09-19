@@ -1,3 +1,5 @@
+import { ChevronsRight} from 'lucide-react'
+
 // TypeScript interfaces
 interface CardProps {
   image: string;
@@ -27,22 +29,10 @@ export const Card: React.FC<CardProps> = ({
         <p className="text-gray-600 mb-4 leading-relaxed">{description}</p>
         <button
           onClick={onLearnMore}
-          className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md transition-colors duration-200 flex items-center gap-2"
+          className="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md transition-colors duration-200 flex items-center gap-2"
         >
           Learn More
-          <svg
-            className="w-4 h-4"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M9 5l7 7-7 7"
-            />
-          </svg>
+          <ChevronsRight className="w-5 h-5 text-white" viewBox="0 0 24 24" />
         </button>
       </div>
     </div>

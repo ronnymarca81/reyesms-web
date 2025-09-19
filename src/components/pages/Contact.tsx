@@ -1,6 +1,4 @@
 import  Process  from "../Contact/Process"
-import  Quote  from "../Contact/Quote"
-import Info from "../Contact/Info"
 
 
 export const Contact = () => {
@@ -25,20 +23,6 @@ export const Contact = () => {
       {/* steps process Content Section */}
       <div className="container mx-auto mt-8">
         <Process />
-      </div>
-
-      {/* contact and request a quote Section */}
-      <div className="bg-sky-100 container mx-auto px-2 py-1 mb-8">
-        <div className="flex flex-col md:flex-row gap-8 md:gap-12 max-w-7xl mx-auto items-start">
-          {/* Simple Steps Component - Equal width on desktop */}
-          <div className="w-full md:w-1/2 md:sticky md:top-8 mb-8">
-            <Info />
-          </div>
-          {/* Get Estimate Form Component - Equal width on desktop */}
-          <div className="w-full md:w-1/2 md:sticky md:top-8 mb-8">
-            <Quote />
-          </div>
-        </div>
       </div>
     </div>
   );
