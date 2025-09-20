@@ -1,7 +1,6 @@
 import React from "react";
 import { Card } from "./Card";
-import { defaultServicesData } from "./types";
-
+import { defaultServicesData } from "./serviceApi";
 
 interface ServicesProps {
   services: typeof defaultServicesData;
@@ -9,10 +8,7 @@ interface ServicesProps {
 }
 
 // Services Component - Wraps multiple Card components
-const Service: React.FC<ServicesProps> = ({
-  services,
-  onServiceLearnMore
-}) => {
+const Service: React.FC<ServicesProps> = ({ services, onServiceLearnMore }) => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       {/* Services Header */}
@@ -46,4 +42,3 @@ const Service: React.FC<ServicesProps> = ({
 };
 
 export default Service;
-

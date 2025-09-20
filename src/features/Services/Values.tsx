@@ -1,8 +1,12 @@
 import { Check, Phone } from "lucide-react";
-import { safetyFeatures, defaultContactInfo } from "../Navbar/types";
+import {
+  safetyFeatures,
+  defaultContactInfo
+} from "../../components/layout/navbar/types";
 
-const imageUrl = "images/cleaning-safety.png"
-const imageAlt = "Professional cleaner wearing blue gloves sanitizing surface with spray bottle";
+const imageUrl = "images/cleaning-safety.png";
+const imageAlt =
+  "Professional cleaner wearing blue gloves sanitizing surface with spray bottle";
 export default function Values() {
   const handleEnquiryClick = () => {
     // Handle enquiry action

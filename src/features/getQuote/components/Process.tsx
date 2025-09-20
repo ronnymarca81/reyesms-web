@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from "react";
 //import Box from "./box";
-import { defaultSteps } from "./types";
+import { defaultSteps } from "../serviceApi";
 import Step from "./Step";
 import Info from "./Info";
-import Quote from "./Quote";
+import Request from "./Request";
 
 const Process: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
-    useEffect(() => {
-      // Trigger animation after component mounts
-      const timer = setTimeout(() => {
-        setIsVisible(true);
-      }, 100);
+  useEffect(() => {
+    // Trigger animation after component mounts
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 100);
 
-      return () => clearTimeout(timer);
-    }, []);
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <div className="w-full bg-sky-100 py-16 px-4">
       {/* Header */}
@@ -71,7 +71,7 @@ const Process: React.FC = () => {
           </div>
           {/* Get Estimate Form Component - Equal width on desktop */}
           <div className="w-full md:w-1/2 md:sticky md:top-8 mb-8">
-            <Quote />
+            <Request />
           </div>
         </div>
       </div>

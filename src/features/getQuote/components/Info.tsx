@@ -1,9 +1,6 @@
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
-import { defaultContactInfo } from "../Navbar/types.ts";
+import { defaultContactInfo } from "../../../components/layout/navbar/types.js";
 const GetInTouch: React.FC = () => {
-
-
-
   return (
     <div className="bg-white p-8 rounded-lg ">
       <div className="mb-8">
@@ -34,9 +31,7 @@ const GetInTouch: React.FC = () => {
             <MapPin className="w-5 h-5 text-gray-600 mt-1 flex-shrink-0" />
             <div>
               <h3 className="font-semibold text-gray-800 mb-1">Address</h3>
-              <p className="text-gray-600">
-                {defaultContactInfo.address}
-              </p>
+              <p className="text-gray-600">{defaultContactInfo.address}</p>
             </div>
           </div>
 

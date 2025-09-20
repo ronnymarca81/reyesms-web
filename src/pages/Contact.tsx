@@ -1,4 +1,4 @@
-import Process from "../Contact/Process";
+import Process from "@features/getQuote/components/Process";
 
 export const Contact = () => {
   return (
@@ -20,7 +20,7 @@ export const Contact = () => {
         </div>
       </div>
       {/* steps process Content Section */}
-      <div className="container mx-auto mt-2 mb-2">
+      <div className="container mx-auto my-2">
         <Process />
       </div>
     </div>

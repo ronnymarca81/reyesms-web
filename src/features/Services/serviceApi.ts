@@ -1,11 +1,4 @@
-interface ServiceData {
-  id: number;
-  image: string;
-  title: string;
-  description: string;
-}
-    
-// Services data - could come from props, API, or context
+import type { ServiceData } from './types'
 
 export const defaultServicesData: ServiceData[] = [
   {

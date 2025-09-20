@@ -27,7 +27,7 @@ const Navbar: React.FC<NavbarProps> = ({
         <nav className={styles["navbar"]} onMouseLeave={handleDropdownLeave}>
           <div className={styles["navbar-container"]}>
             {/* Logo Section */}
-            <Logo brandName={brandName} />
+            <Logo className="text-white" brandName={brandName} />
             {/* Navigation Menu */}
             <div className={styles["navbar-menu"]}>
               {navItems.map((item) => (

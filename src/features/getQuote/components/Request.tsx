@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { serviceOptions, type FormData } from "./types";
+import { serviceOptions,   } from "../serviceApi";
+import type { FormData } from "../types";
 
-
-const Quote: React.FC = () => {
+const Request: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     phoneNumber: "",
@@ -118,4 +118,4 @@ const Quote: React.FC = () => {
     </div>
   );
 };
-export default Quote
+export default Request;
