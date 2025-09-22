@@ -1,6 +1,6 @@
 import React from "react";
 import type { ContactInfo } from "./types";
-import { MailIcon, FacebookIcon, PhoneIcon } from "./icons";
+import { MailIcon, FacebookIcon, PhoneIcon } from "../icons";
 import styles from "./Navbar.module.css"; // assuming you keep styles in Navbar.module.css
 
 interface ContactButtonsProps {
@@ -21,7 +21,7 @@ export const Contact: React.FC<ContactButtonsProps> = ({ contactInfo }) => {
       console.log("Email click disabled");
     }
   };
-    //(window.location.href = `mailto:${contactInfo.email}`);
+  //(window.location.href = `mailto:${contactInfo.email}`);
   const handleSocialClick = () =>
     window.open(
       contactInfo.socialLinks.facebook,

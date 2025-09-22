@@ -1,5 +1,5 @@
 
-import { Setroutes } from "./routing/Setroutes"
+import { Setroutes } from "@routing/Setroutes"
 
 
 function App() {

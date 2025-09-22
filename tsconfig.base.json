@@ -10,7 +10,7 @@
       "@hooks/*": ["hooks/*"],
       "@styles/*": ["styles/*"],
       "@routing/*": ["routing/*"],
-      "@types/*": ["types/*"]
+      "@myTypes/*": ["myTypes/*"]
     }
   }
 }

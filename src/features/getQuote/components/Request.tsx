@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { serviceOptions,   } from "../serviceApi";
 import type { FormData } from "../types";
+import { defaultServicesData } from "@features/Services/serviceApi";
 
 const Request: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
@@ -100,9 +100,9 @@ const Request: React.FC = () => {
             className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-white"
           >
             <option value="">Select a service...</option>
-            {serviceOptions.map((service, index) => (
-              <option key={index} value={service}>
-                {service}
+            {defaultServicesData.map((item, index) => (
+              <option key={index} value={item.id}>
+                {item.title}
               </option>
             ))}
           </select>

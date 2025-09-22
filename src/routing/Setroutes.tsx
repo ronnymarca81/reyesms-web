@@ -1,23 +1,27 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "@pages/Home";
 import { About } from "@pages/About";
-import { Contact } from "@pages/Contact";
 import { Services } from "@pages/Services";
-import Navbar from "@components/layout/navbar/Navbar";
 import Footer from "@components/layout/footer/Footer";
+import NoFound from "@pages/NoFound";
+import Header from "@components/layout/header/Header";
+import { Quote } from '@pages/Quote'
+import Contact from "@pages/Contact";
 
 export const Setroutes = () => {
   return (
     <BrowserRouter>
       {/* Layout */}
-      <Navbar />
+      <Header />
       {/* Content routes   */}
       <section>
         <Routes>
+          <Route path="*" element={<NoFound />} />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/quote" element={<Quote />} />
         </Routes>
       </section>
       {/* Footer */}

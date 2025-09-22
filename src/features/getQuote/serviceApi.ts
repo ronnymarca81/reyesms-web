@@ -23,13 +23,3 @@ export const defaultSteps: Steps[] = [
     showArrow: false
   }
 ];
-
- export const serviceOptions = [
-   "House Cleaning",
-   "Office Cleaning",
-   "Deep Cleaning",
-   "Move In/Out Cleaning",
-   "Post Construction Cleaning",
-   "Window Cleaning",
-   "Carpet Cleaning"
- ];

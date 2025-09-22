@@ -4,3 +4,13 @@ export interface ServiceData {
   title: string;
   description: string;
 }
+export interface SafetyFeature {
+  text: string;
+}
+
+export const safetyFeatures: SafetyFeature[] = [
+  { text: "Sanitize and disinfect" },
+  { text: "Make sure you wear a mask" },
+  { text: "Wears gloves at all times" },
+  { text: "Rinsing our hands" }
+];

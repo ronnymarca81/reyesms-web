@@ -1,27 +1,26 @@
 import { Check, Phone } from "lucide-react";
-import {
-  safetyFeatures,
-  defaultContactInfo
-} from "../../components/layout/navbar/types";
+import {  safetyFeatures } from "./types";
+import { defaultContactInfo } from "@myTypes/ServiceApi";
+import { useNavigate } from "react-router-dom";
 
 const imageUrl = "images/cleaning-safety.png";
-const imageAlt =
-  "Professional cleaner wearing blue gloves sanitizing surface with spray bottle";
+const imageAlt = "Professional cleaner wearing blue gloves sanitizing surface with spray bottle";
 export default function Values() {
+  const navigate = useNavigate();
+  
   const handleEnquiryClick = () => {
-    // Handle enquiry action
-    console.log("Enquiry button clicked");
+    navigate('/Contact')
   };
 
   const handleCallClick = () => {
     // Handle call action
-    window.location.href = "tel:8888918843";
+    window.location.href = `tel:${defaultContactInfo.phone}`;
   };
   return (
     <div className="bg-white rounded-3xl overflow-hidden  max-w-7xl mx-auto mb-12">
       <div className="grid lg:grid-cols-2 min-h-[600px]">
         {/* Left Content Section */}
-        <div className="flex items-center justify-center p-8 lg:p-12 z-10 relative">
+        <div className="flex items-center justify-center p-8 lg:p-12 z-10 relative order-1 lg:order-2">
           <div className="max-w-xl w-full">
             <h1 className="text-2xl lg:text-3xl xl:text-5xl font-bold leading-tight mb-10">
               Our company's top priority is{" "}
@@ -65,12 +64,12 @@ export default function Values() {
         </div>
 
         {/* Right Image Section */}
-        <div className="relative min-h-[600px] lg:min-h-full">
-          <div className="relative h-full w-full lg:rounded-r-3xl overflow-hidden">
+        <div className="relative min-h-[600px] lg:min-h-full ">
+          <div className="relative h-full w-full lg:rounded-r-2xl overflow-hidden">
             <img
               src={imageUrl}
               alt={imageAlt}
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover mx-4 shadow-lg shadow-green-800"
             />
 
             {/* Optionally, overlay or gradient if needed */}
