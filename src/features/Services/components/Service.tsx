@@ -1,10 +1,10 @@
 import React from "react";
 import { Card } from "./Card";
-import { defaultServicesData } from "./serviceApi";
+import { defaultServicesData } from "../ServiceApi";
 
 interface ServicesProps {
   services: typeof defaultServicesData;
-  onServiceLearnMore?: (serviceTitle: string) => void;
+  onServiceLearnMore?: (serviceLink: string) => void;
 }
 
 // Services Component - Wraps multiple Card components
@@ -19,7 +19,7 @@ const Service: React.FC<ServicesProps> = ({ services, onServiceLearnMore }) => {
             image={service.image}
             title={service.title}
             description={service.description}
-            onLearnMore={() => onServiceLearnMore?.(service.title)}
+            onLearnMore={() => onServiceLearnMore?.(service.href)}
           />
         ))}
       </div>

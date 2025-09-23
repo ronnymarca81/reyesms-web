@@ -1,13 +1,14 @@
-import Service from "../features/Services/Service";
-import { defaultServicesData } from "@features/Services/serviceApi";
-import Values from "@features/Services/Values";
-import  banner  from '@assets/images/services-banner.png'
+import Service from "../features/Services/components/Service";
+import { defaultServicesData } from "@features/Services/ServiceApi";
+import Values from "@features/Services/components/Values";
+import banner from "@assets/images/services-banner.png";
+import { useNavigate } from "react-router-dom";
 
 export const Services = () => {
-  const handleServiceLearnMore = (serviceTitle: string) => {
-    console.log(`Learn more clicked for: ${serviceTitle}`);
+  const navigate = useNavigate()
+  const handleServiceLearnMore = (serviceLink: string) => {
     // Here you would typically navigate to a detailed service page
-    alert(`Navigate to ${serviceTitle} details page`);
+    navigate(`${serviceLink}`);
   };
   return (
     <div className="min-h-screen bg-white">

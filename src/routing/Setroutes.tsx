@@ -7,6 +7,7 @@ import NoFound from "@pages/NoFound";
 import Header from "@components/layout/header/Header";
 import { Quote } from '@pages/Quote'
 import Contact from "@pages/Contact";
+import CustomService from "@features/Services/components/CustomService";
 
 export const Setroutes = () => {
   return (
@@ -19,9 +20,10 @@ export const Setroutes = () => {
           <Route path="*" element={<NoFound />} />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/quote" element={<Quote />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/services/residential" element={<CustomService />} />
         </Routes>
       </section>
       {/* Footer */}

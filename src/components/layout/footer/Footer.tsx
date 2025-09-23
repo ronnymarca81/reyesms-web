@@ -8,6 +8,7 @@ import{ menuItems } from '../ServiceApi'
 import Logo from "@components/layout/header/Logo";
 import { PhoneCall, Mail } from "lucide-react";
 import { FacebookIcon } from '@components/layout/icons'
+import { Button } from '@components/layout/header/Button'
 
 interface FooterProps {
   className?: string;
@@ -31,13 +32,17 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
             <Logo />
           </div>
 
-          <p className="text-gray-200 leading-relaxed mt-4">
-            {contact.companyDescription}
-          </p>
-
           <p className="text-gray-200 leading-relaxed mt-3">
             {contact.companyCuenta}
           </p>
+          <Button
+            variant="custom"
+            size="md"
+            className="w-full mt-2"
+            href="/quote"
+          >
+            GET A QUOTE
+          </Button>
         </div>
 
         {/* Helpful Links */}

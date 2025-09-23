@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import type { FormData } from "../types";
-import { defaultServicesData } from "@features/Services/serviceApi";
+import { defaultServicesData } from "@features/Services/ServiceApi";
 
 const Request: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({

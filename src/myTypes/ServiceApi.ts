@@ -15,6 +15,6 @@ export const defaultContactInfo: ContactInfo = {
     "operated professional cleaning service for commercial and janitorial " +
     "services across the Ottawa region.",
   companyCuenta:
-    "Explore our various services or contact us today to get started." +
+    "Explore our services or contact us today to get started." +
     " Customer Satisfaction is our guarantee!"
 };

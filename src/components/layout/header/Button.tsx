@@ -19,7 +19,8 @@ export const Button: React.FC<ButtonProps> = ({
     outline:
       "border-2 border-white text-white hover:bg-white hover:text-gray-800",
     phone:
-      "bg-red-600 hover:bg-red-800 text-white shadow-lg hover:shadow-xl cursor-pointer"
+      "bg-red-600 hover:bg-red-800 text-white shadow-lg hover:shadow-xl cursor-pointer",
+    custom: "bg-red-600 hover:bg-transparent hover:border-2"
   };
 
   const sizes = {

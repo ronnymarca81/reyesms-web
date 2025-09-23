@@ -1,15 +1,16 @@
 import { Check, Phone } from "lucide-react";
-import {  safetyFeatures } from "./types";
+import { safetyFeatures } from "../types";
 import { defaultContactInfo } from "@myTypes/ServiceApi";
 import { useNavigate } from "react-router-dom";
 
 const imageUrl = "images/cleaning-safety.png";
-const imageAlt = "Professional cleaner wearing blue gloves sanitizing surface with spray bottle";
+const imageAlt =
+  "Professional cleaner wearing blue gloves sanitizing surface with spray bottle";
 export default function Values() {
   const navigate = useNavigate();
-  
+
   const handleEnquiryClick = () => {
-    navigate('/Contact')
+    navigate("/quote");
   };
 
   const handleCallClick = () => {
