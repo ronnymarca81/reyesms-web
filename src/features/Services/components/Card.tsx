@@ -1,6 +1,6 @@
-import { ChevronsRight} from 'lucide-react'
+import { ChevronsRight } from "lucide-react";
+import { motion } from "framer-motion";
 
-// TypeScript interfaces
 interface CardProps {
   image: string;
   title: string;
@@ -8,7 +8,6 @@ interface CardProps {
   onLearnMore?: () => void;
 }
 
-// Card Component - Basic reusable card
 export const Card: React.FC<CardProps> = ({
   image,
   title,
@@ -16,25 +15,39 @@ export const Card: React.FC<CardProps> = ({
   onLearnMore
 }) => {
   return (
-    <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-      <div className="aspect-video overflow-hidden">
+    <motion.div
+      whileHover={{ y: -6 }}
+      transition={{ type: "spring", stiffness: 200, damping: 15 }}
+      className="bg-white rounded-2xl shadow-md hover:shadow-2xl overflow-hidden group relative"
+    >
+      {/* Image with gradient overlay */}
+      <div className="relative aspect-video overflow-hidden">
         <img
           src={image}
           alt={title}
-          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500" />
+        <h3 className="absolute bottom-4 left-4 text-white text-2xl font-bold drop-shadow-lg">
+          {title}
+        </h3>
       </div>
+
+      {/* Content */}
       <div className="p-6">
-        <h3 className="text-xl font-semibold text-gray-800 mb-3">{title}</h3>
-        <p className="text-gray-600 mb-4 leading-relaxed">{description}</p>
-        <button
+        <p className="text-gray-600 mb-6 leading-relaxed">{description}</p>
+
+        {/* Animated Button */}
+        <motion.button
+          whileHover={{ scale: 1.05, x: 5 }}
+          whileTap={{ scale: 0.95 }}
           onClick={onLearnMore}
-          className="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md transition-colors duration-200 flex items-center gap-2"
+          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-medium shadow-md hover:shadow-lg transition-all duration-300"
         >
           Learn More
-          <ChevronsRight className="w-5 h-5 text-white" viewBox="0 0 24 24" />
-        </button>
+          <ChevronsRight className="w-5 h-5" />
+        </motion.button>
       </div>
-    </div>
+    </motion.div>
   );
 };

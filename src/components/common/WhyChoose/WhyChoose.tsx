@@ -1,26 +1,19 @@
-import React from 'react';
-import type {
-  CardProps,
-} from "./types.ts";
-import { BarChart3, Handshake , Users, Monitor } from 'lucide-react';
-import { Button } from '../Button';
-import ContentOne from '../ContentOne';
-import { Gear }  from './Gear'
-
-
-
+import React from "react";
+import type { CardProps } from "./types.ts";
+import { BarChart3, Handshake, Users, Monitor } from "lucide-react";
+import { Button } from "../Button.js";
+import ContentOne from "../ContentOne";
+import { Gear } from "./Gear";
 
 const Card: React.FC<CardProps> = ({ title, description, position }) => {
-  const positionClasses = position === 'top' ? 'mb-8' : 'mt-8';
-  
+  const positionClasses = position === "top" ? "mb-8" : "mt-8";
+
   return (
     <div
       className={`text-center  max-w-xs hover:border-t-4 rounded-4xl my-3 ${positionClasses}`}
     >
       <h3 className="text-lg font-bold text-gray-800 mb-2">{title}</h3>
-      <p className="text-gray-600 text-md leading-relaxed">
-        {description}
-      </p>
+      <p className="text-gray-600 text-md leading-relaxed">{description}</p>
     </div>
   );
 };
