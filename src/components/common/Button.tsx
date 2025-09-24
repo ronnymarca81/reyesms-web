@@ -20,7 +20,10 @@ export const Button: React.FC<ButtonProps> = ({
       "border-2 border-white text-white hover:bg-white hover:text-gray-800",
     phone:
       "bg-red-600 hover:bg-red-800 text-white shadow-lg hover:shadow-xl cursor-pointer",
-    custom: "bg-red-600 hover:bg-transparent hover:border-2"
+    custom: "",
+    contact:
+      "bg-gradient-to-r from-orange-400 to-orange-500 text-white px-8 py-3 rounded-lg font-semibold " +
+      "hover:from-orange-500 hover:to-orange-600 transform hover:scale-105 transition-all duration-300 shadow-lg"
   };
 
   const sizes = {
@@ -45,3 +48,4 @@ export const Button: React.FC<ButtonProps> = ({
     </button>
   );
 };
+

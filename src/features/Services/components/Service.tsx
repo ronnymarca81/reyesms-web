@@ -2,6 +2,7 @@ import React from "react";
 import { Card } from "./Card";
 import { defaultServicesData } from "../ServiceApi";
 
+
 interface ServicesProps {
   services: typeof defaultServicesData;
   onServiceLearnMore?: (serviceLink: string) => void;
@@ -10,7 +11,7 @@ interface ServicesProps {
 // Services Component - Wraps multiple Card components
 const Service: React.FC<ServicesProps> = ({ services, onServiceLearnMore }) => {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       {/* Services Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service) => (

@@ -5,7 +5,7 @@ export interface LogoProps {
 
 export interface ButtonProps {
   children: React.ReactNode;
-  variant?: "primary" | "secondary" | "outline" | "phone" | "custom";
+  variant?: "primary" | "secondary" | "outline" | "phone" | "contact" | "custom";
   size?: "sm" | "md" | "lg";
   onClick?: () => void;
   className?: string;

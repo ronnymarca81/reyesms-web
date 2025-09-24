@@ -4,11 +4,11 @@ import {
   defaultBrandName,
   defaultLastName
 } from "@myTypes/ServiceApi";
-import{ menuItems } from '../ServiceApi'
+import { menuItems } from "../ServiceApi";
 import Logo from "@components/layout/header/Logo";
 import { PhoneCall, Mail } from "lucide-react";
-import { FacebookIcon } from '@components/layout/icons'
-import { Button } from '@components/layout/header/Button'
+import { FacebookIcon } from "@components/layout/icons";
+import { Button } from "@components/common/Button";
 
 interface FooterProps {
   className?: string;
@@ -38,7 +38,7 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
           <Button
             variant="custom"
             size="md"
-            className="w-full mt-2"
+            className="w-full mt-2 bg-red-600 text-white hover:bg-transparent hover:border-2"
             href="/quote"
           >
             GET A QUOTE

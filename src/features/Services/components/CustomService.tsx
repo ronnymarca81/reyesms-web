@@ -1,5 +1,6 @@
 import BannerQuote from "@components/common/BannerQuote";
-import WhyChoose from "@components/common/WhyChoose";
+import FAQ from "@components/common/FAQ";
+import WhyChoose from "@components/common/WhyChoose/WhyChoose";
 
 
 export default function CustomService() {
@@ -7,6 +8,7 @@ export default function CustomService() {
     <>
     <WhyChoose />
     <BannerQuote/>
+    <FAQ/>
     </>
   )
 }
