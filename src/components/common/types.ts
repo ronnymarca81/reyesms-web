@@ -1,5 +1,5 @@
 export interface HeaderProps {
-  backgroundImage: string;
+  backgroundImage?: string;
   title: string;
   description: string;
   bottom?: React.ReactNode;

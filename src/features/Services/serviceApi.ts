@@ -3,56 +3,27 @@ import type { ServiceData } from './types'
 export const defaultServicesData: ServiceData[] = [
   {
     id: 1,
-    image:
-      "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    title: "Residential Cleaning",
+    image: "https://images.pexels.com/photos/713297/pexels-photo-713297.jpeg",
+    title: "Office Cleaning",
     description:
-      "Develop comprehensive success strategies tailored to your unique goals. Our expert coaches help you identify opportunities, overcome obstacles, and create actionable plans for sustainable growth.",
-    href: "/services/residential"
+      "Maintain a pristine and productive workspace with our meticulous office cleaning services. We cover everything from dusting and sanitizing surfaces to trash removal and floor care, ensuring a healthy environment for your employees and clients.",
+    href: "/services/office"
   },
   {
     id: 2,
-    image:
-      "https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80",
-    title: "Commercial Cleaning",
+    image: "https://images.pexels.com/photos/6195288/pexels-photo-6195288.jpeg",
+    title: "Retail & Plaza Cleaning",
     description:
-      "Enhance your leadership capabilities with personalized coaching sessions. Learn to inspire teams, make strategic decisions, and drive organizational change with confidence and clarity.",
-    href: "/services/commercial"
+      "First impressions matter. Our retail and plaza cleaning services ensure your commercial spaces are spotless and inviting, enhancing customer experience and reflecting your brand's commitment to quality and hygiene.",
+    href: "/services/retail-plaza"
   },
   {
     id: 3,
     image:
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    title: "Deep Cleaning",
+      "https://images.pexels.com/photos/38325/vacuum-cleaner-carpet-cleaner-housework-housekeeping-38325.jpeg",
+    title: "Carpet Cleaning",
     description:
-      "Maximize your potential with data-driven performance optimization strategies. We analyze your current performance and implement targeted improvements for measurable results.",
-    href: "/services/deep-cleaning"
-  },
-  {
-    id: 4,
-    image:
-      "https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80",
-    title: "Move-in/Move-out",
-    description:
-      "Accelerate your career growth with strategic planning and skill development. Our coaches provide guidance on networking, professional branding, and career transition strategies.",
-    href: "/services/move-cleaning"
-  },
-  {
-    id: 5,
-    image:
-      "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    title: "Post Construction",
-    description:
-      "Build high-performing teams through effective communication, collaboration strategies, and leadership development. Transform your team dynamics for enhanced productivity.",
-    href: "/services/construction-cleanup"
-  },
-  {
-    id: 6,
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    title: "Business Mastery",
-    description:
-      "Master the fundamentals of business success with comprehensive training programs. From strategic planning to execution, develop the skills needed to thrive in today's market.",
-    href: "/services/business-mastery"
+      "Extend the life of your carpets and improve indoor air quality with our professional carpet cleaning. We use advanced techniques to remove deep-seated dirt, stains, and allergens, leaving your carpets fresh and revitalized.",
+    href: "/services/carpet"
   }
 ];

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { Plus, Minus, HelpCircle } from "lucide-react";
-import { faqData, type FAQAccordionProps } from "./ServiceApi";
-import { Button } from "./Button";
+import { ChevronUp, ChevronDown, HelpCircle } from "lucide-react";
+import { type FAQAccordionProps } from "./types";
+import { faqData } from './ServiceApi'
+import { Button } from "@components/common/Button";
 
 const FAQAccordion: React.FC<FAQAccordionProps> = ({
   title = "COMMERCIAL CLEANING FAQS",
@@ -68,9 +69,9 @@ const FAQAccordion: React.FC<FAQAccordionProps> = ({
                   {/* Toggle Icon */}
                   <div className="flex-shrink-0 w-10 h-10 bg-traspatent bg-opacity-20 border-2 border-white rounded-full flex items-center justify-center transition-all duration-300 hover:bg-opacity-30">
                     {isOpen ? (
-                      <Minus className="w-6 h-6 stroke-3 text-white transform transition-transform duration-300" />
+                      <ChevronDown className="w-6 h-6 stroke-3 text-white transform transition-transform duration-300" />
                     ) : (
-                      <Plus className="w-6 h-6 stroke-3 text-white transform transition-transform duration-300" />
+                      <ChevronUp className="w-6 h-6 stroke-3 text-white transform transition-transform duration-300" />
                     )}
                   </div>
                 </button>

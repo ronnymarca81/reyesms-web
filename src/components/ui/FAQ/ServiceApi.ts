@@ -1,13 +1,4 @@
-interface FAQItem {
-  id: string;
-  question: string;
-  answer: string;
-}
-export interface FAQAccordionProps {
-  title?: string;
-  subtitle?: string;
-  faqs: FAQItem[];
-}
+import type{ FAQItem } from './types'
 
 
 export const faqData: FAQItem[] = [
@@ -49,3 +40,4 @@ export const faqData: FAQItem[] = [
       "Reyes Maintenence  stands out through our commitment to exceptional service, eco-friendly cleaning products, highly trained staff, and personalized approach. We use state-of-the-art equipment, maintain comprehensive insurance coverage, and provide consistent quality through detailed checklists and regular supervision. Our focus on building long-term partnerships sets us apart from competitors."
   }
 ];
+

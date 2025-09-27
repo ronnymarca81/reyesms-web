@@ -23,7 +23,7 @@ export const Setroutes = () => {
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/quote" element={<Quote />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/services/residential" element={<CustomService />} />
+          <Route path="/services/office" element={<CustomService />} />
         </Routes>
       </section>
       {/* Footer */}

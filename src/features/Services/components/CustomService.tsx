@@ -1,6 +1,6 @@
 import BannerQuote from "@components/common/BannerQuote";
-import FAQ from "@components/common/FAQ";
-import WhyChoose from "@components/common/WhyChoose/WhyChoose";
+import FAQ from "@components/ui/FAQ/FAQ";
+import WhyChoose from "@components/ui/WhyChoose/WhyChoose";
 
 
 export default function CustomService() {

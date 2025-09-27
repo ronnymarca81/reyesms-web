@@ -9,7 +9,7 @@ export const HeaderLeft: React.FC<HeaderProps> = ({
 }) => {
   return (
     <header
-      className="relative h-[80vh] flex items-center"
+      className="relative h-[50vh] flex items-center"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
