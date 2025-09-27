@@ -1,7 +1,7 @@
 import { HeaderCenter } from "@components/common/HeaderCenter";
 import BannerQuote from "@components/common/BannerQuote";
 import HeaderOne from "@components/common/HeaderOne";
-import TestimonialDemo from "@components/ui/Testimonial/Testimonial";
+import Testimonial from "@components/ui/Testimonial/Testimonial";
 import WhyChoose from "@components/ui/WhyChoose/WhyChoose";
 import Service from "@features/Services/components/Service";
 import { defaultServicesData } from "@features/Services/ServiceApi";
@@ -48,7 +48,7 @@ export const Home = () => {
         onServiceLearnMore={handleServiceLearnMore}
       />
       <WhyChoose />
-      <TestimonialDemo />
+      <Testimonial autoplay showStats />
       <BannerQuote backgroundClassName="bg-gradient-to-r from-blue-100 to-gray-500 text-white" />
     </>
   );

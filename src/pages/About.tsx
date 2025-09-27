@@ -30,7 +30,7 @@ export const About = () => {
       />
       <HowWeWork background="bg-gradient-to-r from-indigo-400 via-purple-700 to-pink-400" />
 
-      <Testimonial />
+      <Testimonial layout="grid" theme="light" showStats />
       <BannerQuote backgroundClassName="bg-gradient-to-r from-orange-100 to-orange-400 text-white" />
     </>
   );
