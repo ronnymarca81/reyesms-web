@@ -31,14 +31,14 @@ const Step: React.FC<StepProps> = ({
             transitionDelay: `${delay}ms`
           }}
         >
-          <div className="bg-sky-200 rounded-2xl grid grid-cols-3 gap-2">
+          <div className="bg-transparent border-2 shadow-2xl rounded-2xl grid grid-cols-3 gap-2 hover:mb-2 hover:cursor-pointer">
             <div className="my-2 mx-2 bg-blue-500 text-white rounded-lg flex items-center justify-center text-5xl font-bold">
               {number}
             </div>
-            <div className="bg-white my-2 mx-2  rounded-lg flex place-items-center col-start-2 col-end-4 text-2xl font-bold text-gray-800">
+            <div className="bg-transparent my-2 mx-2  rounded-lg flex place-items-center col-start-2 col-end-4 text-2xl font-bold text-gray-800">
               {title}
             </div>
-            <div className="bg-white mx-2 mt-2 mb-4  rounded-lg col-start-1 col-end-4 ">
+            <div className="bg-transparent mx-2 mt-2 mb-4  rounded-lg col-start-1 col-end-4 ">
               {description}
             </div>
           </div>
@@ -60,9 +60,9 @@ const Step: React.FC<StepProps> = ({
           )}
         </div>
       </div>
-      <div className="hidden md:block p-2 animate-in slide-in-from-left-full fade-in">
+      <div className="hidden md:block p-2 animate-in slide-in-from-left-full fade-in hover:mb-2 hover:cursor-pointer">
         <div
-          className={`grid grid-flow-col grid-rows-3 transition-all duration-700 ease-out
+          className={`grid grid-flow-col grid-rows-3 transition-all duration-700 ease-out 
           ${
             isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
           }`}
@@ -70,7 +70,7 @@ const Step: React.FC<StepProps> = ({
             transitionDelay: `${delay}ms`
           }}
         >
-          <div className="col-start-1 col-span-3 flex  rounded-t-2xl ">
+          <div className="col-start-1 col-span-3 flex  rounded-t-2xl border-t-2 border-x-2 ">
             {/* Number */}
             <div className="my-2 mx-2 w-26 h-16 bg-blue-500 text-white rounded-lg flex items-center justify-center text-5xl font-bold">
               {number}
@@ -80,7 +80,7 @@ const Step: React.FC<StepProps> = ({
               <h3 className="text-2xl font-bold text-gray-800">{title}</h3>
             </div>
           </div>
-          <div className="col-start-1 col-span-3  rounded-b-2xl">
+          <div className="col-start-1 col-span-3  rounded-b-2xl border-b-2 border-x-2 shadow-2xl">
             <p className=" text-gray-600 text-lg">{description}</p>
           </div>
           {showArrow && (

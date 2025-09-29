@@ -15,3 +15,17 @@ export const safetyFeatures: SafetyFeature[] = [
   { text: "Wears gloves at all times" },
   { text: "Rinsing our hands" }
 ];
+
+// Interfaces for Cleaning Services content
+
+export interface CleaningService {
+  title: string;
+  description: string;
+  specificTasks: string[];
+  frequencyOptions: string[];
+  keyBenefits: string[];
+}
+
+export interface CleaningServicesData {
+  services: CleaningService[];
+}

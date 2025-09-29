@@ -1,6 +1,4 @@
-
-
-import HowWeWork from "@features/getQuote/components/HowWeWork";
+import Process from "@features/getQuote/components/Process";
 
 
 export const Quote = () => {
@@ -8,7 +6,7 @@ export const Quote = () => {
     <div className="min-h-screen bg-white-100">
       {/* steps process Content Section */}
       <div >
-        <HowWeWork />
+        <Process />
       </div>
     </div>
   );

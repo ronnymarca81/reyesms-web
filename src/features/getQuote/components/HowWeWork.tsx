@@ -2,8 +2,8 @@ import { useState } from "react";
 
 import { defaultSteps } from "../serviceApi";
 import StepCard from "./StepCard";
-import  Info  from './Info'
-import Request  from "./Request";
+import { Zap } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 interface DisplayProps {
   background?: string; // tailwind class or custom style
@@ -12,11 +12,15 @@ const HowWeWork = ({
   background = "bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900"
 }: DisplayProps) => {
   const [hoveredStep, setHoveredStep] = useState<number | null>(null);
+  const navigate = useNavigate()
+  const handleGetQuote = () => {
+    navigate("/quote");
+  };
 
   const Display = () => {
     return (
-      <div className={`min-h-screen relative overflow-hidden ${background}`}>
-        <div className="relative z-10 container mx-auto px-6 py-20">
+      <div className={`relative overflow-hidden ${background}`}>
+        <div className="relative z-10 container mx-auto px-6 py-10">
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-6xl font-bold text-white mb-6">How We Work</h2>
@@ -38,18 +42,15 @@ const HowWeWork = ({
               />
             ))}
           </div>
-          <div
-            className="flex flex-col md:flex-row gap-8 md:gap-12 max-w-7xl mx-auto items-start my-8
-          "
-          >
-            {/* Simple Steps Component - Equal width on desktop */}
-            <div className="w-full md:w-1/2 md:sticky md:top-8 mb-8">
-              <Info />
-            </div>
-            {/* Get Estimate Form Component - Equal width on desktop */}
-            <div className="w-full md:w-1/2 md:sticky md:top-8 mb-8">
-              <Request />
-            </div>
+          {/* Bottom CTA */}
+          <div className="text-center mt-16">
+            <button
+              onClick={handleGetQuote}
+              className="bg-white/20 backdrop-blur-xl text-white font-semibold py-4 px-8 rounded-2xl border border-white/30 hover:bg-white/30 transition-all duration-300 flex items-center space-x-3 mx-auto group"
+            >
+              <span>GET A QUOTE</span>
+              <Zap className="w-5 h-5 group-hover:animate-pulse stroke-3" />
+            </button>
           </div>
         </div>
       </div>
