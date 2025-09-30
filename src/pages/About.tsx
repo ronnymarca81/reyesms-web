@@ -42,12 +42,16 @@ export const About = () => {
           {
             label: "Get a Free Quote",
             variant: "primary",
-            onClick: () => alert("Quote requested!")
+            onClick: () => {
+              navigate("/quote");
+            }
           },
           {
             label: "Our Services",
             variant: "secondary",
-            onClick: () => alert("Services clicked!")
+            onClick: () => {
+              navigate("/services");
+            }
           }
         ]}
         image={pgImage}

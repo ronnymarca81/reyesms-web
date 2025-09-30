@@ -33,6 +33,12 @@ export type Frequencies = {
   weekly: FrequencyOption;
   biweekly: FrequencyOption;
   monthly: FrequencyOption;
+  custom: FrequencyOption;
+  onDemand: FrequencyOption;
+  specialEvent: FrequencyOption;
+  quarterly: FrequencyOption;
+  biannually: FrequencyOption;
+  annually: FrequencyOption;
 };
 
 export interface Benefit {

@@ -7,7 +7,7 @@ import { defaultServicesData } from "@features/Services/ServiceApi";
 import { useNavigate } from "react-router-dom";
 import bgImage from "@assets/images/home.png";
 import ContentImage from "@components/common/ContentImage";
-import pgImage from '@assets/images/home-image.png'
+import pgImage from "@assets/images/home-image.png";
 import { HeroSection } from "@components/common/HeroSection";
 
 export const Home = () => {
@@ -49,7 +49,9 @@ export const Home = () => {
           {
             label: "Get a Free Quote",
             variant: "primary",
-            onClick: () => alert("Quote requested!")
+            onClick: () => {
+              navigate("/quote");
+            }
           },
           {
             label: "Our Services",

@@ -1,0 +1,281 @@
+{
+  "services": [
+    {
+      "name": "Office Cleaning",
+      "slug": "office",
+      "description": "Ensure a productive and healthy environment for your team. Our detailed office cleaning services are designed to maintain professionalism and hygiene throughout your workspace.",
+      "paragraphs": [
+        "Keep your workplace clean, healthy and productive with professional office cleaning services from Jani Queen in Ottawa. Our experienced team offers a full range of workplace cleaning solutions tailored to the needs of your office.",
+        "Our office cleaning services include day porter service, personalized cleaning programs, floor stripping and waxing, carpet cleaning and move in or move out cleaning. We also provide weekend and holiday cleaning services for maximum flexibility.",
+        "No matter the size of your office, Jani Queen is equipped to maintain a spotless and hygienic environment for employees and visitors. Contact our team today to request a quote for our office cleaning and sanitization services in Ottawa."
+      ],
+      "images": [
+        "/images/services/office-1.png",
+        "/images/services/office-2.png",
+        "/images/services/office-3.png"
+      ],
+      "tasks": [
+        {
+          "icon": "Sparkles",
+          "title": "Surface Care",
+          "desc": "Dusting and polishing all surfaces with premium products"
+        },
+        {
+          "icon": "Building2",
+          "title": "Floor Maintenance",
+          "desc": "Professional vacuuming and mopping of all floor types"
+        },
+        {
+          "icon": "Shield",
+          "title": "Facility Sanitization",
+          "desc": "Complete sanitization of restrooms and kitchen areas"
+        },
+        {
+          "icon": "Check",
+          "title": "Waste Management",
+          "desc": "Efficient trash removal and recycling services"
+        },
+        {
+          "icon": "Blinds",
+          "title": "Glass Cleaning",
+          "desc": "Streak-free interior glass and window cleaning"
+        },
+        {
+          "icon": "Shield",
+          "title": "Touch Point Disinfection",
+          "desc": "Thorough disinfection of high-contact surfaces"
+        }
+      ],
+      "frequencies": {
+        "daily": {
+          "price": "$150-200",
+          "visits": "5x/week",
+          "best": "High-traffic offices"
+        },
+        "weekly": {
+          "price": "$120-160",
+          "visits": "1x/week",
+          "best": "Medium-sized teams"
+        },
+        "biweekly": {
+          "price": "$100-140",
+          "visits": "2x/month",
+          "best": "Smaller offices"
+        },
+        "monthly": {
+          "price": "$80-120",
+          "visits": "1x/month",
+          "best": "Basic maintenance"
+        },
+        "custom": {
+          "price": "On request",
+          "visits": "Flexible",
+          "best": "Tailored schedules for operational needs"
+        }
+      },
+      "benefits": [
+        {
+          "icon": "Users",
+          "title": "Healthier Work Environment",
+          "desc": "Reduces sick days by up to 30% and promotes overall wellness",
+          "stat": "30%",
+          "metric": "Fewer Sick Days"
+        },
+        {
+          "icon": "TrendingUp",
+          "title": "Boosts Productivity",
+          "desc": "Clean workspaces increase focus and employee satisfaction",
+          "stat": "23%",
+          "metric": "Productivity Increase"
+        },
+        {
+          "icon": "Building2",
+          "title": "Professional Image",
+          "desc": "Impress clients and visitors with immaculate facilities",
+          "stat": "85%",
+          "metric": "Client Satisfaction"
+        },
+        {
+          "icon": "Star",
+          "title": "Extends Asset Life",
+          "desc": "Proper maintenance preserves furniture and equipment value",
+          "stat": "40%",
+          "metric": "Longer Lifespan"
+        }
+      ]
+    },
+    {
+      "name": "Retail & Plaza Cleaning",
+      "slug": "retail-plaza",
+      "description": "Create an inviting and immaculate space that reflects your brand's commitment to quality. Our retail and plaza cleaning services focus on enhancing customer experience and ensuring safety.",
+      "tasks": [
+        {
+          "icon": "Building2",
+          "title": "Comprehensive Floor Care",
+          "desc": "Sweeping, mopping, buffing, and polishing for all floor types"
+        },
+        {
+          "icon": "Blinds",
+          "title": "Window Cleaning",
+          "desc": "Crystal-clear, streak-free window and facade cleaning"
+        },
+        {
+          "icon": "Shirt",
+          "title": "Fitting Room Sanitization",
+          "desc": "Disinfection of fitting rooms and shared customer areas"
+        },
+        {
+          "icon": "Package",
+          "title": "Display & Shelf Cleaning",
+          "desc": "Spotless display cases and shelves to showcase your products"
+        },
+        {
+          "icon": "Droplet",
+          "title": "Immediate Spill Response",
+          "desc": "Rapid cleanup to ensure safety and prevent accidents"
+        },
+        {
+          "icon": "DoorOpen",
+          "title": "Entrance & Facade Maintenance",
+          "desc": "Polished entrances that reflect brand quality"
+        }
+      ],
+      "frequencies": {
+        "daily": {
+          "price": "$180-250",
+          "visits": "High-frequency",
+          "best": "Busy retail spaces"
+        },
+        "weekly": {
+          "price": "$140-200",
+          "visits": "1x/week",
+          "best": "Standard traffic retail"
+        },
+        "biweekly": {
+          "price": "$120-160",
+          "visits": "2x/month",
+          "best": "Plazas with moderate foot traffic"
+        },
+        "specialEvent": {
+          "price": "On request",
+          "visits": "Flexible",
+          "best": "Pre-sale or promotion preparations"
+        }
+      },
+      "benefits": [
+        {
+          "icon": "Smile",
+          "title": "Customer Satisfaction",
+          "desc": "Enhances shopping experience with clean, safe spaces",
+          "stat": "90%",
+          "metric": "Customer Approval"
+        },
+        {
+          "icon": "Sparkles",
+          "title": "Brand Perception",
+          "desc": "Reinforces premium and trustworthy brand image",
+          "stat": "75%",
+          "metric": "Positive Brand Recognition"
+        },
+        {
+          "icon": "Shield",
+          "title": "Safety Compliance",
+          "desc": "Maintains hygienic and hazard-free environments",
+          "stat": "100%",
+          "metric": "Safety Standards"
+        },
+        {
+          "icon": "TrendingUp",
+          "title": "Boost Sales",
+          "desc": "Clean environments encourage longer visits and purchases",
+          "stat": "18%",
+          "metric": "Sales Increase"
+        }
+      ]
+    },
+    {
+      "name": "Carpet Cleaning",
+      "slug": "carpet",
+      "description": "Revitalize your carpets and improve indoor air quality with our specialized cleaning solutions. We target deep-seated dirt and allergens to restore the freshness and appearance of your flooring.",
+      "tasks": [
+        {
+          "icon": "SprayCan",
+          "title": "Pre-Treatment",
+          "desc": "Advanced solutions for stubborn stains and spills"
+        },
+        {
+          "icon": "Droplet",
+          "title": "Deep Steam Cleaning",
+          "desc": "High-heat steam or low-moisture methods for deep cleaning"
+        },
+        {
+          "icon": "Wind",
+          "title": "Odor Removal",
+          "desc": "Elimination of odors caused by dirt, spills, or allergens"
+        },
+        {
+          "icon": "ShieldCheck",
+          "title": "Protective Treatment",
+          "desc": "Application of protectants to resist future soiling"
+        },
+        {
+          "icon": "Timer",
+          "title": "Rapid Drying",
+          "desc": "Accelerated drying methods to reduce downtime"
+        }
+      ],
+      "frequencies": {
+        "quarterly": {
+          "price": "$250-350",
+          "visits": "Every 3 months",
+          "best": "High-traffic offices"
+        },
+        "biannually": {
+          "price": "$200-300",
+          "visits": "2x/year",
+          "best": "Medium-traffic areas"
+        },
+        "annually": {
+          "price": "$150-250",
+          "visits": "1x/year",
+          "best": "Low-traffic carpets"
+        },
+        "onDemand": {
+          "price": "On request",
+          "visits": "As needed",
+          "best": "Emergency spills or high-traffic zones"
+        }
+      },
+      "benefits": [
+        {
+          "icon": "Leaf",
+          "title": "Improved Air Quality",
+          "desc": "Removes allergens, dust, and pollutants from carpets",
+          "stat": "95%",
+          "metric": "Cleaner Air"
+        },
+        {
+          "icon": "Clock",
+          "title": "Extended Carpet Life",
+          "desc": "Prevents wear and tear, prolonging carpet usability",
+          "stat": "40%",
+          "metric": "Lifespan Increase"
+        },
+        {
+          "icon": "Smile",
+          "title": "Odor-Free Spaces",
+          "desc": "Eliminates unpleasant odors for a fresher environment",
+          "stat": "100%",
+          "metric": "Odor Elimination"
+        },
+        {
+          "icon": "Sparkles",
+          "title": "Vibrant Look",
+          "desc": "Restores carpet’s original texture and color",
+          "stat": "85%",
+          "metric": "Aesthetic Restoration"
+        }
+      ]
+    }
+  ]
+}

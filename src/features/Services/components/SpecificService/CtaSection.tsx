@@ -1,65 +1,15 @@
-import { Calendar, Phone } from "lucide-react";
+import { ArrowRight, Calendar } from "lucide-react";
+import type { themeProps } from "./types.ts";
+import  { containerTheme }  from './ServiceApi'
+import { useNavigate } from "react-router-dom";
 
-// Theme configuration
-export interface ThemeConfig {
-  container: string;
-  text: string;
-  card: string;
-  border: string;
-  hover: string;
-  accent: string;
-  subtext: string;
-}
 
-export const containerTheme: Record<
-  "light" | "dark" | "gradient" | "cta",
-  ThemeConfig
-> = {
-  light: {
-    container: "bg-gray-50",
-    text: "text-gray-900",
-    card: "bg-white shadow-sm border border-gray-200",
-    border: "border-gray-200",
-    hover: "hover:bg-gray-100",
-    accent: "bg-gradient-to-br from-blue-500 to-indigo-600",
-    subtext: "text-gray-600"
-  },
-  dark: {
-    container: "bg-neutral-950",
-    text: "text-gray-100",
-    card: "bg-neutral-900 border border-neutral-800 shadow-md",
-    border: "border-neutral-800",
-    hover: "hover:bg-neutral-800",
-    accent: "bg-gradient-to-br from-indigo-400 to-emerald-400",
-    subtext: "text-gray-400"
-  },
-  gradient: {
-    container: "bg-gradient-to-br from-sky-50 via-indigo-50 to-rose-50",
-    text: "text-gray-900",
-    card: "bg-white/80 border border-gray-200 backdrop-blur-md shadow-md",
-    border: "border-gray-200",
-    hover: "hover:bg-white",
-    accent: "bg-gradient-to-br from-pink-500 via-violet-500 to-indigo-500",
-    subtext: "text-gray-700"
-  },
-  cta: {
-    container: "bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-00",
-    text: "text-white",
-    card: "bg-white/10 backdrop-blur-lg border border-white/20 shadow-xl",
-    border: "border-white/30",
-    hover: "hover:bg-white/20",
-    accent: "bg-gradient-to-r from-yellow-400 to-orange-500",
-    subtext: "text-white/80"
-  }
-};
-
-// Props
-export interface BenefitProps {
-  theme?: "light" | "dark" | "gradient" | "cta";
-}
-
-export default function CtaSection({ theme = "dark" }: BenefitProps) {
+export default function CtaSection({ theme = "dark" }: themeProps) {
   const themeConfig = containerTheme[theme];
+  const navigate = useNavigate()
+  const handleGetQuote = () => {
+    navigate("/quote");
+  };
 
   return (
     <section className={`relative z-10 py-20 px-6 ${themeConfig.container}`}>
@@ -81,25 +31,16 @@ export default function CtaSection({ theme = "dark" }: BenefitProps) {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button
+              onClick={handleGetQuote}
               className={`
                 ${themeConfig.accent} 
                 hover:opacity-90 text-white px-8 py-4 rounded-2xl font-semibold
                 transition-all transform hover:scale-105 shadow-lg flex items-center space-x-2
               `}
             >
-              <Phone className="h-5 w-5" />
-              <span>Call for Free Quote</span>
-            </button>
-
-            <button
-              className={`
-                border-2 ${themeConfig.border} ${themeConfig.text} 
-                ${themeConfig.hover} px-8 py-4 rounded-2xl font-semibold
-                transition-all transform hover:scale-105 flex items-center space-x-2
-              `}
-            >
               <Calendar className="h-5 w-5" />
-              <span>Schedule Online</span>
+              <span>Get a Free Quote</span>
+              <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </button>
           </div>
 

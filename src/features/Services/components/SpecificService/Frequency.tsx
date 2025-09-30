@@ -1,56 +1,19 @@
 import { useState } from "react";
 import { Clock } from "lucide-react";
-import { frequencies } from "./ServiceApi";
+import type { themeProps, FrequencyOption } from "./types.ts";
+import { containerTheme } from "./ServiceApi";
 
-// Theme options type
-export type ContainerThemeKey = "light" | "dark" | "gradient";
-
-interface ThemeConfig {
-  container: string;
-  text: string;
-  card: string;
-  border: string;
-  hover: string;
-  accent: string; // for highlighting values
-  subtext: string;
+interface FrequencyProps extends themeProps {
+  frequencyOptions: Record<string, FrequencyOption>;
 }
 
-export const containerTheme: Record<ContainerThemeKey, ThemeConfig> = {
-  light: {
-    container: "bg-gray-50",
-    text: "text-gray-900",
-    card: "bg-white shadow-sm border border-gray-200",
-    border: "border-gray-200",
-    hover: "hover:bg-gray-100",
-    accent: "text-indigo-600",
-    subtext: "text-gray-600"
-  },
-  dark: {
-    container: "bg-neutral-950",
-    text: "text-gray-100",
-    card: "bg-neutral-900 shadow-lg border border-neutral-800",
-    border: "border-neutral-800",
-    hover: "hover:bg-neutral-800",
-    accent: "text-emerald-400",
-    subtext: "text-gray-400"
-  },
-  gradient: {
-    container: "bg-gradient-to-br from-slate-50 via-indigo-50 to-sky-100",
-    text: "text-gray-900",
-    card: "bg-white/80 shadow-md border border-gray-200 backdrop-blur-sm",
-    border: "border-gray-200",
-    hover: "hover:bg-white",
-    accent: "text-indigo-500",
-    subtext: "text-gray-700"
-  }
-};
-
-interface Props {
-  theme: ContainerThemeKey;
-}
-
-export const Frequency = ({ theme }: Props) => {
-  const [activeFrequency, setActiveFrequency] = useState("weekly");
+export const Frequency = ({
+  theme = "dark",
+  frequencyOptions
+}: FrequencyProps) => {
+  const [activeFrequency, setActiveFrequency] = useState(
+    Object.keys(frequencyOptions)[0]
+  );
   const t = containerTheme[theme]; // shorthand theme config
 
   return (
@@ -70,7 +33,8 @@ export const Frequency = ({ theme }: Props) => {
 
         {/* Frequency Buttons */}
         <div className="grid md:grid-cols-4 gap-4 mb-12">
-          {Object.entries(frequencies).map(([key, freq]) => {
+          {Object.entries(frequencyOptions).map(([key, freq]) => {
+            console.log("Frequencies", freq);
             const isActive = activeFrequency === key;
             return (
               <button
@@ -102,23 +66,34 @@ export const Frequency = ({ theme }: Props) => {
           </h4>
           <div className={`grid md:grid-cols-3 gap-6 ${t.text}`}>
             <div>
-              <div className={`text-3xl font-bold ${t.accent}`}>
-                {frequencies[activeFrequency as keyof typeof frequencies].price}
+              <div className={`text-3xl rounded-2xl  font-bold `}>
+                {
+                  frequencyOptions[
+                    activeFrequency as keyof typeof frequencyOptions
+                  ].price
+                }
               </div>
               <div className={`${t.subtext}`}>Price Range</div>
             </div>
             <div>
-              <div className={`text-3xl font-bold ${t.accent}`}>
+              <div
+                className={`text-3xl rounded-2xl text-emerald-100 font-bold ${t.accent}`}
+              >
                 {
-                  frequencies[activeFrequency as keyof typeof frequencies]
-                    .visits
+                  frequencyOptions[
+                    activeFrequency as keyof typeof frequencyOptions
+                  ].visits
                 }
               </div>
               <div className={`${t.subtext}`}>Service Frequency</div>
             </div>
             <div>
               <div className="text-lg font-semibold">
-                {frequencies[activeFrequency as keyof typeof frequencies].best}
+                {
+                  frequencyOptions[
+                    activeFrequency as keyof typeof frequencyOptions
+                  ].best
+                }
               </div>
               <div className={`${t.subtext}`}>Best For</div>
             </div>

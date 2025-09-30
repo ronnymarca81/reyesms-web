@@ -2,7 +2,7 @@ import defaultHover from "/images/rm-logo.png";
 
 import {
   Building2,
-  CheckCircle2,
+  Check,
   Shield,
   Sparkles,
   Star,
@@ -11,7 +11,7 @@ import {
   Blinds
 } from "lucide-react";
 
-import type { Task, Frequencies, Benefit, ThemeConfig } from "./types";
+import type { Task, Benefit, ThemeConfig } from "./types";
 
 export const DEFAULT_HOVER_BG = defaultHover;
 
@@ -34,41 +34,23 @@ export const tasks: Task[] = [
     backgroundImage: "/images/cleaning-safety.png"
   },
   {
-    icon: CheckCircle2,
+    icon: Check,
     title: "Waste Management",
-    desc: "Efficient trash removal and recycling services",
+    desc: "Efficient trash removal and recycling services"
   },
   {
     icon: Blinds,
     title: "Glass Cleaning",
-    desc: "Streak-free interior glass and window cleaning",
+    desc: "Streak-free interior glass and window cleaning"
   },
   {
     icon: Shield,
     title: "Touch Point Disinfection",
-    desc: "Thorough disinfection of high-contact surfaces",
-
+    desc: "Thorough disinfection of high-contact surfaces"
   }
 ];
 
-export const frequencies: Frequencies = {
-  daily: {
-    price: "$150-200",
-    visits: "5x/week",
-    best: "High-traffic offices"
-  },
-  weekly: {
-    price: "$120-160",
-    visits: "1x/week",
-    best: "Medium-sized teams"
-  },
-  biweekly: {
-    price: "$100-140",
-    visits: "2x/month",
-    best: "Smaller offices"
-  },
-  monthly: { price: "$80-120", visits: "1x/month", best: "Basic maintenance" }
-};
+
 
 export const benefits: Benefit[] = [
   {
