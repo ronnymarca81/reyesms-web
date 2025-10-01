@@ -21,7 +21,7 @@ export default function Values() {
     <div className="bg-white rounded-3xl overflow-hidden  max-w-7xl mx-auto mb-12">
       <div className="grid lg:grid-cols-2 min-h-[600px]">
         {/* Left Content Section */}
-        <div className="flex items-center justify-center p-8 lg:p-12 z-10 relative order-1 lg:order-2">
+        <div className="flex items-center justify-center p-8 lg:p-12 z-10 relative ">
           <div className="max-w-xl w-full">
             <h1 className="text-2xl lg:text-3xl xl:text-5xl font-bold leading-tight mb-10">
               Our company's top priority is{" "}

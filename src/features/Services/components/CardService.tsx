@@ -8,7 +8,7 @@ interface CardProps {
   onLearnMore?: () => void;
 }
 
-export const Card: React.FC<CardProps> = ({
+export const CardService: React.FC<CardProps> = ({
   image,
   title,
   description,

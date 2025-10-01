@@ -1,106 +1,95 @@
-import { ChevronsRight, ChevronsDown } from "lucide-react";
+import React from "react";
+import { type Variants, easeOut } from "framer-motion";
+import { ChevronsRight } from "lucide-react";
+import { motion } from "framer-motion";
+import type { StepProps } from "../types";
 
-interface StepProps {
-  number: string;
-  title: string;
-  description: string;
-  showArrow?: boolean;
-  isVisible?: boolean;
-  delay?: number;
-}
+// Card animation
+const cardVariants: Variants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: easeOut }
+  }
+};
+
+// Arrow animation (directional)
+const arrowVariantsMobile: Variants = {
+  hidden: { opacity: 0, y: -15 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: easeOut, delay: 0.3 }
+  }
+};
+
+const arrowVariantsDesktop: Variants = {
+  hidden: { opacity: 0, x: -15 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.5, ease: easeOut, delay: 0.3 }
+  }
+};
 
 const Step: React.FC<StepProps> = ({
+  icon: Icon,
   number,
   title,
   description,
-  showArrow = false,
-  isVisible =true,
-  delay=100
+  color = "bg-blue-500",
+  showArrow = false
 }) => {
   return (
-    <>
-      <div className="block md:hidden p-2">
-        <div
-          className={`flex flex-col  justify-center transition-all duration-700 ease-out
-            ${
-              isVisible
-                ? "opacity-100 translate-x-0"
-                : "opacity-0 -translate-x-8"
-            }`}
-          style={{
-            transitionDelay: `${delay}ms`
-          }}
-        >
-          <div className="bg-transparent border-2 shadow-2xl rounded-2xl grid grid-cols-3 gap-2 hover:mb-2 hover:cursor-pointer">
-            <div className="my-2 mx-2 bg-blue-500 text-white rounded-lg flex items-center justify-center text-5xl font-bold">
-              {number}
-            </div>
-            <div className="bg-transparent my-2 mx-2  rounded-lg flex place-items-center col-start-2 col-end-4 text-2xl font-bold text-gray-800">
-              {title}
-            </div>
-            <div className="bg-transparent mx-2 mt-2 mb-4  rounded-lg col-start-1 col-end-4 ">
-              {description}
-            </div>
+    <motion.div
+      className="flex flex-col lg:flex-row items-center w-full lg:w-auto lg:flex-1"
+      initial="hidden"
+      animate="visible"
+      variants={{}}
+    >
+      {/* Step Card */}
+      <motion.div
+        className="bg-white rounded-2xl border-2 border-gray-200 p-5 sm:p-6 shadow-sm hover:shadow-md transition-all h-full max-w-md mx-auto lg:max-w-none"
+        variants={cardVariants}
+        whileHover={{ scale: 1.05 }}
+      >
+        <div className="flex items-start gap-3 mb-3">
+          <div
+            className={`${color} text-white font-bold text-xl sm:text-2xl rounded-lg px-3 sm:px-4 py-2 flex-shrink-0`}
+          >
+            {Icon ? <Icon className="w-5 h-5" /> : number}
           </div>
-          {/* Arrow */}
-          {showArrow && (
-            <div
-              className={`mt-6 flex justify-center items-center transition-all duration-700 ease-out
-              ${
-                isVisible
-                  ? "opacity-100 translate-x-0"
-                  : "opacity-0 -translate-x-4"
-              }`}
-              style={{
-                transitionDelay: `${delay + 200}ms`
-              }}
-            >
-              <ChevronsDown className="w-10 h-10 text-blue-700" />
-            </div>
-          )}
+          <h3 className="font-bold text-gray-900 text-base sm:text-lg leading-tight pt-2">
+            {title}
+          </h3>
         </div>
-      </div>
-      <div className="hidden md:block p-2 animate-in slide-in-from-left-full fade-in hover:mb-2 hover:cursor-pointer">
-        <div
-          className={`grid grid-flow-col grid-rows-3 transition-all duration-700 ease-out 
-          ${
-            isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
-          }`}
-          style={{
-            transitionDelay: `${delay}ms`
-          }}
-        >
-          <div className="col-start-1 col-span-3 flex  rounded-t-2xl border-t-2 border-x-2 ">
-            {/* Number */}
-            <div className="my-2 mx-2 w-26 h-16 bg-blue-500 text-white rounded-lg flex items-center justify-center text-5xl font-bold">
-              {number}
-            </div>
-            {/* Content */}
-            <div className="mt-2 mx-2 flex items-center flex-grow ">
-              <h3 className="text-2xl font-bold text-gray-800">{title}</h3>
-            </div>
-          </div>
-          <div className="col-start-1 col-span-3  rounded-b-2xl border-b-2 border-x-2 shadow-2xl">
-            <p className=" text-gray-600 text-lg">{description}</p>
-          </div>
-          {showArrow && (
-            <div
-              className={`mx-8 row-span-2 flex items-center justify-center transition-all duration-700 ease-out
-                ${
-                  isVisible
-                    ? "opacity-100 translate-x-0"
-                    : "opacity-0 -translate-x-4"
-                }`}
-              style={{
-                transitionDelay: `${delay + 200}ms`
-              }}
-            >
-              <ChevronsRight className="w-10 h-10 text-gray-500 flex-shrink-0 " />
-            </div>
-          )}
-        </div>
-      </div>
-    </>
+        <p className="text-gray-600 text-sm leading-relaxed">{description}</p>
+      </motion.div>
+
+      {/* Arrow Separator */}
+      {showArrow && (
+        <>
+          {/* Mobile/Tablet: Vertical Arrow */}
+          <motion.div
+            className="flex lg:hidden items-center justify-center py-2"
+            variants={arrowVariantsMobile}
+          >
+            <ChevronsRight className="text-blue-600 w-6 h-6 sm:w-8 sm:h-8 rotate-90 stroke-3" />
+          </motion.div>
+
+          {/* Desktop: Horizontal Arrow */}
+          <motion.div
+            className="hidden lg:flex items-center justify-center px-2 xl:px-4"
+            variants={arrowVariantsDesktop}
+            animate="visible"
+          >
+            <ChevronsRight className="text-blue-600 w-6 h-6 xl:w-8 xl:h-8 flex-shrink-0 stroke-3 " />
+          </motion.div>
+        </>
+      )}
+    </motion.div>
   );
 };
+
 export default Step;

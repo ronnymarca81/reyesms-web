@@ -108,6 +108,11 @@
       "name": "Retail & Plaza Cleaning",
       "slug": "retail-plaza",
       "description": "Create an inviting and immaculate space that reflects your brand's commitment to quality. Our retail and plaza cleaning services focus on enhancing customer experience and ensuring safety.",
+      "paragraphs": ["Idea 1", "Idea 2", "Idea 3"],
+      "images": [
+        "/images/services/office-1.png",
+        "/images/services/office-2.png"
+      ],
       "tasks": [
         {
           "icon": "Building2",

@@ -1,11 +1,11 @@
 export interface ContactInfo {
-  address?: string;
+  address: string;
   email: string;
   phone: string;
   socialLinks: {
     facebook: string;
   };
-  webSite: string;
+  webSite?: string;
   companyDescription?: string;
   companyCuenta?: string;
 }

@@ -115,7 +115,7 @@ export const containerTheme: Record<
     subtext: "text-gray-700"
   },
   cta: {
-    container: "bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600",
+    container: "bg-gradient-to-br from-blue-950 via-sky-900 to-gray-900",
     text: "text-white",
     card: "bg-white/10 backdrop-blur-lg border border-white/20 shadow-xl",
     border: "border-white/30",

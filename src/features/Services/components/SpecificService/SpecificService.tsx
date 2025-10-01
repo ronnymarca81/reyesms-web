@@ -1,12 +1,11 @@
+import { Navigate, useNavigate } from "react-router-dom";
 import Benefit from "./Benefit";
 import Task from "./Task";
 import { Frequency } from "./Frequency";
 import CtaSection from "./CtaSection";
 import { blobConfigs } from "@components/common/blobConfigs";
 import ContentGalery from "@components/common/ContentGalery";
-
 import { useServiceBySlug } from "./Hook/useServiceBySlug";
-import { Navigate, useNavigate } from "react-router-dom";
 import HeroSection from "./HeroSection";
 
 interface SpecificServiceProps {
@@ -30,7 +29,7 @@ const SpecificService: React.FC<SpecificServiceProps> = ({
           serviceType={serviceType}
           name={service.name}
           description={service.description}
-          highlightIndex={0}
+          //highlightIndex={3}
         />
       </div>
       <ContentGalery
@@ -40,8 +39,10 @@ const SpecificService: React.FC<SpecificServiceProps> = ({
           {
             label: "Get a Free Quote",
             variant: "primary",
-            onClick: () =>  {navigate("/quote") }
-          },
+            onClick: () => {
+              navigate("/quote");
+            }
+          }
         ]}
         images={service.images} // ✅ images style carousel
         reverse={false} // set true to swap sides

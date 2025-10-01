@@ -1,8 +1,8 @@
 import { Star } from "lucide-react";
-import type { Steps } from "../types";
+import type { StepProps } from "../types";
 
 interface StepCardProps {
-  step: Steps;
+  step: StepProps;
   index: number;
   isHovered: boolean;
   onHover: () => void;
@@ -19,8 +19,8 @@ const StepCard = ({
   const Icon = step.icon;
 
   return (
-    <div
-      className="relative group"
+    <div 
+      className="relative group "
       onMouseEnter={onHover}
       onMouseLeave={onLeave}
     >
@@ -55,7 +55,7 @@ const StepCard = ({
             {step.number}
           </span>
           <div className="flex space-x-1">
-            {[...Array(3)].map((_, i) => (
+            {[...Array(4)].map((_, i) => (
               <Star
                 key={i}
                 className={`w-4 h-4 ${

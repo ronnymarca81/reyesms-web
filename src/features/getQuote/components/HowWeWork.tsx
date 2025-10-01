@@ -25,12 +25,12 @@ const HowWeWork = ({
           <div className="text-center mb-16">
             <h2 className="text-6xl font-bold text-white mb-6">How We Work</h2>
             <p className="text-xl text-purple-200 max-w-2xl mx-auto">
-              Simple 3 Steps Process
+              Simple 4 Steps Process
             </p>
           </div>
 
           {/* Steps */}
-          <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-4 gap-8 max-w-7xl mx-auto">
             {defaultSteps.map((step, index) => (
               <StepCard
                 key={index}
