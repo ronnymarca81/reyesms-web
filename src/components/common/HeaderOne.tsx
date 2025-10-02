@@ -14,7 +14,7 @@ interface ServicesHeaderProps {
   /** Paragraph(s) describing the services */
   description: string;
   /** Additional Tailwind classes for container */
-  className?: string;
+  classContainer?: string;
 }
 
 const HeaderOne: React.FC<ServicesHeaderProps> = ({
@@ -24,11 +24,11 @@ const HeaderOne: React.FC<ServicesHeaderProps> = ({
   heading,
   highlightText,
   description,
-  className = ""
+  classContainer = ""
 }) => {
   return (
     <header
-      className={`relative w-full bg-cover bg-center ${className}`}
+      className={`relative w-full bg-cover bg-center ${classContainer}`}
       style={
         backgroundImageUrl
           ? { backgroundImage: `url(${backgroundImageUrl})` }

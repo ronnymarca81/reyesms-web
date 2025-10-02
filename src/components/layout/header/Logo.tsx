@@ -1,5 +1,5 @@
 import type { LogoProps } from "@components/layout/types";
-import { defaultBrandName, defaultLastName } from "@myTypes/ServiceApi";
+import { defaultBrandName, defaultLastName } from "@myTypes/CompanyApi";
 
 const Logo: React.FC<LogoProps> = ({ className = "" }) => {
   return (

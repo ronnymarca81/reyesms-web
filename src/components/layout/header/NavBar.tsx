@@ -3,7 +3,7 @@ import type { NavBarProps } from "@components/layout/types";
 import Logo from "./Logo";
 import { Button } from "../../common/Button";
 import { NavMenu } from "./NavMenu";
-import { defaultContactInfo } from "@myTypes/ServiceApi";
+import { defaultContactInfo } from "@myTypes/CompanyApi";
 
 import { Phone, TextAlignEnd, X } from "lucide-react";
 

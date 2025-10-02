@@ -68,8 +68,8 @@ const WhyChoose: React.FC = () => {
           <ContentOne
             title="Why Choose Reyes Maintenance Service?"
             contents={[
-              "With years of experience serving Canadian businesses, **Reyes Maintenance Service Inc.** has built a reputation for reliability, professionalism, and exceptional results. We understand that a clean workspace isn't just about appearance, it's about creating a healthy, productive environment for your employees and a positive impression for your clients.",
-              "Our comprehensive approach combines state-of-the-art equipment, eco-friendly cleaning products, and highly trained staff to deliver superior results. We're not just a cleaning service; we're your facility maintenance partner, committed to maintaining the highest standards of cleanliness and hygiene in your commercial space."
+              "With years of experience serving Canadian businesses, **Reyes Maintenance Service Inc.** has built a reputation for reliability, professionalism, and exceptional results. We understand that a clean workspace is not just about appearance, it is about creating a healthy, productive environment for your employees and a positive impression for your clients.",
+              "Our comprehensive approach combines modern equipment, eco-friendly cleaning products, and highly trained staff to deliver superior results. We are not just a cleaning service; we are your facility maintenance partner, committed to maintaining the highest standards of cleanliness and hygiene in your commercial space."
             ]}
             buttons={[
               <Button

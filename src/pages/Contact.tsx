@@ -1,14 +1,11 @@
 import React from "react";
-import { FeatureBadge } from '@components/common/FeatureBadge'
-import { defaultContactInfo } from '@myTypes/ServiceApi'
-import  Request  from '@features/getQuote/components/Request'
-import  HeroSection  from '@features/Services/components/SpecificService/HeroSection' 
+import { FeatureBadge } from "@components/common/FeatureBadge";
+import { defaultContactInfo } from "@myTypes/CompanyApi";
+import Request from "@features/getQuote/components/Request";
+import HeroSection from "@features/Services/components/SpecificService/HeroSection";
 import { MapPin, PhoneCall, Mail } from "lucide-react";
 
-
 const App: React.FC = () => {
-
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50">
       {/* Hero Section */}
@@ -17,7 +14,7 @@ const App: React.FC = () => {
         name="Let's Make Your Space Shine Contact Us"
         description="Transform your business environment with Reyes Maintenance. Get your free estimate today and experience the difference."
         highlightIndex={5}
-        visible={false} 
+        visible={false}
       />
 
       {/* Features Section */}

@@ -1,7 +1,6 @@
 import React from "react";
-import {  CardService } from "./CardService";
-import { defaultServicesData } from "../ServiceApi";
-
+import { CardService } from "./CardService";
+import { defaultServicesData } from "../../../myTypes/ServiceApi";
 
 interface ServicesProps {
   services: typeof defaultServicesData;

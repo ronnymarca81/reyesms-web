@@ -15,11 +15,10 @@ interface BannerQuoteProps {
 const BannerQuote: React.FC<BannerQuoteProps> = ({
   backgroundClassName = "bg-sky-200",
   backgroundStyle,
-  title = "Professional Cleaning Services",
-  subtitle = "Get Started With Our",
-  description = `If you’re looking for a professional cleaning service for your Ottawa
-    business or commercial property, rely on our team to get the job done right the first time around. Request a free quote from our team today to get started.`,
-  ctaText = "GET A QUOTE",
+  title = "Comprehensive Cleaning and Maintenance Services",
+  subtitle = "Connect With Our",
+  description = `Trust Reyes Maintenance Service Inc. to keep your Ottawa business clean, safe, and welcoming. Our reliable team delivers tailored solutions that fit your needs and schedule. Request your free quote today and see the difference.`,
+  ctaText = "GET A FREE QUOTE",
   ctaPath = "/quote"
 }) => {
   const navigate = useNavigate();

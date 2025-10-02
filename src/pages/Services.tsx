@@ -1,11 +1,11 @@
 import Service from "../features/Services/components/Service";
-import { defaultServicesData } from "@features/Services/ServiceApi";
+import { defaultServicesData } from "@myTypes/ServiceApi";
 import Values from "@features/Services/components/Values";
 import banner from "@assets/images/services-banner.png";
 import { useNavigate } from "react-router-dom";
 
 export const Services = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const handleServiceLearnMore = (serviceLink: string) => {
     // Here you would typically navigate to a detailed service page
     navigate(`${serviceLink}`);

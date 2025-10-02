@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import { defaultSteps } from "../serviceApi";
 import StepCard from "./StepCard";
 import { Zap } from "lucide-react";
@@ -11,7 +9,6 @@ interface DisplayProps {
 const HowWeWork = ({
   background = "bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900"
 }: DisplayProps) => {
-  const [hoveredStep, setHoveredStep] = useState<number | null>(null);
   const navigate = useNavigate()
   const handleGetQuote = () => {
     navigate("/quote");
@@ -23,35 +20,31 @@ const HowWeWork = ({
         <div className="relative z-10 container mx-auto px-6 py-10">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-6xl font-bold text-white mb-6">How We Work</h2>
-            <p className="text-xl text-purple-200 max-w-2xl mx-auto">
-              Simple 4 Steps Process
+            <h2 className="text-5xl md:text-6xl font-extrabold text-white mb-4 tracking-tight">
+              How We Work
+            </h2>
+            <p className="text-lg md:text-xl text-purple-200 max-w-xl mx-auto">
+              A simple 4-step process to spotless results
             </p>
           </div>
 
           {/* Steps */}
-          <div className="grid md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
             {defaultSteps.map((step, index) => (
               <StepCard
                 key={index}
                 step={step}
-                index={index}
-                isHovered={hoveredStep === index}
-                onHover={() => setHoveredStep(index)}
-                onLeave={() => setHoveredStep(null)}
               />
             ))}
           </div>
           {/* Bottom CTA */}
-          <div className="text-center mt-16">
-            <button
-              onClick={handleGetQuote}
-              className="bg-white/20 backdrop-blur-xl text-white font-semibold py-4 px-8 rounded-2xl border border-white/30 hover:bg-white/30 transition-all duration-300 flex items-center space-x-3 mx-auto group"
-            >
-              <span>GET A QUOTE</span>
-              <Zap className="w-5 h-5 group-hover:animate-pulse stroke-3" />
-            </button>
-          </div>
+          <button
+            onClick={handleGetQuote}
+            className="mt-12 bg-white/10 hover:bg-white/20 text-white font-medium py-4 px-10 rounded-full border border-white/30 transition-all duration-300 flex items-center gap-3 mx-auto group"
+          >
+            <span className="text-lg">Get a Quote</span>
+            <Zap className="w-5 h-5 group-hover:animate-pulse stroke-[2.5]" />
+          </button>
         </div>
       </div>
     );

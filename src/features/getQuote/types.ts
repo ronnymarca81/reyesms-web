@@ -1,4 +1,4 @@
-import { defaultServicesData } from "@features/Services/ServiceApi";
+import { defaultServicesData } from "@myTypes/ServiceApi";
 import type { LucideIcon } from "lucide-react";
 
 // export interface Steps {
@@ -26,7 +26,7 @@ export interface FormData {
   service: string;
   message: string;
   timestamp: string;
-  source: string
+  source: string;
 }
 
 // formFields
@@ -55,7 +55,6 @@ export type TextAreaField = {
 };
 
 export type FormField = SelectField | InputField | TextAreaField;
-
 
 export const formFields: FormField[] = [
   {
@@ -98,5 +97,3 @@ export const formFields: FormField[] = [
       "Please describe your facility, cleaning frequency needs, and any specific requirements..."
   }
 ];
-
-

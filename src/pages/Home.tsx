@@ -3,7 +3,7 @@ import HeaderOne from "@components/common/HeaderOne";
 import Testimonial from "@components/ui/Testimonial/Testimonial";
 import WhyChoose from "@components/ui/WhyChoose/WhyChoose";
 import Service from "@features/Services/components/Service";
-import { defaultServicesData } from "@features/Services/ServiceApi";
+import { defaultServicesData } from "@myTypes/ServiceApi";
 import { useNavigate } from "react-router-dom";
 import bgImage from "@assets/images/home.png";
 import ContentImage from "@components/common/ContentImage";
@@ -24,39 +24,35 @@ export const Home = () => {
       {/* Header Section */}
       <HeroSection
         view="center"
-        height="70vh"
+        height="60vh"
         backgroundImage={bgImage}
-        title="Reyes Maintenance: Elevating Your Business Environment"
-        description="Ensure your commercial space always looks its best with Reyes Maintenance Service Inc. We deliver exceptional cleaning solutions, maintaining pristine and professional environments that reflect your business's high standards."
+        title="Complete Cleaning and Maintenance Solutions for Your Business"
+        description="Trusted by Ottawa companies since 2008 for reliable, professional, full-service facility care."
         bottom={
           <>
             <button
               className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-medium shadow-md text-white"
               onClick={handleGetQuote}
             >
-              Get a Free Quote
+              Request a Free Quote
             </button>
           </>
         }
       />
       <ContentImage
-        title="Reyes Maintenance: Elevating Your Business Environment"
+        title="Elevating Your Business Environment"
         paragraphs={[
           "Ensure your commercial space always looks its best with Reyes Maintenance Service Inc.",
-          "We deliver exceptional cleaning solutions, maintaining pristine and professional environments that reflect your business's high standards."
+          "As a locally owned and operated company with over 15 years of experience, Reyes Maintenance Service Inc. has earned a reputation for reliability, professionalism, and exceptional results.",
+          "We understand that a clean workspace is about more than just appearance: it fosters a healthy, productive environment for employees while leaving a lasting impression on clients. To achieve these exceptional outcomes, our highly skilled staff relies on modern equipment and environmentally safe supplies."
         ]}
         buttons={[
           {
-            label: "Get a Free Quote",
+            label: "Claim your Free Estimate",
             variant: "primary",
             onClick: () => {
               navigate("/quote");
             }
-          },
-          {
-            label: "Our Services",
-            variant: "secondary",
-            onClick: () => alert("Services clicked!")
           }
         ]}
         image={pgImage}
@@ -65,13 +61,15 @@ export const Home = () => {
       />
       <div className="bg-white">
         <HeaderOne
-          //backgroundImageUrl={headerImg}
-          overlayColorClass="bg-white/90" // light overlay to ensure readability
-          preHeading="Professional"
-          heading="Our Comprehensive Commercial"
-          highlightText="Cleaning Services"
-          description={`Reyes Maintenance Service offers a full spectrum of cleaning solutions tailored to meet the unique demands of various commercial environments. From daily office upkeep to specialized retail and carpet care, we ensure every space is impeccably maintained.`}
+          backgroundImageUrl={pgImage}
+          overlayColorClass="bg-white/90"
+          preHeading="PROFESSIONAl"
+          heading="Complete Cleaning & Maintenance"
+          highlightText="in Ottawa"
+          description="Trusted by local businesses since 2008, Reyes Maintenance delivers reliable, eco-friendly, full-service facility care tailored to your needs."
+          classContainer="h-[250px]"
         />
+
         <Service
           services={defaultServicesData}
           onServiceLearnMore={handleServiceLearnMore}

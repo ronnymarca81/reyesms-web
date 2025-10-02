@@ -19,8 +19,8 @@ export const About = () => {
         view="left"
         height="40vh"
         backgroundImage={bgImage}
-        title="Reyes Maintenance"
-        description="Elevating Your Business Environment"
+        title="About Us"
+        description="Your Trusted Partner in Facility Care Across Ottawa"
         bottom={
           <>
             <button
@@ -33,10 +33,11 @@ export const About = () => {
         }
       />
       <ContentImage
-        title="About Reyes Maintenance Service"
+        title="About Reyes Maintenance Service Inc"
         paragraphs={[
-          "With over a decade of dedicated service, Reyes Maintenance Service Inc. stands as a trusted leader in commercial cleaning. Our commitment to unparalleled quality ensures every space we touch is meticulously maintained and impeccably clean.",
-          "We pride ourselves on a highly skilled team, tailored solutions, and a relentless focus on customer satisfaction, setting a new standard for professional business environments."
+          "Reyes Maintenance Service Inc. has been proudly serving Ottawa businesses since 2008, providing reliable cleaning and maintenance solutions that keep workplaces clean, safe, and professional. As a locally owned company with over 15 years of experience, we have built our reputation on trust, consistency, and results that reflect the high standards of our clients.",
+          "We believe a well‑maintained workplace is more than just appearance: it supports productivity, protects health, and creates a positive impression for employees and visitors alike. Our team combines modern equipment, eco‑friendly products, and proven expertise to deliver tailored solutions that fit each client’s schedule and budget, ensuring minimal disruption and maximum impact.",
+          "At Reyes Maintenance Service Inc., we are more than a cleaning service: we are your facility care partner. With a skilled team, flexible scheduling, and a commitment to sustainable practices, we stand by our motto: Satisfaction Guaranteed."
         ]}
         buttons={[
           {

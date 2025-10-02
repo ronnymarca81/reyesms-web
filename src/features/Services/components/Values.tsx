@@ -1,6 +1,6 @@
 import { Check, Phone } from "lucide-react";
 import { safetyFeatures } from "../types";
-import { defaultContactInfo } from "@myTypes/ServiceApi";
+import { defaultContactInfo } from "@myTypes/CompanyApi";
 import { useNavigate } from "react-router-dom";
 
 const imageUrl = "images/cleaning-safety.png";

@@ -5,7 +5,7 @@ import { blobConfigs } from "@components/common/blobConfigs";
 import { useNavigate } from "react-router-dom";
 
 interface HeroSectionProps {
-  serviceType: keyof typeof blobConfigs;
+  serviceType?: keyof typeof blobConfigs;
   name: string;
   description: string;
   highlightIndex?: number;
@@ -13,7 +13,7 @@ interface HeroSectionProps {
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({
-  serviceType,
+  serviceType = "office",
   name,
   description,
   highlightIndex,

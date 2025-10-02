@@ -3,8 +3,8 @@ import {
   defaultContactInfo,
   defaultBrandName,
   defaultLastName
-} from "@myTypes/ServiceApi";
-import { menuItems } from "../ServiceApi";
+} from "@myTypes/CompanyApi";
+import { menuItems } from "../../../myTypes/MenuApi";
 import Logo from "@components/layout/header/Logo";
 import { PhoneCall, Mail } from "lucide-react";
 import { FacebookIcon } from "@components/layout/icons";
