@@ -48,10 +48,11 @@ const SpecificService: React.FC<SpecificServiceProps> = ({
         reverse={false} // set true to swap sides
         backgroundColor="bg-sky-100"
       />
+      
       {/* Other Sections */}
-      <Task theme="light" tasks={service.tasks} service={service.name} />
-      <Benefit theme="dark" benefits={service.benefits} />
-      <Frequency theme="gradient" frequencyOptions={service.frequencies} />
+      <Task theme="light" tasks={service.tasks} />
+      <Benefit theme="light" benefits={service.benefits} />
+      <Frequency theme="light" frequencyOptions={service.frequencies} />
       <CtaSection theme="cta" />
     </>
   );

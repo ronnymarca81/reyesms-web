@@ -63,10 +63,10 @@ export const Home = () => {
         <HeaderOne
           backgroundImageUrl={pgImage}
           overlayColorClass="bg-white/90"
-          preHeading="PROFESSIONAl"
-          heading="Complete Cleaning & Maintenance"
+          preHeading="COMPREHENSIVE"
+          heading="Maintenance Services"
           highlightText="in Ottawa"
-          description="Trusted by local businesses since 2008, Reyes Maintenance delivers reliable, eco-friendly, full-service facility care tailored to your needs."
+          description="Reyes Maintenance Service Inc. provides a full range of professional maintenance solutions tailored to meet the unique needs of businesses of every size. We create customized plans that fit your schedule and budget, delivering reliable results."
           classContainer="h-[250px]"
         />
 

@@ -34,9 +34,8 @@ const Card: React.FC<CardWithPositionProps> = ({
       cursor-pointer
       focus-within:outline-none focus-within:ring-2 focus-within:ring-blue-500
       transition-colors duration-200
-      hover:bg-gray-100
       /* no border by default */
-      border border-transparent rounded-4xl shadow-2xl
+      border border-transparent 
  
     `}
       tabIndex={0}

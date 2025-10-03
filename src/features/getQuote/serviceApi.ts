@@ -8,7 +8,7 @@ export const defaultSteps: StepProps[] = [
     title: "Free Assessment",
     description:
       "We visit your space, discuss your needs, and evaluate the best cleaning or maintenance solution for your business",
-    color: "from-purple-500 to-pink-500",
+    color: "from-emerald-50 to-emerald-200",
     showArrow: true
   },
   {
@@ -17,7 +17,7 @@ export const defaultSteps: StepProps[] = [
     title: "Custom Quote & Easy Scheduling",
     description:
       "Competitive quote along with a tailored service plan. Once approved, you simply pick the schedule that works best for you.",
-    color: "from-blue-500 to-cyan-500",
+    color: "from-sky-50 to-sky-200",
     showArrow: true
   },
   {
@@ -26,7 +26,7 @@ export const defaultSteps: StepProps[] = [
     title: "Professional Cleaning",
     description:
       "Our trained and insured team arrives fully equipped with eco-friendly products and commercial grade tools. ",
-    color: "from-emerald-500 to-teal-500",
+    color: "from-violet-50 to-violet-200",
     showArrow: true
   },
   {
@@ -35,7 +35,7 @@ export const defaultSteps: StepProps[] = [
     title: "Guaranteed Results",
     description:
       "We deliver spotless results with minimal disruption, backed by our 100% satisfaction guarantee.",
-    color: "from-emerald-300 to-teal-900",
+    color: "from-amber-50 to-amber-300",
     showArrow: false
   }
 ];

@@ -14,27 +14,26 @@ export const Frequency = ({
   const [activeFrequency, setActiveFrequency] = useState(
     Object.keys(frequencyOptions)[0]
   );
-  const t = containerTheme[theme]; // shorthand theme config
+  const t = containerTheme[theme];
 
   return (
     <section
-      className={`${t.container} relative z-10 py-16 px-6 transition-colors duration-300`}
+      className={`${t.container} relative z-10 py-12 px-6 transition-colors duration-300  `}
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-screen-xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h3 className={`text-4xl font-bold mb-2 ${t.text}`}>
+        <div className="text-left mb-6">
+          <h2 className={`text-2xl font-bold mb-2 ${t.text}`}>
             Flexible Scheduling
-          </h3>
-          <p className={`text-lg ${t.subtext}`}>
+          </h2>
+          <p className={`text-sm leading-relaxed ${t.subtext}`}>
             Choose the perfect cleaning schedule for your business
           </p>
         </div>
 
         {/* Frequency Buttons */}
-        <div className="grid md:grid-cols-4 gap-4 mb-12">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] mx-auto gap-4 mb-12">
           {Object.entries(frequencyOptions).map(([key, freq]) => {
-            console.log("Frequencies", freq);
             const isActive = activeFrequency === key;
             return (
               <button
@@ -64,36 +63,24 @@ export const Frequency = ({
           <h4 className={`text-2xl font-bold mb-4 capitalize ${t.text}`}>
             {activeFrequency} Cleaning
           </h4>
-          <div className={`grid md:grid-cols-3 gap-6 ${t.text}`}>
+          <div
+            className={`grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-6 ${t.text}`}
+          >
             <div>
-              <div className={`text-3xl rounded-2xl  font-bold `}>
-                {
-                  frequencyOptions[
-                    activeFrequency as keyof typeof frequencyOptions
-                  ].price
-                }
+              <div className="text-3xl font-bold">
+                {frequencyOptions[activeFrequency].price}
               </div>
               <div className={`${t.subtext}`}>Price Range</div>
             </div>
             <div>
-              <div
-                className={`text-3xl rounded-2xl text-emerald-100 font-bold ${t.accent}`}
-              >
-                {
-                  frequencyOptions[
-                    activeFrequency as keyof typeof frequencyOptions
-                  ].visits
-                }
+              <div className={`text-3xl rounded-2xl font-bold ${t.accent}`}>
+                {frequencyOptions[activeFrequency].visits}
               </div>
-              <div className={`${t.subtext}`}>Service Frequency</div>
+              <div className={` ${t.subtext}`}>Service Frequency</div>
             </div>
             <div>
               <div className="text-lg font-semibold">
-                {
-                  frequencyOptions[
-                    activeFrequency as keyof typeof frequencyOptions
-                  ].best
-                }
+                {frequencyOptions[activeFrequency].best}
               </div>
               <div className={`${t.subtext}`}>Best For</div>
             </div>

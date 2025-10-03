@@ -1,5 +1,5 @@
 import React from "react";
-import { BarChart3, Handshake, Users, Monitor } from "lucide-react";
+import { Handshake, Users, CalendarClock, ShieldCheck } from "lucide-react";
 import { Button } from "@components/common/Button";
 import ContentOne from "@components/common/ContentOne";
 import { Gear } from "./Gear";
@@ -19,11 +19,7 @@ const WhyChoose: React.FC = () => {
                   description="Our highly skilled professionals bring years of expertise to every job. Trained in the latest techniques and equipped with advanced tools, they ensure thorough and efficient cleaning, consistently exceeding expectations."
                   position="right"
                 />
-                <Gear
-                  image={<BarChart3 />}
-                  color="blue"
-                  linePosition="right"
-                />
+                <Gear image={<Users />} color="blue" linePosition="right" />
               </div>
 
               <div className="flex flex-col items-center group ">
@@ -38,7 +34,7 @@ const WhyChoose: React.FC = () => {
               {/* Bottom Row */}
               <div className="flex flex-col items-center group ">
                 <Gear
-                  image={<Monitor />}
+                  image={<ShieldCheck />}
                   color="darkBlue"
                   linePosition="right"
                 />
@@ -50,7 +46,7 @@ const WhyChoose: React.FC = () => {
               </div>
 
               <div className="flex flex-col items-center group ">
-                <Gear image={<Users />} color="blue" />
+                <Gear image={<CalendarClock />} color="blue" />
                 <Card
                   title="Flexible Scheduling"
                   description="Your business operates on its own schedule, and so do we. We offer customizable cleaning plans and flexible appointment times to seamlessly integrate with your operations, minimizing disruption."
@@ -68,7 +64,7 @@ const WhyChoose: React.FC = () => {
           <ContentOne
             title="Why Choose Reyes Maintenance Service?"
             contents={[
-              "With years of experience serving Canadian businesses, **Reyes Maintenance Service Inc.** has built a reputation for reliability, professionalism, and exceptional results. We understand that a clean workspace is not just about appearance, it is about creating a healthy, productive environment for your employees and a positive impression for your clients.",
+              "With years of experience serving Canadian businesses, **Reyes Maintenance Service Inc.** has built a reputation for reliability, professionalism, and exceptional results. We understand that a clean workspace is not just about appearance; it is about creating a healthy, productive environment for your employees and a positive impression for your clients.",
               "Our comprehensive approach combines modern equipment, eco-friendly cleaning products, and highly trained staff to deliver superior results. We are not just a cleaning service; we are your facility maintenance partner, committed to maintaining the highest standards of cleanliness and hygiene in your commercial space."
             ]}
             buttons={[

@@ -9,6 +9,7 @@ import  type{ LucideIcon }  from "lucide-react";
 export interface BenefitItem {
   icon: IconName;
   stat: string;
+  unit: string;
   metric: string;
   title: string;
   desc: string;
@@ -32,24 +33,24 @@ export default function Benefit({ theme = "light", benefits }: BenefitProps) {
   };
 
   return (
-    <section className={`relative z-10 py-16 px-6 ${currentTheme.container}`}>
+    <section
+      className={`relative z-10 py-12 px-6 ${currentTheme.container}`}
+    >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h3 className={`text-4xl font-bold mb-4 ${currentTheme.text}`}>
-            Key Benefits
-          </h3>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full"></div>
+        <div className="text-Left mb-6">
+          <h2 className={`text-2xl font-bold mb-2 ${currentTheme.text}`}>
+            Business Impact Metrics
+          </h2>
+          <p className={`text-sm leading-relaxed ${currentTheme.subtext}`}>
+            Real-world benefits of professional cleaning
+          </p>
         </div>
 
         {/* Benefit Cards */}
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {benefits.map((benefit, index) => {
             const Icon = resolveIcon(benefit.icon);
-            //const Icon = iconMap[benefit.icon] ?? Bug;
-
-            //const Icon = benefit.icon;
-
             return (
               <motion.div
                 key={index}
@@ -64,7 +65,7 @@ export default function Benefit({ theme = "light", benefits }: BenefitProps) {
                 <div
                   className={`
                     ${currentTheme.card}
-                    p-8 rounded-2xl transition-all duration-500
+                    p-6 rounded-xl transition-all duration-500
                     transform hover:scale-105 hover:-translate-y-4
                     ${currentTheme.hover}
                     ${
@@ -74,34 +75,42 @@ export default function Benefit({ theme = "light", benefits }: BenefitProps) {
                     }
                   `}
                 >
-                  <div className="text-center">
+                  <div className="text-left">
                     {/* Icon */}
                     <div
-                      className={`${currentTheme.accent} p-4 rounded-full w-16 h-16 mx-auto mb-6 
+                      className={`${currentTheme.accent} p-4 rounded-full mx-auto w-14 h-14  mb-6 
                       flex items-center justify-center transition-transform duration-300
                       group-hover:scale-110 shadow-md`}
                     >
                       <Icon className="h-8 w-8 text-white" aria-hidden="true" />
                     </div>
-
-                    {/* Stat */}
-                    <div
-                      className={`text-4xl font-bold mb-2 ${currentTheme.text}`}
-                    >
-                      {benefit.stat}
+                    <div className="mb-4">
+                      <div className="flex items-baseline gap-1">
+                        {/* Stat */}
+                        <div
+                          className={`text-5xl font-bold mb-2 ${currentTheme.text}`}
+                        >
+                          {benefit.stat}
+                        </div>
+                        {/* unit */}
+                        <div
+                          className={`text-2xl font-bold mb-2 ${currentTheme.text}`}
+                        >
+                          {benefit.unit}
+                        </div>
+                      </div>
                     </div>
-
                     {/* Metric */}
                     <div className="text-indigo-400 text-sm mb-4 font-medium">
                       {benefit.metric}
                     </div>
 
                     {/* Title */}
-                    <h4
+                    <h3
                       className={`font-semibold text-lg mb-3 ${currentTheme.text}`}
                     >
                       {benefit.title}
-                    </h4>
+                    </h3>
 
                     {/* Description */}
                     <p

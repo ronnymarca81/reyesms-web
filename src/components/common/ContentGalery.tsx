@@ -45,7 +45,7 @@ const ContentGalery: React.FC<ContentGaleryProps> = ({
 
           <div className="space-y-4">
             {paragraphs.map((text, index) => (
-              <p key={index} className="text-lg text-gray-600">
+              <p key={index} className="text-md text-gray-600">
                 {text}
               </p>
             ))}

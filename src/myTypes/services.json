@@ -1,13 +1,13 @@
 {
   "services": [
     {
-      "name": "Office Cleaning",
+      "name": "Office and Commercial Cleaning",
       "slug": "office",
       "description": "Ensure a productive and healthy environment for your team. Our detailed office cleaning services are designed to maintain professionalism and hygiene throughout your workspace.",
       "paragraphs": [
-        "Keep your workplace clean, healthy and productive with professional office cleaning services from Jani Queen in Ottawa. Our experienced team offers a full range of workplace cleaning solutions tailored to the needs of your office.",
-        "Our office cleaning services include day porter service, personalized cleaning programs, floor stripping and waxing, carpet cleaning and move in or move out cleaning. We also provide weekend and holiday cleaning services for maximum flexibility.",
-        "No matter the size of your office, Jani Queen is equipped to maintain a spotless and hygienic environment for employees and visitors. Contact our team today to request a quote for our office cleaning and sanitization services in Ottawa."
+        "Maintain a Pristine environment. Our meticulous office and commercial cleaning services in Ottawa ensure your workplace is spotless, healthy, and welcoming every day. Whether you manage a small office, a large building, a retail store, a plaza, or an event venue, our professional team keeps your environment polished and ready to impress both staff and clients. As a locally owned Ottawa company with over 15 years of experience, Reyes Maintenance Service Inc. is trusted for delivering reliable, high-quality cleaning solutions that reflect your business’s professionalism.",
+        "Our commercial cleaning programs in Ottawa are designed to handle every detail of your facility. Services include dusting and polishing surfaces, vacuuming and mopping floors, sanitizing restrooms and kitchens, cleaning interior glass and partitions, trash and recycling removal, and disinfecting high‑touch points such as door handles, switches, and keyboards. Every plan is customized to match your facility’s size, traffic level, and operating schedule, ensuring consistent results that enhance productivity and create a healthier environment for employees and visitors alike. In addition to cleaning, we can also provide essential supplies such as paper products, hand soap, and sanitizers, ensuring your workplace is always fully stocked and ready for daily operations."
+    
       ],
       "images": [
         "/images/services/office-1.png",
@@ -78,35 +78,39 @@
           "icon": "Users",
           "title": "Healthier Work Environment",
           "desc": "Reduces sick days by up to 30% and promotes overall wellness",
-          "stat": "30%",
+          "stat": "30",
+          "unit":"%",
           "metric": "Fewer Sick Days"
         },
         {
           "icon": "TrendingUp",
           "title": "Boosts Productivity",
           "desc": "Clean workspaces increase focus and employee satisfaction",
-          "stat": "23%",
+          "stat": "23",
+          "unit": "%",
           "metric": "Productivity Increase"
         },
         {
           "icon": "Building2",
           "title": "Professional Image",
           "desc": "Impress clients and visitors with immaculate facilities",
-          "stat": "85%",
+          "stat": "85",
+          "unit": "%",
           "metric": "Client Satisfaction"
         },
         {
           "icon": "Star",
           "title": "Extends Asset Life",
           "desc": "Proper maintenance preserves furniture and equipment value",
-          "stat": "40%",
+          "stat": "40",
+          "unit": "%",
           "metric": "Longer Lifespan"
         }
       ]
     },
     {
-      "name": "Retail & Plaza Cleaning",
-      "slug": "retail-plaza",
+      "name": "Floor Stripping and Waxing",
+      "slug": "floor",
       "description": "Create an inviting and immaculate space that reflects your brand's commitment to quality. Our retail and plaza cleaning services focus on enhancing customer experience and ensuring safety.",
       "paragraphs": ["Idea 1", "Idea 2", "Idea 3"],
       "images": [
@@ -256,28 +260,32 @@
           "icon": "Leaf",
           "title": "Improved Air Quality",
           "desc": "Removes allergens, dust, and pollutants from carpets",
-          "stat": "95%",
+          "stat": "95",
+          "unit": "%",
           "metric": "Cleaner Air"
         },
         {
           "icon": "Clock",
           "title": "Extended Carpet Life",
           "desc": "Prevents wear and tear, prolonging carpet usability",
-          "stat": "40%",
+          "stat": "40",
+          "unit": "%",
           "metric": "Lifespan Increase"
         },
         {
           "icon": "Smile",
           "title": "Odor-Free Spaces",
           "desc": "Eliminates unpleasant odors for a fresher environment",
-          "stat": "100%",
+          "stat": "100",
+          "unit": "%",
           "metric": "Odor Elimination"
         },
         {
           "icon": "Sparkles",
           "title": "Vibrant Look",
           "desc": "Restores carpet’s original texture and color",
-          "stat": "85%",
+          "stat": "85",
+          "unit": "%",
           "metric": "Aesthetic Restoration"
         }
       ]

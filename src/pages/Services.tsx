@@ -28,9 +28,11 @@ export const Services = () => {
               Our Services
             </h1>
             <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
-              We are passionate about empowering individuals and businesses to
-              reach their full potential. Our approach is rooted in personalized
-              strategies, meaningful connections, and measurable results.
+              Reyes Maintenance Service Inc. provides a meticulous approach to
+              commercial cleaning and maintenance, ensuring every aspect of your
+              Ottawa business environment is handled precisely and carefully.
+              Explore our key services below, each designed to keep workplaces
+              spotless, safe, and welcoming.
             </p>
           </div>
         </div>
