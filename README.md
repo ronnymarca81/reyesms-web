@@ -88,11 +88,13 @@ Follow these steps to get the project running locally:
 ```bash
 git clone https://github.com/your-username/reyes-maintenance
 cd reyes-maintenance
+```
 
 ### 1. Clone the repo
 
 ```bash
 npm install
+```
 
 ### 3. Set up environment variables
 
@@ -102,11 +104,13 @@ Create a .env.local file in the root directory and add your EmailJS keys:
 VITE_EMAIL_PUBLIC_KEY=your_key
 VITE_EMAIL_SERVICE_ID=your_service_id
 VITE_EMAIL_TEMPLATE_ID=your_template_id
+```
 
 ### 4. Start the dev server
 
 ```bash 
 npm run dev
+```
 
 ### 5. Ready to deploy
 
