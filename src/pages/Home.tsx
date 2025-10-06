@@ -34,7 +34,7 @@ export const Home = () => {
               className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-medium shadow-md text-white"
               onClick={handleGetQuote}
             >
-              Request a Free Quote
+              Request a Free Estimate
             </button>
           </>
         }
