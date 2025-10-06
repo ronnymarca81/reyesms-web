@@ -1,16 +1,12 @@
-# 🧼 Reyes Maintenance Service Inc - Web Site
+# 🧼 Reyes Maintenance Service Inc – Web Site
 
-Reyes Maintenance Service Inc is a modern, responsive web application designed to streamline service inquiries for commercial cleaning and maintenance. Built with React, TypeScript, Vite, and Tailwind CSS, the app delivers a seamless user experience and professional polish that reflects the high standards of Reyes Maintenance Service Inc.
-
-This application empowers potential clients to request quotes quickly and confidently, while reinforcing the company’s reputation for reliability, eco-conscious practices, and exceptional service. It features a dynamic, step-by-step form with live validation, branded email auto-replies, and scalable architecture for future service expansion.
-
-Whether accessed from desktop or mobile, the app ensures that every interaction feels clean, intuitive, and trustworthy—just like the spaces Reyes Maintenance Service Inc maintains.
+A modern, responsive web application designed to streamline service inquiries for commercial cleaning and maintenance. Built with React, TypeScript, Vite, and Tailwind CSS, this app delivers a seamless experience across devices while reinforcing the company’s reputation for professionalism, reliability, and eco-conscious care.
 
 ---
 
 ## 🧼 Project Overview
 
-**Reyes Maintenance Service Inc – Quote Request App** empowers potential clients to request service quotes quickly and confidently. It features a dynamic, step-by-step form with live validation, branded auto-reply emails, and scalable architecture for future service expansion.
+**Reyes Maintenance Service Inc – Web Site** empowers potential clients to request service quotes quickly and confidently. It features a dynamic, step-by-step form with live validation, branded auto-reply emails, and scalable architecture for future service expansion.
 
 As a locally owned and operated business serving Ottawa since 2008, Reyes Maintenance Service Inc. understands that a clean workspace is more than just appearance—it’s about creating a healthy, productive environment that leaves a lasting impression. This app reflects that philosophy, combining modern technology with thoughtful design to elevate every client interaction.
 
@@ -130,26 +126,26 @@ npm run dev
 
 ### 5. Ready to deploy
 
-Use Vercel, Netlify, or Firebase Hosting. Make sure to set your environment variables in the platform dashboard.
+Use **Vercel**, **Netlify**, or **Firebase Hosting**. Make sure to set your environment variables in the platform dashboard.
 
 ---
 
 ### 📤 Deployment
 This app is ready for deployment on platforms like:
 
-Vercel – auto-detects Vite and supports .env variables
+**Vercel** – auto-detects Vite and supports .env variables
 
-Netlify – configure build command npm run build and publish directory dist
+**Netlify** – configure build command npm run build and publish directory dist
 
-Firebase Hosting – optional for static deployment
+**Firebase Hosting** – optional for static deployment
 
 
 ## 🙌 Contributors
 
 | Name        | Role                          | GitHub Profile                                  | Badge                                      |
 |-------------|-------------------------------|--------------------------------------------------|--------------------------------------------|
-| Ronny Martinez       | Lead Developer & Architect    | [@ronnymarca81](https://github.com/ronnymarca81)        | ![GitHub](https://img.shields.io/badge/Ronny-Martinez-dev-blue) |
-| Nubia Lovo  | Business Requirements & QA    |[@nklovo84](https://github.com/nklovo84)                                               | ![Team](https://img.shields.io/badge/Nubia-QA-green) |
+| Ronny Martinez       | Lead Developer & Architect    | [@ronnymarca81](https://github.com/ronnymarca81)        | ![GitHub](https://img.shields.io/badge/Marlov-dev-blue) |
+| Nubia Lovo  | Business Requirements & QA    |[@nklovo84](https://github.com/nklovo84)                                               | ![Team](https://img.shields.io/badge/Marlov-QA-green) |
 | Nubia Lovo      | Web Design & Branding         | [@nklovo84](https://github.com/nklovo84)             | ![Design](https://img.shields.io/badge/Marlov-design-orange) |
 
 
@@ -158,7 +154,7 @@ Firebase Hosting – optional for static deployment
 Thanks to everyone who has contributed!
 
 <a href="https://github.com/nklovo84/reyes-maintenance/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=your-username/reyes-maintenance" />
+  <img src="https://contrib.rocks/image?repo=nklovo84/reyes-maintenance" />
 </a>
 
 ---
