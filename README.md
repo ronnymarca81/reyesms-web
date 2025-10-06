@@ -2,8 +2,6 @@
 
 A modern, responsive web application designed to streamline service inquiries for commercial cleaning and maintenance. Built with React, TypeScript, Vite, and Tailwind CSS, this app delivers a seamless experience across devices while reinforcing the company’s reputation for professionalism, reliability, and eco-conscious care.
 
----
-
 ## 🧼 Project Overview
 
 **Reyes Maintenance Service Inc – Web Site** empowers potential clients to request service quotes quickly and confidently. It features a dynamic, step-by-step form with live validation, branded auto-reply emails, and scalable architecture for future service expansion.
@@ -63,7 +61,7 @@ src/
 ## 🔐 Environment Variables
 Create a .env.local file in the root directory:
 ```bash
-VITE_EMAIL_PUBLIC_KEY=SPvmzo5lI0xSv8BY3
+VITE_EMAIL_PUBLIC_KEY=your_public_key_here
 VITE_EMAIL_SERVICE_ID=your_service_id_here
 VITE_EMAIL_TEMPLATE_ID=your_template_id_here
 ```
