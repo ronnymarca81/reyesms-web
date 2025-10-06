@@ -8,6 +8,14 @@ Whether accessed from desktop or mobile, the app ensures that every interaction 
 
 ---
 
+## 🧼 Project Overview
+
+**Reyes Maintenance Service Inc – Quote Request App** empowers potential clients to request service quotes quickly and confidently. It features a dynamic, step-by-step form with live validation, branded auto-reply emails, and scalable architecture for future service expansion.
+
+As a locally owned and operated business serving Ottawa since 2008, Reyes Maintenance Service Inc. understands that a clean workspace is more than just appearance—it’s about creating a healthy, productive environment that leaves a lasting impression. This app reflects that philosophy, combining modern technology with thoughtful design to elevate every client interaction.
+
+---
+
 ##🚀 Features
 
 - Step-by-step quote request flow with animated transitions and dynamic titles
@@ -45,7 +53,7 @@ Whether accessed from desktop or mobile, the app ensures that every interaction 
 ---
 
 ## 📁 Project Structure
-```
+```text
 src/
 ├── components/ # Reusable UI components
 ├── pages/ # Quote form and landing page
@@ -54,6 +62,17 @@ src/
 ├── types/ # Centralized TypeScript definitions
 └── config/ # Service labels, email templates
 ```
+---
+
+## 🔐 Environment Variables
+Create a .env.local file in the root directory:
+```bash
+VITE_EMAIL_PUBLIC_KEY=SPvmzo5lI0xSv8BY3
+VITE_EMAIL_SERVICE_ID=your_service_id_here
+VITE_EMAIL_TEMPLATE_ID=your_template_id_here
+```
+All variables must be prefixed with VITE_ to be exposed in Vite.
+Add .env.local to .gitignore, and include a .env.example for onboarding.
 
 ---
 
@@ -75,32 +94,6 @@ src/
 - Conventional commit linting with Commitlint
 
 ---
-
-## 🙌 Contributors
-
-| Name        | Role                          |
-|-------------|-------------------------------|
-| Ronny       | Lead Developer & Architect    |
-| Reyes Team  | Business Requirements & QA    |
-| Marlov      | Web Design & Branding         |
-
-| Name        | Role                          | GitHub Profile                                  | Badge                                      |
-|-------------|-------------------------------|--------------------------------------------------|--------------------------------------------|
-| Ronny       | Lead Developer & Architect    | [@ronnydev](https://github.com/ronnydev)        | ![GitHub](https://img.shields.io/badge/Ronny-dev-blue) |
-| Reyes Team  | Business Requirements & QA    | —                                                | ![Team](https://img.shields.io/badge/Reyes--Team-QA-green) |
-| Marlov      | Web Design & Branding         | [@marlov](https://github.com/marlov)             | ![Design](https://img.shields.io/badge/Marlov-design-orange) |
-
-
-## ✨ GitHub Contributors
-
-Thanks to everyone who has contributed!
-
-<a href="https://github.com/your-username/reyes-maintenance/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=your-username/reyes-maintenance" />
-</a>
-
-
-
 
 ## 🧭 Onboarding Guide
 
@@ -139,9 +132,33 @@ npm run dev
 
 Use Vercel, Netlify, or Firebase Hosting. Make sure to set your environment variables in the platform dashboard.
 
+---
+
+### 📤 Deployment
+This app is ready for deployment on platforms like:
+
+Vercel – auto-detects Vite and supports .env variables
+
+Netlify – configure build command npm run build and publish directory dist
+
+Firebase Hosting – optional for static deployment
 
 
+## 🙌 Contributors
+
+| Name        | Role                          | GitHub Profile                                  | Badge                                      |
+|-------------|-------------------------------|--------------------------------------------------|--------------------------------------------|
+| Ronny Martinez       | Lead Developer & Architect    | [@ronnymarca81](https://github.com/ronnymarca81)        | ![GitHub](https://img.shields.io/badge/Ronny-Martinez-dev-blue) |
+| Reyes Team  | Business Requirements & QA    |[@nklovo84](https://github.com/nklovo84)                                               | ![Team](https://img.shields.io/badge/Nubia-Lovo-QA-green) |
+| Reyes Team      | Web Design & Branding         | [@nklovo84](https://github.com/nklovo84)             | ![Design](https://img.shields.io/badge/Marlov-design-orange) |
 
 
+## ✨ GitHub Contributors
+
+Thanks to everyone who has contributed!
+
+<a href="https://github.com/nklovo84/reyes-maintenance/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=your-username/reyes-maintenance" />
+</a>
 
 ---
