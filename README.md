@@ -77,7 +77,16 @@ src/
 
 ## 📦 Setup
 
+---
+
+## 🧭 Onboarding Guide
+
+Follow these steps to get the project running locally:
+
+### 1. Clone the repo
+
+```bash
 git clone https://github.com/your-username/reyes-maintenance
 cd reyes-maintenance
-npm install
-npm run dev
+
+---
