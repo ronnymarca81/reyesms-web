@@ -11,7 +11,10 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "@sentry/react": "^10.17.0",
+    "@sentry/tracing": "^7.120.4",
     "@tailwindcss/vite": "^4.1.13",
+    "@tanstack/react-query": "^5.90.2",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^12.23.21",
     "lucide-react": "^0.544.0",
