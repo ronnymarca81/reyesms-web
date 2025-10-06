@@ -1,10 +1,10 @@
 // src/hooks/useEmailSender.ts
 import emailjs from "emailjs-com";
 import { type FormData } from "@features/getQuote/types";
+const publicKey = import.meta.env.VITE_EMAIL_PUBLIC_KEY;
+const serviceId = import.meta.env.VITE_EMAIL_SERVICE_ID;
+const templateId = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
 
-const SERVICE_ID = "service_5wjvwel";
-const TEMPLATE_ID = "template_vzts92k";
-const PUBLIC_KEY = "SPvmzo5lI0xSv8BY3";
 
 export const useEmailSender = () => {
   const sendQuoteEmail = async (formData: FormData) => {
@@ -14,7 +14,7 @@ export const useEmailSender = () => {
       source: window.location.pathname
     };
 
-    return emailjs.send(SERVICE_ID, TEMPLATE_ID, enrichedData, PUBLIC_KEY);
+    return emailjs.send(serviceId, templateId, enrichedData, publicKey);
   };
 
   return { sendQuoteEmail };
