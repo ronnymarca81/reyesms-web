@@ -149,8 +149,8 @@ Firebase Hosting – optional for static deployment
 | Name        | Role                          | GitHub Profile                                  | Badge                                      |
 |-------------|-------------------------------|--------------------------------------------------|--------------------------------------------|
 | Ronny Martinez       | Lead Developer & Architect    | [@ronnymarca81](https://github.com/ronnymarca81)        | ![GitHub](https://img.shields.io/badge/Ronny-Martinez-dev-blue) |
-| Reyes Team  | Business Requirements & QA    |[@nklovo84](https://github.com/nklovo84)                                               | ![Team](https://img.shields.io/badge/Nubia-Lovo-QA-green) |
-| Reyes Team      | Web Design & Branding         | [@nklovo84](https://github.com/nklovo84)             | ![Design](https://img.shields.io/badge/Marlov-design-orange) |
+| Nubia Lovo  | Business Requirements & QA    |[@nklovo84](https://github.com/nklovo84)                                               | ![Team](https://img.shields.io/badge/Nubia-QA-green) |
+| Nubia Lovo      | Web Design & Branding         | [@nklovo84](https://github.com/nklovo84)             | ![Design](https://img.shields.io/badge/Marlov-design-orange) |
 
 
 ## ✨ GitHub Contributors
