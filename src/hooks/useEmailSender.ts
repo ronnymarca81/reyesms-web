@@ -1,9 +1,9 @@
 // src/hooks/useEmailSender.ts
 import emailjs from "emailjs-com";
 import { type FormData } from "@features/getQuote/types";
-const publicKey = import.meta.env.VITE_EMAIL_PUBLIC_KEY;
-const serviceId = import.meta.env.VITE_EMAIL_SERVICE_ID;
-const templateId = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
+import { EMAIL_CONFIG  } from "../config/email";
+
+const { publicKey, serviceId, templateId } = EMAIL_CONFIG;
 
 
 export const useEmailSender = () => {
