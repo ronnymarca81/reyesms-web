@@ -6,8 +6,7 @@
       "description": "Ensure a productive and healthy environment for your team. Our detailed office cleaning services are designed to maintain professionalism and hygiene throughout your workspace.",
       "paragraphs": [
         "Maintain a Pristine environment. Our meticulous office and commercial cleaning services in Ottawa ensure your workplace is spotless, healthy, and welcoming every day. Whether you manage a small office, a large building, a retail store, a plaza, or an event venue, our professional team keeps your environment polished and ready to impress both staff and clients. As a locally owned Ottawa company with over 15 years of experience, Reyes Maintenance Service Inc. is trusted for delivering reliable, high-quality cleaning solutions that reflect your business’s professionalism.",
-        "Our commercial cleaning programs in Ottawa are designed to handle every detail of your facility. Services include dusting and polishing surfaces, vacuuming and mopping floors, sanitizing restrooms and kitchens, cleaning interior glass and partitions, trash and recycling removal, and disinfecting high‑touch points such as door handles, switches, and keyboards. Every plan is customized to match your facility’s size, traffic level, and operating schedule, ensuring consistent results that enhance productivity and create a healthier environment for employees and visitors alike. In addition to cleaning, we can also provide essential supplies such as paper products, hand soap, and sanitizers, ensuring your workplace is always fully stocked and ready for daily operations."
-    
+        "Our commercial cleaning programs in Ottawa are designed to handle every detail of your facility. Services include dusting and polishing surfaces, vacuuming and mopping floors, sanitizing washrooms and kitchens, cleaning interior glass and partitions, trash and recycling removal, and disinfecting high‑touch points such as door handles, and switches. Every plan is customized to match your facility’s size, traffic level, and operating schedule, ensuring consistent results that enhance productivity and create a healthier environment for employees and visitors alike. In addition to cleaning, we can also provide essential supplies such as paper products, hand soap, and sanitizers, ensuring your workplace is always fully stocked and ready for daily operations."
       ],
       "images": [
         "/images/services/office-1.png",
@@ -28,12 +27,12 @@
         {
           "icon": "Shield",
           "title": "Facility Sanitization",
-          "desc": "Complete sanitization of restrooms and kitchen areas"
+          "desc": "Complete sanitization of washrooms and kitchen areas"
         },
         {
           "icon": "Check",
           "title": "Waste Management",
-          "desc": "Efficient trash removal and recycling services"
+          "desc": "Efficient trash and recycling removal services"
         },
         {
           "icon": "Blinds",
@@ -79,7 +78,7 @@
           "title": "Healthier Work Environment",
           "desc": "Reduces sick days by up to 30% and promotes overall wellness",
           "stat": "30",
-          "unit":"%",
+          "unit": "%",
           "metric": "Fewer Sick Days"
         },
         {
@@ -113,10 +112,7 @@
       "slug": "floor",
       "description": "Create an inviting and immaculate space that reflects your brand's commitment to quality. Our retail and plaza cleaning services focus on enhancing customer experience and ensuring safety.",
       "paragraphs": ["Idea 1", "Idea 2", "Idea 3"],
-      "images": [
-        "/images/services/office-1.png",
-        "/images/services/office-2.png"
-      ],
+      "images": ["/images/services/office-1.png", "/images/services/office-2.png"],
       "tasks": [
         {
           "icon": "Building2",
