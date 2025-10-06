@@ -10,7 +10,7 @@ As a locally owned and operated business serving Ottawa since 2008, Reyes Mainte
 
 ---
 
-##🚀 Features
+## 🚀 Features
 
 - Step-by-step quote request flow with animated transitions and dynamic titles
 - Responsive design optimized for desktop, tablet, and mobile
