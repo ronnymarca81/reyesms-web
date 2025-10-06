@@ -103,7 +103,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 }}
               >
                 <Calendar className="h-6 w-6" />
-                <span>Get a Free Quote</span>
+                <span>Request a Quote</span>
                 <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </button>
             )}
