@@ -1,70 +1,83 @@
-# React + TypeScript + Vite
+# 🧼 Reyes Maintenance Service Inc – Quote Request App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Reyes Maintenance Service Inc is a modern, responsive web application designed to streamline service inquiries for commercial cleaning and maintenance. Built with React, TypeScript, Vite, and Tailwind CSS, the app delivers a seamless user experience and professional polish that reflects the high standards of Reyes Maintenance Service Inc.
 
-Currently, two official plugins are available:
+This application empowers potential clients to request quotes quickly and confidently, while reinforcing the company’s reputation for reliability, eco-conscious practices, and exceptional service. It features a dynamic, step-by-step form with live validation, branded email auto-replies, and scalable architecture for future service expansion.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Whether accessed from desktop or mobile, the app ensures that every interaction feels clean, intuitive, and trustworthy—just like the spaces Reyes Maintenance Service Inc maintains.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+##🚀 Features
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Step-by-step quote request flow with animated transitions and dynamic titles
+- Responsive design optimized for desktop, tablet, and mobile
+- Live field validation for email, phone number, and message length
+- Dynamic form fields including service selection, textarea, and conditional rendering
+- Branded auto-reply emails with company logo, header, and footer
+- Centralized validation logic for maintainability and scalability
+- Type-safe service label mapping using discriminated unions and reusable utilities
+- Frontend-only email delivery via EmailJS with secure public key integration
+- Environment variable support for deployment flexibility across platforms
+- Scalable project structure with modular components and centralized config
+- GitHub collaboration workflows including branch protection and code review enforcement
+- Customizable service offerings including:
+  - Office & commercial cleaning
+  - Floor stripping and waxing
+  - Carpet care and allergen removal
+  - Spring/deep cleaning for seasonal or post-construction refresh
+  - Minor renovations and non-structural demolitions
+  - Light maintenance and bulb replacement
+  - Eco-conscious messaging and professional polish to reflect brand values
+  - Client testimonials and satisfaction metrics to build trust and credibility
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠️ Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+| Layer      | Tools Used                            |
+| ---------- | ------------------------------------- |
+| Frontend   | React, TypeScript, Vite, Tailwind CSS |
+| Validation | Custom hooks, TypeScript utilities    |
+| Email      | EmailJS (public key only)             |
+| Deployment | Vercel / Netlify (recommended)        |
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-"# reyesms-web" 
+## 📁 Project Structure
+
+src/
+├── components/ # Reusable UI components
+├── pages/ # Quote form and landing page
+├── utils/ # Validation and mapping logic
+├── assets/ # Logo and branding
+├── types/ # Centralized TypeScript definitions
+└── config/ # Service labels, email templates
+
+---
+
+## 🧪 Validation Highlights
+
+- Email format and phone number checks
+- Character limits for message textarea
+- Real-time feedback and error handling
+- Type-safe service label mapping
+
+---
+
+## 🧼 Code Quality & Collaboration
+
+- ESLint with type-aware rules via @typescript-eslint
+- React-specific linting via eslint-plugin-react-x and eslint-plugin-react-dom
+- Prettier for consistent formatting
+- Optional Git hooks via Husky and lint-staged
+- Conventional commit linting with Commitlint
+
+---
+
+## 📦 Setup
+
+git clone https://github.com/your-username/reyes-maintenance
+cd reyes-maintenance
+npm install
+npm run dev
