@@ -50,11 +50,11 @@ const Step: React.FC<StepProps> = ({
     >
       {/* Step Card */}
       <motion.div
-        className="bg-white rounded-2xl border-2 border-gray-200 p-5 sm:p-6 shadow-sm hover:shadow-md transition-all h-full max-w-md mx-auto lg:max-w-none"
+        className="bg-white rounded-2xl border-2 border-gray-200 p-8 shadow-sm hover:shadow-md transition-all h-full max-w-md mx-auto lg:max-w-none"
         variants={cardVariants}
         whileHover={{ scale: 1.05 }}
       >
-        <div className="flex items-start gap-3 mb-3">
+        <div className="flex items-start justify-between gap-3 mb-2">
           <div
             className={`${color} text-white font-bold text-xl sm:text-2xl rounded-lg px-3 sm:px-4 py-2 flex-shrink-0`}
           >
