@@ -1,4 +1,4 @@
-# 🧼 Reyes Maintenance Service Inc – Quote Request App
+# 🧼 Reyes Maintenance Service Inc - Web Site
 
 Reyes Maintenance Service Inc is a modern, responsive web application designed to streamline service inquiries for commercial cleaning and maintenance. Built with React, TypeScript, Vite, and Tailwind CSS, the app delivers a seamless user experience and professional polish that reflects the high standards of Reyes Maintenance Service Inc.
 
@@ -45,7 +45,7 @@ Whether accessed from desktop or mobile, the app ensures that every interaction 
 ---
 
 ## 📁 Project Structure
-
+```
 src/
 ├── components/ # Reusable UI components
 ├── pages/ # Quote form and landing page
@@ -53,6 +53,7 @@ src/
 ├── assets/ # Logo and branding
 ├── types/ # Centralized TypeScript definitions
 └── config/ # Service labels, email templates
+```
 
 ---
 
@@ -75,9 +76,31 @@ src/
 
 ---
 
-## 📦 Setup
+## 🙌 Contributors
 
----
+| Name        | Role                          |
+|-------------|-------------------------------|
+| Ronny       | Lead Developer & Architect    |
+| Reyes Team  | Business Requirements & QA    |
+| Marlov      | Web Design & Branding         |
+
+| Name        | Role                          | GitHub Profile                                  | Badge                                      |
+|-------------|-------------------------------|--------------------------------------------------|--------------------------------------------|
+| Ronny       | Lead Developer & Architect    | [@ronnydev](https://github.com/ronnydev)        | ![GitHub](https://img.shields.io/badge/Ronny-dev-blue) |
+| Reyes Team  | Business Requirements & QA    | —                                                | ![Team](https://img.shields.io/badge/Reyes--Team-QA-green) |
+| Marlov      | Web Design & Branding         | [@marlov](https://github.com/marlov)             | ![Design](https://img.shields.io/badge/Marlov-design-orange) |
+
+
+## ✨ GitHub Contributors
+
+Thanks to everyone who has contributed!
+
+<a href="https://github.com/your-username/reyes-maintenance/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=your-username/reyes-maintenance" />
+</a>
+
+
+
 
 ## 🧭 Onboarding Guide
 
@@ -90,7 +113,7 @@ git clone https://github.com/your-username/reyes-maintenance
 cd reyes-maintenance
 ```
 
-### 1. Clone the repo
+### 2. Install dependencies
 
 ```bash
 npm install
