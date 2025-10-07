@@ -35,7 +35,7 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
             className="w-full mt-2 bg-red-600 text-white hover:bg-transparent hover:border-2"
             href="/quote"
           >
-            GET A QUOTE
+            GET A FREE QUOTE
           </Button>
         </div>
 

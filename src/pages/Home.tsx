@@ -16,11 +16,9 @@ export const Home = () => {
     // Here you would typically navigate to a detailed service page
     navigate(`${serviceLink}`);
   };
-
-  const handleGetQuote =  () => {
-     navigate('/quote');
+  const handleGetQuote = () => {
+    navigate('/quote');
   };
-
   return (
     <>
       {/* Header Section */}
