@@ -11,10 +11,10 @@ export const defaultContactInfo: ContactInfo = {
   },
   webSite: "www.reyesms.ca",
   companyDescription:
-    ` With over 30 years of experience, ${defaultBrandName} is a locally owned and ` +
-    "operated professional cleaning service for commercial and janitorial " +
-    "services across the Ottawa region.",
+    `${defaultBrandName} is a locally owned company ` +
+    "with over 15 years of experience, delivering comprehensive commercial cleaning and maintenance " +
+    "services in Ottawa.",
   companyCuenta:
-    "Explore our services or contact us today to get started." +
-    " Customer Satisfaction is our guarantee!"
+    "Discover our services or contact us to start now. " +
+    "Always Satisfaction Guaranteed!"
 };

@@ -33,6 +33,9 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
           </div>
 
           <p className="text-gray-200 leading-relaxed mt-3">
+            {contact.companyDescription}
+          </p>
+          <p className="text-gray-200 leading-relaxed mt-3">
             {contact.companyCuenta}
           </p>
           <Button
