@@ -1,14 +1,14 @@
-import BannerQuote from "@components/common/BannerQuote";
-import HeaderOne from "@components/common/HeaderOne";
-import Testimonial from "@components/ui/Testimonial/Testimonial";
-import WhyChoose from "@components/ui/WhyChoose/WhyChoose";
-import Service from "@features/Services/components/Service";
-import { defaultServicesData } from "@myTypes/ServiceApi";
-import { useNavigate } from "react-router-dom";
-import bgImage from "@assets/images/home.png";
-import ContentImage from "@components/common/ContentImage";
-import pgImage from "@assets/images/home-image.png";
-import { HeroSection } from "@components/common/HeroSection";
+import BannerQuote from '@components/common/BannerQuote';
+import HeaderOne from '@components/common/HeaderOne';
+import Testimonial from '@components/ui/Testimonial/Testimonial';
+import WhyChoose from '@components/ui/WhyChoose/WhyChoose';
+import Service from '@features/Services/components/Service';
+import { defaultServicesData } from '@myTypes/ServiceApi';
+import { useNavigate } from 'react-router-dom';
+import bgImage from '@assets/images/home.png';
+import ContentImage from '@components/common/ContentImage';
+import pgImage from '@assets/images/home-image.png';
+import { HeroSection } from '@components/common/HeroSection';
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -16,9 +16,11 @@ export const Home = () => {
     // Here you would typically navigate to a detailed service page
     navigate(`${serviceLink}`);
   };
-  const handleGetQuote = () => {
-    navigate("/quote");
+
+  const handleGetQuote =  () => {
+     navigate('/quote');
   };
+
   return (
     <>
       {/* Header Section */}
@@ -42,18 +44,18 @@ export const Home = () => {
       <ContentImage
         title="Elevating Your Business Environment"
         paragraphs={[
-          "Ensure your commercial space always looks its best with Reyes Maintenance Service Inc.",
-          "As a locally owned and operated company with over 15 years of experience, Reyes Maintenance Service Inc. has earned a reputation for reliability, professionalism, and exceptional results.",
-          "We understand that a clean workspace is about more than just appearance: it fosters a healthy, productive environment for employees while leaving a lasting impression on clients. To achieve these exceptional outcomes, our highly skilled staff relies on modern equipment and environmentally safe supplies."
+          'Ensure your commercial space always looks its best with Reyes Maintenance Service Inc.',
+          'As a locally owned and operated company with over 15 years of experience, Reyes Maintenance Service Inc. has earned a reputation for reliability, professionalism, and exceptional results.',
+          'We understand that a clean workspace is about more than just appearance: it fosters a healthy, productive environment for employees while leaving a lasting impression on clients. To achieve these exceptional outcomes, our highly skilled staff relies on modern equipment and environmentally safe supplies.',
         ]}
         buttons={[
           {
-            label: "Claim your Free Estimate",
-            variant: "primary",
+            label: 'Claim your Free Estimate',
+            variant: 'primary',
             onClick: () => {
-              navigate("/quote");
-            }
-          }
+              handleGetQuote;
+            },
+          },
         ]}
         image={pgImage}
         reverse={false} // set true to swap sides
@@ -70,10 +72,7 @@ export const Home = () => {
           classContainer="h-[250px]"
         />
 
-        <Service
-          services={defaultServicesData}
-          onServiceLearnMore={handleServiceLearnMore}
-        />
+        <Service services={defaultServicesData} onServiceLearnMore={handleServiceLearnMore} />
       </div>
       <WhyChoose />
       <Testimonial autoplay showStats />

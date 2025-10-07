@@ -25,7 +25,7 @@ const Request: React.FC<RequestProps> = ({ title = 'Request a Free Quote' }) => 
   const [formData, setFormData] = useState<FormData>(initialFormData);
   const [errors, setErrors] = useState<Partial<FormData>>({});
   const [submitted, setSubmitted] = useState(false);
-  const { sendQuoteEmail, isSending, error } = useEmailSender();
+  const { sendQuoteEmail, isSending, error: _error } = useEmailSender();
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
