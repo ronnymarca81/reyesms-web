@@ -91,7 +91,7 @@ export const TestimonialComponent: React.FC<TestimonialProps> = ({
               theme === "dark" ? "text-gray-300" : "text-gray-600"
             }`}
           >
-            Real feedback from real customers who've experienced our exceptional
+            Real feedback from real customers who have experienced our exceptional
             service
           </p>
         </div>
