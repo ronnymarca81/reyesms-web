@@ -1,4 +1,4 @@
-import { Check, Medal } from "lucide-react";
+import { Check } from "lucide-react";
 import { containerTheme } from "./ServiceApi";
 import type { themeProps } from "./types";
 import * as LucideIcons from "lucide-react";

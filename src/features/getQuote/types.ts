@@ -1,14 +1,6 @@
 import { defaultServicesData } from "@myTypes/ServiceApi";
 import type { LucideIcon } from "lucide-react";
 
-// export interface Steps {
-//   icon?: LucideIcon
-//   number: string;
-//   title: string;
-//   description: string;
-//   color?: string;
-//   showArrow?: boolean;
-// }
 export interface StepProps {
   icon?: LucideIcon;
   number: string;
@@ -27,10 +19,9 @@ export interface FormData {
   message: string;
   timestamp: string;
   source: string;
+  honeypot?: string; // 👈 optional hidden field for spam detection
 }
 
-// formFields
-// src/types/FormField.ts
 export type InputField = {
   type: "text" | "tel" | "email";
   name: keyof FormData;

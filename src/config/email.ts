@@ -1,9 +1,9 @@
 const isDev = import.meta.env.DEV;
 
 export const EMAIL_CONFIG = {
-  serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID,
-  templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-  publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+  publicKey: import.meta.env.VITE_EMAIL_PUBLIC_KEY,
+  serviceId: import.meta.env.VITE_EMAIL_SERVICE_ID,
+  templateId: import.meta.env.VITE_EMAIL_TEMPLATE_ID,
 };
 
 if (

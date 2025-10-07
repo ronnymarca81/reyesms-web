@@ -30,6 +30,7 @@ const SpecificService: React.FC<SpecificServiceProps> = ({
           name={service.name}
           description={service.description}
           //highlightIndex={3}
+          visible={true} // Show the button
         />
       </div>
       <ContentGalery
