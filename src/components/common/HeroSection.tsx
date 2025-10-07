@@ -49,8 +49,8 @@ export const HeroSection: React.FC<HeaderProps> = ({
             view === 'left' ? 'text-left' : view === 'right' ? 'text-right' : 'text-center'
           }`}
         >
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">{title}</h1>
-          <p className="text-lg md:text-xl mb-8">{description}</p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">{title}</h1>
+          <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8">{description}</p>
           {button && (
             <div
               className={`flex gap-4 ${

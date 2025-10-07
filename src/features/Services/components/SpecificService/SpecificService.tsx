@@ -1,20 +1,18 @@
-import { Navigate } from "react-router-dom";
-import Benefit from "./Benefit";
-import Task from "./Task";
-import { Frequency } from "./Frequency";
-import CtaSection from "./CtaSection";
-import { blobConfigs } from "@components/common/blobConfigs";
-import ContentGalery from "@components/common/ContentGalery";
-import { useServiceBySlug } from "./Hook/useServiceBySlug";
-import HeroSection from "./HeroSection";
+import { Navigate } from 'react-router-dom';
+import Benefit from './Benefit';
+import Task from './Task';
+import { Frequency } from './Frequency';
+import CtaSection from './CtaSection';
+import { blobConfigs } from '@components/common/blobConfigs';
+import ContentGalery from '@components/common/ContentGalery';
+import { useServiceBySlug } from '../../../../hooks/useServiceBySlug';
+import HeroSection from './HeroSection';
 
 interface SpecificServiceProps {
   serviceType?: keyof typeof blobConfigs; // "office" | "healthcare" | "spa" ...
 }
 
-const SpecificService: React.FC<SpecificServiceProps> = ({
-  serviceType = "office"
-}) => {
+const SpecificService: React.FC<SpecificServiceProps> = ({ serviceType = 'office' }) => {
   const service = useServiceBySlug();
   if (!service) {
     return <Navigate to="*" replace />;

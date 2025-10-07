@@ -62,7 +62,6 @@ export const Home = () => {
           description="Reyes Maintenance Service Inc. provides a full range of professional maintenance solutions tailored to meet the unique needs of businesses of every size. We create customized plans that fit your schedule and budget, delivering reliable results."
           classContainer="h-[250px]"
         />
-
         <Service services={defaultServicesData} />
       </div>
       <WhyChoose />

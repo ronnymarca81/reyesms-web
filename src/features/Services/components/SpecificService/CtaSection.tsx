@@ -1,17 +1,10 @@
-import { ArrowRight, Calendar } from "lucide-react";
-import type { themeProps } from "./types.ts";
-import  { containerTheme }  from './ServiceApi'
-import { useNavigate } from "react-router-dom";
-import { Button } from "@components/common/Button.js";
+import { ArrowRight, Calendar } from 'lucide-react';
+import type { themeProps } from './types.ts';
+import { containerTheme } from './ServiceApi';
+import { Button } from '@components/common/Button.js';
 
-
-export default function CtaSection({ theme = "dark" }: themeProps) {
+export default function CtaSection({ theme = 'dark' }: themeProps) {
   const themeConfig = containerTheme[theme];
-  const navigate = useNavigate()
-  const handleGetQuote = () => {
-    navigate("/quote");
-  };
-
   return (
     <section className={`relative z-10 py-20 px-6 ${themeConfig.container}`}>
       <div className="max-w-5xl mx-auto">
@@ -24,7 +17,6 @@ export default function CtaSection({ theme = "dark" }: themeProps) {
             Experience the difference professional cleaning makes. Get a customized quote tailored
             to your business needs and schedule.
           </p>
-
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Button
@@ -40,7 +32,6 @@ export default function CtaSection({ theme = "dark" }: themeProps) {
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
-
           {/* Benefits Grid */}
           <div className="mt-12 grid md:grid-cols-3 gap-8 text-center">
             <div>

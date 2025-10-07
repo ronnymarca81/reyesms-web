@@ -1,7 +1,7 @@
-import { useParams } from "react-router-dom";
-import { useMemo } from "react";
-import rawData from "@myTypes/services.json";
-import { sanitizeServices, type Service } from "../Helper/sanitizeServices";
+import { useParams } from 'react-router-dom';
+import { useMemo } from 'react';
+import rawData from '@myTypes/services.json';
+import { sanitizeServices, type Service } from '@utils/sanitizeServices';
 
 export function useServiceBySlug(): Service | undefined {
   const { slug } = useParams<{ slug: string }>();

@@ -44,7 +44,6 @@ const Process: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
         />
       </motion.div>
-
       {/* Steps Section */}
       <motion.div
         className="max-w-7xl mx-auto"
@@ -90,5 +89,4 @@ const Process: React.FC = () => {
     </div>
   );
 };
-
 export default Process;

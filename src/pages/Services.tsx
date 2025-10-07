@@ -1,7 +1,11 @@
 import Service from '../features/Services/components/Service';
 import { defaultServicesData } from '@myTypes/ServiceApi';
-import Values from '@features/Services/components/Values';
-import banner from '@assets/images/services-banner.png';
+import banner from '@assets/images/services-banner.png'
+import SafetyFeatures from '@features/Services/components/SafetyFeatures';
+import { safetyFeatures } from '@features/Services/types';
+
+
+
 
 export const Services = () => {
   return (
@@ -28,10 +32,9 @@ export const Services = () => {
           </div>
         </div>
       </div>
-
       {/* Services Section - Services component wraps Card components */}
       <Service services={defaultServicesData} />
-      <Values />
+      <SafetyFeatures theme="light" safeties={safetyFeatures} />
     </div>
   );
 };
