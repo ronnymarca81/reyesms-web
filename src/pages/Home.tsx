@@ -4,21 +4,13 @@ import Testimonial from '@components/ui/Testimonial/Testimonial';
 import WhyChoose from '@components/ui/WhyChoose/WhyChoose';
 import Service from '@features/Services/components/Service';
 import { defaultServicesData } from '@myTypes/ServiceApi';
-import { useNavigate } from 'react-router-dom';
 import bgImage from '@assets/images/home.png';
-import ContentImage from '@components/common/ContentImage';
 import pgImage from '@assets/images/home-image.png';
 import { HeroSection } from '@components/common/HeroSection';
+import ContentGalery from '@components/common/ContentGalery';
+import { Button } from '@components/common/Button';
 
 export const Home = () => {
-  const navigate = useNavigate();
-  const handleServiceLearnMore = (serviceLink: string) => {
-    // Here you would typically navigate to a detailed service page
-    navigate(`${serviceLink}`);
-  };
-  const handleGetQuote = () => {
-    navigate('/quote');
-  };
   return (
     <>
       {/* Header Section */}
@@ -28,18 +20,20 @@ export const Home = () => {
         backgroundImage={bgImage}
         title="Complete Cleaning and Maintenance Solutions for Your Business"
         description="Trusted by Ottawa companies since 2008 for reliable, professional, full-service facility care."
-        bottom={
+        button={
           <>
-            <button
+            <Button
+              href="/quote"
+              variant="custom"
+              size="lg"
               className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-medium shadow-md text-white"
-              onClick={handleGetQuote}
             >
               Request a Free Estimate
-            </button>
+            </Button>
           </>
         }
       />
-      <ContentImage
+      <ContentGalery
         title="Elevating Your Business Environment"
         paragraphs={[
           'Ensure your commercial space always looks its best with Reyes Maintenance Service Inc.',
@@ -48,14 +42,13 @@ export const Home = () => {
         ]}
         buttons={[
           {
-            label: 'Claim your Free Estimate',
-            variant: 'primary',
-            onClick: () => {
-              handleGetQuote;
-            },
+            children: 'Get a Free Quote',
+            variant: 'contact',
+            size: 'md',
+            href: '/quote',
           },
         ]}
-        image={pgImage}
+        images={pgImage}
         reverse={false} // set true to swap sides
         backgroundColor="bg-sky-100"
       />
@@ -70,7 +63,7 @@ export const Home = () => {
           classContainer="h-[250px]"
         />
 
-        <Service services={defaultServicesData} onServiceLearnMore={handleServiceLearnMore} />
+        <Service services={defaultServicesData} />
       </div>
       <WhyChoose />
       <Testimonial autoplay showStats />

@@ -1,7 +1,9 @@
+import { Button } from "@components/common/Button";
 import { defaultSteps } from "../serviceApi";
 import StepCard from "./StepCard";
 import { Zap } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+
 
 interface DisplayProps {
   background?: string; // tailwind class or custom style
@@ -31,20 +33,21 @@ const HowWeWork = ({
           {/* Steps */}
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
             {defaultSteps.map((step, index) => (
-              <StepCard
-                key={index}
-                step={step}
-              />
+              <StepCard key={index} step={step} />
             ))}
           </div>
           {/* Bottom CTA */}
-          <button
-            onClick={handleGetQuote}
-            className="mt-12 bg-white/10 hover:bg-white/20 text-white font-medium py-4 px-10 rounded-full border border-white/30 transition-all duration-300 flex items-center gap-3 mx-auto group"
-          >
-            <span className="text-lg">Get a Quote</span>
-            <Zap className="w-5 h-5 group-hover:animate-pulse stroke-[2.5]" />
-          </button>
+          <div className="mt-10 text-center">
+            <Button
+              variant="custom"
+              size="md"
+              className="inline-flex items-center  gap-3 mx-auto group bg-white/10 hover:bg-white/20 text-white font-medium py-4 px-10 rounded-full border border-white/30 transition-all duration-300 "
+              href="/quote"
+            >
+              <span className="text-lg">Get a Quote</span>
+              <Zap className="w-5 h-5 group-hover:animate-pulse stroke-[2.5]" />
+            </Button>
+          </div>
         </div>
       </div>
     );

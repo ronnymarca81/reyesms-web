@@ -1,5 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
-import type { ContentGaleryProps } from "./types";
+import React, { useState, useEffect, useRef } from 'react';
+import type { ContentGaleryProps } from '@components/common/types';
+import { Button } from '@components/common/Button';
+
+
 
 const ContentGalery: React.FC<ContentGaleryProps> = ({
   title,
@@ -7,36 +10,37 @@ const ContentGalery: React.FC<ContentGaleryProps> = ({
   buttons = [],
   images = [],
   reverse = false,
-  backgroundColor = "bg-gray-50"
+  backgroundColor = 'bg-gray-50',
 }) => {
+  const normalizedImages = Array.isArray(images) ? images : images ? [images] : [];
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
-  // ✅ Auto-play effect with pause on hover
   useEffect(() => {
-    if (images.length <= 1) return;
+    if (normalizedImages.length <= 1) return;
 
     if (!isPaused) {
       intervalRef.current = setInterval(() => {
-        setCurrentIndex((prev) => (prev + 1) % images.length);
-      }, 5000); // change slide every 5s
+        setCurrentIndex((prev) => (prev + 1) % normalizedImages.length);
+      }, 5000);
     }
 
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
     };
-  }, [images.length, isPaused]);
+  }, [normalizedImages.length, isPaused]);
 
-  const nextSlide = () => setCurrentIndex((prev) => (prev + 1) % images.length);
+  const nextSlide = () => setCurrentIndex((prev) => (prev + 1) % normalizedImages.length);
   const prevSlide = () =>
-    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
+    setCurrentIndex((prev) => (prev - 1 + normalizedImages.length) % normalizedImages.length);
 
   return (
     <section className={`w-full py-16 ${backgroundColor}`}>
       <div
         className={`container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center ${
-          reverse ? "md:flex flex-row-reverse" : ""
+          reverse ? 'md:flex flex-row-reverse' : ''
         }`}
       >
         {/* Content Section */}
@@ -52,18 +56,8 @@ const ContentGalery: React.FC<ContentGaleryProps> = ({
           </div>
 
           <div className="flex flex-wrap gap-4">
-            {buttons.map((btn, index) => (
-              <button
-                key={index}
-                onClick={btn.onClick}
-                className={`px-5 py-3 rounded-lg font-medium transition ${
-                  btn.variant === "secondary"
-                    ? "border border-indigo-600 text-indigo-600 hover:bg-indigo-50"
-                    : "bg-indigo-600 text-white hover:bg-indigo-700"
-                }`}
-              >
-                {btn.label}
-              </button>
+            {buttons.map((btnProps, index) => (
+              <Button key={index} {...btnProps} />
             ))}
           </div>
         </div>
@@ -71,20 +65,20 @@ const ContentGalery: React.FC<ContentGaleryProps> = ({
         {/* Image Carousel Section */}
         <div
           className="relative w-full h-[400px] md:h-[500px] rounded-xl shadow-lg overflow-hidden"
-          onMouseEnter={() => setIsPaused(true)} // ✅ pause on hover
-          onMouseLeave={() => setIsPaused(false)} // ✅ resume on leave
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
         >
-          {images.length > 0 ? (
-            images.map((src, i) => (
+          {normalizedImages.length > 0 ? (
+            normalizedImages.map((src, i) => (
               <div
                 key={i}
                 className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-                  i === currentIndex ? "opacity-100" : "opacity-0"
+                  i === currentIndex ? 'opacity-100 z-10' : 'opacity-0'
                 }`}
                 style={{
                   backgroundImage: `url(${src})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center"
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
                 }}
               />
             ))
@@ -94,18 +88,17 @@ const ContentGalery: React.FC<ContentGaleryProps> = ({
             </div>
           )}
 
-          {/* Controls */}
-          {images.length > 1 && (
+          {normalizedImages.length > 1 && (
             <>
               <button
                 onClick={prevSlide}
-                className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full"
+                className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white text-gray-800 p-3 rounded-full shadow-lg hover:bg-gray-100 transition"
               >
                 ‹
               </button>
               <button
                 onClick={nextSlide}
-                className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full"
+                className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white text-gray-800 p-3 rounded-full shadow-lg hover:bg-gray-100 transition"
               >
                 ›
               </button>
