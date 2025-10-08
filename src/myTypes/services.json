@@ -113,7 +113,7 @@
       "slug": "floor",
       "description": "Create a polished and professional space that reflects your brand’s commitment to excellence. Our floor stripping and waxing services restore shine, improve safety, and extend the life of your flooring.",
       "paragraphs": [
-        "Restore Shine and Protect Your Floors.  High-traffic floors in offices, retail spaces, and commercial buildings quickly lose their luster from daily wear and buildup. At Reyes Maintenance Service Inc., we provide professional floor stripping and waxing services in Ottawa that restore brilliance, extend floor life, and protect your investment. Our team specializes in vinyl, laminate, and other common commercial flooring surfaces, ensuring a clean, polished, and safe environment for both employees and visitors.", 
+        "Restore Shine and Protect your Floors.  High-traffic floors in offices, retail spaces, and commercial buildings quickly lose their luster from daily wear and buildup. At Reyes Maintenance Service Inc., we provide professional floor stripping and waxing services in Ottawa that restore brilliance, extend floor life, and protect your investment. Our team specializes in vinyl, laminate, and other common commercial flooring surfaces, ensuring a clean, polished, and safe environment for both employees and visitors.", 
         "Our process begins with a full stripping of old wax and buildup, followed by a deep cleaning to remove dirt and contaminants. We then apply multiple coats of high-quality commercial wax, buffed and polished to create a durable, slip-resistant finish that enhances the appearance of your entire facility. Whether for an office, retail store, plaza, or any other business, this service not only improves aesthetics but also reduces long-term maintenance needs."],
       "images": [
         "/images/services/office-1.png",
@@ -197,9 +197,9 @@
     {
       "name": "Carpet Care",
       "slug": "carpet",
-      "description": "Revitalize your carpets and improve indoor air quality with our specialized cleaning solutions. We target deep-seated dirt and allergens to restore the freshness and appearance of your flooring.",
+      "description": "Revitalize your carpets and improve indoor air quality with our specialized cleaning solutions. We target deep-seated dirt and allergens to restore the freshness and appearance of your carpets.",
       "paragraphs": [
-        "Revitalize carpets and improve indoor air quality. Our deep-cleaning methods remove dirt, allergens, and odors, helping businesses maintain a healthier, fresher, and more professional environment. Whether it is a small office, retail store, or large commercial facility, our locally owned company ensures your carpets look vibrant and extend their lifespan, protecting your investment.", 
+        "Revitalize Carpets and Improve Indoor Air Quality. Our deep-cleaning methods remove dirt, allergens, and odors, helping businesses maintain a healthier, fresher, and more professional environment. Whether it is a small office, retail store, or large commercial facility, our locally owned company ensures your carpets look vibrant and extend their lifespan, protecting your investment.", 
         "Our comprehensive commercial carpet cleaning process includes pre-treatment of stains and high-traffic areas, followed by deep steam extraction or low-moisture encapsulation, depending on your needs. We also provide odor neutralization, deodorizing, and optional protective treatments to resist future soiling. With rapid drying times, your workspace experiences minimal downtime, making our services ideal for busy offices, plazas, and event venues across Ottawa. Flexible scheduling options are available quarterly, semi-annually, annually, or on demand for spills and high-traffic areas"],
       "images": [
         "/images/services/office-1.png",
@@ -290,97 +290,97 @@
       ]
     },
     {
-      "name": "Carpet Care",
-      "slug": "carpet",
-      "description": "Revitalize your carpets and improve indoor air quality with our specialized cleaning solutions. We target deep-seated dirt and allergens to restore the freshness and appearance of your flooring.",
+      "name": "Spring and Deep Cleaning",
+      "slug": "spring-deep",
+      "description": "Refresh your workspace with expert spring and deep cleaning. Go beyond routine upkeep to deliver a complete top‑to‑bottom refresh, ensuring a spotless, healthy, and welcoming environment.",
       "paragraphs": [
-        "Revitalize carpets and improve indoor air quality. Our deep-cleaning methods remove dirt, allergens, and odors, helping businesses maintain a healthier, fresher, and more professional environment. Whether it is a small office, retail store, or large commercial facility, our locally owned company ensures your carpets look vibrant and extend their lifespan, protecting your investment.", 
-        "Our comprehensive commercial carpet cleaning process includes pre-treatment of stains and high-traffic areas, followed by deep steam extraction or low-moisture encapsulation, depending on your needs. We also provide odor neutralization, deodorizing, and optional protective treatments to resist future soiling. With rapid drying times, your workspace experiences minimal downtime, making our services ideal for busy offices, plazas, and event venues across Ottawa. Flexible scheduling options are available quarterly, semi-annually, annually, or on demand for spills and high-traffic areas"],
+        "Refresh your Workspace with Expert Spring/Deep Cleaning. Go beyond routine upkeep to deliver a complete top‑to‑bottom refresh. Ideal for seasonal cleaning, pre‑event preparation, or post‑construction projects, this service ensures your office, retail space, or commercial facility is spotless, healthy, and welcoming. At Reyes Maintenance Service Inc., we help businesses maintain a polished image while creating a cleaner, safer environment for employees and clients.", 
+        "Our deep cleaning programs are designed to reach areas often overlooked in daily maintenance. Services include high and low dusting of vents, ledges, and baseboards; vacuuming and mopping floors; intensive sanitation of washrooms, and common areas; interior window cleaning and detail work; plus specialty tasks plus specialty tasks as you request. By addressing these details, we restore freshness, extend the life of surfaces and fixtures, and ensure your Ottawa workspace is always ready to impress."],
       "images": [
         "/images/services/office-1.png",
         "/images/services/office-2.png"
       ],
       "tasks": [
         {
-          "icon": "SprayCan",
-          "title": "Pre-Treatment",
-          "desc": "Advanced solutions for stubborn stains and spills"
-        },
-        {
           "icon": "Droplet",
-          "title": "Deep Cleaning",
-          "desc": "High-heat steam or low-moisture methods for deep cleaning"
+          "title": "Dusting",
+          "desc": "High and low dusting of vents, ledges, and baseboards to remove accumulated dust in overlooked areas"
         },
-        {
-          "icon": "Wind",
-          "title": "Odor Removal",
-          "desc": "Elimination of odors caused by dirt, spills, or allergens"
+                {
+          "icon": "Building2",
+          "title": "Floor Maintenance",
+          "desc": "Professional vacuuming and mopping of all floor types"
         },
         {
           "icon": "ShieldCheck",
-          "title": "Optional Protective Treatment ",
-          "desc": "Application of protectants to resist future soiling"
+          "title": "Sanitation",
+          "desc": "Intensive cleaning of washrooms and common areas to maintain a hygienic and healthy environment"
         },
         {
-          "icon": "Timer",
-          "title": "Rapid Drying",
-          "desc": "Accelerated drying methods to reduce downtime"
+          "icon": "Window",
+          "title": "Window Cleaning",
+          "desc": "Interior window cleaning to enhance visibility and brighten your workspace"
+        },
+        {
+          "icon": "Brush",
+          "title": "Detail Work",
+          "desc": "Specialty cleaning tasks including fixtures, appliances, and areas often missed in routine maintenance"
+        },
+        {
+          "icon": "Star",
+          "title": "Custom Tasks",
+          "desc": "Additional specialty tasks performed upon request to meet your facility’s unique cleaning needs"
         }
       ],
       "frequencies": {
-        "quarterly": {
-          "price": "$250-350",
-          "visits": "Every 3 months",
-          "best": "High-traffic offices"
-        },
         "biannually": {
-          "price": "$200-300",
+          "price": "$0.20–$0.60 per sq ft",
           "visits": "2x/year",
           "best": "Medium-traffic areas"
         },
         "annually": {
-          "price": "$150-250",
+          "price": "$0.15–$0.50 per sq ft",
           "visits": "1x/year",
-          "best": "Low-traffic carpets"
+          "best": "Low-traffic facilities and seasonal refreshes"
         },
         "onDemand": {
           "price": "On request",
           "visits": "As needed",
-          "best": "Emergency spills or high-traffic zones"
+          "best": "High-traffic zones"
         }
       },
       "benefits": [
         {
           "icon": "Leaf",
           "title": "Improved Air Quality",
-          "desc": "Removes allergens, dust, and pollutants from carpets",
+          "desc": "Removes dust from vents, ledges, and baseboards",
           "stat": "95",
           "unit": "%",
           "metric": "Cleaner Air"
         },
         {
-          "icon": "Clock",
-          "title": "Extended Carpet Life",
-          "desc": "Prevents wear and tear, prolonging carpet usability",
-          "stat": "40",
+          "icon": "TrendingUp",
+          "title": "Boosts Productivity",
+          "desc": "Clean workspaces increase focus and employee satisfaction",
+          "stat": "23",
           "unit": "%",
-          "metric": "Lifespan Increase"
+          "metric": "Productivity Increase"
         },
         {
-          "icon": "Smile",
-          "title": "Odor-Free Spaces",
-          "desc": "Eliminates unpleasant odors for a fresher environment",
-          "stat": "100",
-          "unit": "%",
-          "metric": "Odor Elimination"
-        },
-        {
-          "icon": "Sparkles",
-          "title": "Vibrant Look",
-          "desc": "Restores carpet’s original texture and color",
+          "icon": "Building2",
+          "title": "Professional Image",
+          "desc": "Impress clients and visitors with immaculate facilities",
           "stat": "85",
           "unit": "%",
-          "metric": "Aesthetic Restoration"
+          "metric": "Client Satisfaction"
+        },
+        {
+          "icon": "Star",
+          "title": "Extends Asset Life",
+          "desc": "Proper maintenance preserves furniture and equipment value",
+          "stat": "40",
+          "unit": "%",
+          "metric": "Longer Lifespan"
         }
       ]
     }

@@ -14,7 +14,7 @@ export const defaultServicesData: ServiceData[] = [
     image: "https://images.pexels.com/photos/6195288/pexels-photo-6195288.jpeg",
     title: "Floor Stripping and Waxing",
     description:
-      "Restore, Shine, and Protect Your Floors. High‑traffic areas lose their luster quickly. Our Ottawa floor stripping and waxing services restore brilliance, extend floor life, and protect your investment. We specialize in vinyl, VCT, and laminate, ensuring polished, safe, and professional spaces for employees and visitors.",
+      "Restore, Shine, and Protect your Floors. High‑traffic areas lose their luster quickly. Our Ottawa floor stripping and waxing services restore brilliance, extend floor life, and protect your investment. We specialize in vinyl, and laminate, ensuring polished, safe, and professional spaces for employees and visitors.",
     href: "/services/floor"
   },
   {
