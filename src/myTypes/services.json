@@ -3,10 +3,11 @@
     {
       "name": "Office and Commercial Cleaning",
       "slug": "office",
-      "description": "Ensure a productive and healthy environment for your team. Our detailed office cleaning services are designed to maintain professionalism and hygiene throughout your workspace.",
+      "description": "Ensure a productive and healthy environment for your team. Our detailed office and commercial cleaning services are designed to maintain professionalism and hygiene throughout your workspace.",
       "paragraphs": [
-        "Maintain a Pristine environment. Our meticulous office and commercial cleaning services in Ottawa ensure your workplace is spotless, healthy, and welcoming every day. Whether you manage a small office, a large building, a retail store, a plaza, or an event venue, our professional team keeps your environment polished and ready to impress both staff and clients. As a locally owned Ottawa company with over 15 years of experience, Reyes Maintenance Service Inc. is trusted for delivering reliable, high-quality cleaning solutions that reflect your business’s professionalism.",
+        "Maintain a Pristine Environment. Our meticulous office and commercial cleaning services in Ottawa ensure your workplace is spotless, healthy, and welcoming every day. Whether you manage a small office, a large building, a retail store, a plaza, or an event venue, our professional team keeps your environment polished and ready to impress both staff and clients. As a locally owned Ottawa company with over 15 years of experience, Reyes Maintenance Service Inc. is trusted for delivering reliable, high-quality cleaning solutions that reflect your business’s professionalism.",
         "Our commercial cleaning programs in Ottawa are designed to handle every detail of your facility. Services include dusting and polishing surfaces, vacuuming and mopping floors, sanitizing washrooms and kitchens, cleaning interior glass and partitions, trash and recycling removal, and disinfecting high‑touch points such as door handles, and switches. Every plan is customized to match your facility’s size, traffic level, and operating schedule, ensuring consistent results that enhance productivity and create a healthier environment for employees and visitors alike. In addition to cleaning, we can also provide essential supplies such as paper products, hand soap, and sanitizers, ensuring your workplace is always fully stocked and ready for daily operations."
+    
       ],
       "images": [
         "/images/services/office-1.png",
@@ -78,7 +79,7 @@
           "title": "Healthier Work Environment",
           "desc": "Reduces sick days by up to 30% and promotes overall wellness",
           "stat": "30",
-          "unit": "%",
+          "unit":"%",
           "metric": "Fewer Sick Days"
         },
         {
@@ -110,61 +111,56 @@
     {
       "name": "Floor Stripping and Waxing",
       "slug": "floor",
-      "description": "Create an inviting and immaculate space that reflects your brand's commitment to quality. Our retail and plaza cleaning services focus on enhancing customer experience and ensuring safety.",
-      "paragraphs": ["Idea 1", "Idea 2", "Idea 3"],
-      "images": ["/images/services/office-1.png", "/images/services/office-2.png"],
+      "description": "Create a polished and professional space that reflects your brand’s commitment to excellence. Our floor stripping and waxing services restore shine, improve safety, and extend the life of your flooring.",
+      "paragraphs": [
+        "Restore Shine and Protect Your Floors.  High-traffic floors in offices, retail spaces, and commercial buildings quickly lose their luster from daily wear and buildup. At Reyes Maintenance Service Inc., we provide professional floor stripping and waxing services in Ottawa that restore brilliance, extend floor life, and protect your investment. Our team specializes in vinyl, laminate, and other common commercial flooring surfaces, ensuring a clean, polished, and safe environment for both employees and visitors.", 
+        "Our process begins with a full stripping of old wax and buildup, followed by a deep cleaning to remove dirt and contaminants. We then apply multiple coats of high-quality commercial wax, buffed and polished to create a durable, slip-resistant finish that enhances the appearance of your entire facility. Whether for an office, retail store, plaza, or any other business, this service not only improves aesthetics but also reduces long-term maintenance needs."],
+      "images": [
+        "/images/services/office-1.png",
+        "/images/services/office-2.png"
+      ],
       "tasks": [
         {
-          "icon": "Building2",
-          "title": "Comprehensive Floor Care",
-          "desc": "Sweeping, mopping, buffing, and polishing for all floor types"
-        },
-        {
-          "icon": "Blinds",
-          "title": "Window Cleaning",
-          "desc": "Crystal-clear, streak-free window and facade cleaning"
-        },
-        {
-          "icon": "Shirt",
-          "title": "Fitting Room Sanitization",
-          "desc": "Disinfection of fitting rooms and shared customer areas"
-        },
-        {
-          "icon": "Package",
-          "title": "Display & Shelf Cleaning",
-          "desc": "Spotless display cases and shelves to showcase your products"
+          "icon": "Sparkles",
+          "title": "Wax Removal and Surface Preparation",
+          "desc": "Complete stripping of old wax and buildup to prepare floors for refinishing"
         },
         {
           "icon": "Droplet",
-          "title": "Immediate Spill Response",
-          "desc": "Rapid cleanup to ensure safety and prevent accidents"
+          "title": "Deep Floor Cleaning",
+          "desc": "Thorough removal of embedded dirt and contaminants for a clean foundation"
         },
         {
-          "icon": "DoorOpen",
-          "title": "Entrance & Facade Maintenance",
-          "desc": "Polished entrances that reflect brand quality"
+          "icon": "Star",
+          "title": "Premium Wax Application",
+          "desc": "Multiple coats of high-quality commercial wax for lasting protection and shine"
+        },
+        {
+          "icon": "Check",
+          "title": "Buffing and Polishing",
+          "desc": "Machine-polished finish that enhances appearance and improves slip resistance"
         }
       ],
       "frequencies": {
-        "daily": {
-          "price": "$180-250",
-          "visits": "High-frequency",
-          "best": "Busy retail spaces"
+        "quarterly": {
+          "price": "$0.45–$0.65/sq ft",
+          "visits": "Every 3 months",
+          "best": "High-traffic areas like retail entrances, lobbies, and hallways"
         },
-        "weekly": {
-          "price": "$140-200",
-          "visits": "1x/week",
-          "best": "Standard traffic retail"
+        "semiAnnual": {
+          "price": "$0.40–$0.60/sq ft",
+          "visits": "Every 6 months",
+          "best": "Standard office spaces, medical clinics, and shared commercial facilities"
         },
-        "biweekly": {
-          "price": "$120-160",
-          "visits": "2x/month",
-          "best": "Plazas with moderate foot traffic"
+        "annual": {
+          "price": "$0.35–$0.55/sq ft",
+          "visits": "Once a year",
+          "best": "Low-traffic zones or facilities with routine maintenance programs"
         },
         "specialEvent": {
           "price": "On request",
-          "visits": "Flexible",
-          "best": "Pre-sale or promotion preparations"
+          "visits": "Flexible scheduling",
+          "best": "Ideal for pre-sale events, seasonal refreshes, or post-renovation cleanup"
         }
       },
       "benefits": [
@@ -199,9 +195,16 @@
       ]
     },
     {
-      "name": "Carpet Cleaning",
+      "name": "Carpet Care",
       "slug": "carpet",
       "description": "Revitalize your carpets and improve indoor air quality with our specialized cleaning solutions. We target deep-seated dirt and allergens to restore the freshness and appearance of your flooring.",
+      "paragraphs": [
+        "Revitalize carpets and improve indoor air quality. Our deep-cleaning methods remove dirt, allergens, and odors, helping businesses maintain a healthier, fresher, and more professional environment. Whether it is a small office, retail store, or large commercial facility, our locally owned company ensures your carpets look vibrant and extend their lifespan, protecting your investment.", 
+        "Our comprehensive commercial carpet cleaning process includes pre-treatment of stains and high-traffic areas, followed by deep steam extraction or low-moisture encapsulation, depending on your needs. We also provide odor neutralization, deodorizing, and optional protective treatments to resist future soiling. With rapid drying times, your workspace experiences minimal downtime, making our services ideal for busy offices, plazas, and event venues across Ottawa. Flexible scheduling options are available quarterly, semi-annually, annually, or on demand for spills and high-traffic areas"],
+      "images": [
+        "/images/services/office-1.png",
+        "/images/services/office-2.png"
+      ],
       "tasks": [
         {
           "icon": "SprayCan",
@@ -210,7 +213,7 @@
         },
         {
           "icon": "Droplet",
-          "title": "Deep Steam Cleaning",
+          "title": "Deep Cleaning",
           "desc": "High-heat steam or low-moisture methods for deep cleaning"
         },
         {
@@ -220,7 +223,102 @@
         },
         {
           "icon": "ShieldCheck",
-          "title": "Protective Treatment",
+          "title": "Optional Protective Treatment ",
+          "desc": "Application of protectants to resist future soiling"
+        },
+        {
+          "icon": "Timer",
+          "title": "Rapid Drying",
+          "desc": "Accelerated drying methods to reduce downtime"
+        }
+      ],
+      "frequencies": {
+        "quarterly": {
+          "price": "$250-350",
+          "visits": "Every 3 months",
+          "best": "High-traffic offices"
+        },
+        "biannually": {
+          "price": "$200-300",
+          "visits": "2x/year",
+          "best": "Medium-traffic areas"
+        },
+        "annually": {
+          "price": "$150-250",
+          "visits": "1x/year",
+          "best": "Low-traffic carpets"
+        },
+        "onDemand": {
+          "price": "On request",
+          "visits": "As needed",
+          "best": "Emergency spills or high-traffic zones"
+        }
+      },
+      "benefits": [
+        {
+          "icon": "Leaf",
+          "title": "Improved Air Quality",
+          "desc": "Removes allergens, dust, and pollutants from carpets",
+          "stat": "95",
+          "unit": "%",
+          "metric": "Cleaner Air"
+        },
+        {
+          "icon": "Clock",
+          "title": "Extended Carpet Life",
+          "desc": "Prevents wear and tear, prolonging carpet usability",
+          "stat": "40",
+          "unit": "%",
+          "metric": "Lifespan Increase"
+        },
+        {
+          "icon": "Smile",
+          "title": "Odor-Free Spaces",
+          "desc": "Eliminates unpleasant odors for a fresher environment",
+          "stat": "100",
+          "unit": "%",
+          "metric": "Odor Elimination"
+        },
+        {
+          "icon": "Sparkles",
+          "title": "Vibrant Look",
+          "desc": "Restores carpet’s original texture and color",
+          "stat": "85",
+          "unit": "%",
+          "metric": "Aesthetic Restoration"
+        }
+      ]
+    },
+    {
+      "name": "Carpet Care",
+      "slug": "carpet",
+      "description": "Revitalize your carpets and improve indoor air quality with our specialized cleaning solutions. We target deep-seated dirt and allergens to restore the freshness and appearance of your flooring.",
+      "paragraphs": [
+        "Revitalize carpets and improve indoor air quality. Our deep-cleaning methods remove dirt, allergens, and odors, helping businesses maintain a healthier, fresher, and more professional environment. Whether it is a small office, retail store, or large commercial facility, our locally owned company ensures your carpets look vibrant and extend their lifespan, protecting your investment.", 
+        "Our comprehensive commercial carpet cleaning process includes pre-treatment of stains and high-traffic areas, followed by deep steam extraction or low-moisture encapsulation, depending on your needs. We also provide odor neutralization, deodorizing, and optional protective treatments to resist future soiling. With rapid drying times, your workspace experiences minimal downtime, making our services ideal for busy offices, plazas, and event venues across Ottawa. Flexible scheduling options are available quarterly, semi-annually, annually, or on demand for spills and high-traffic areas"],
+      "images": [
+        "/images/services/office-1.png",
+        "/images/services/office-2.png"
+      ],
+      "tasks": [
+        {
+          "icon": "SprayCan",
+          "title": "Pre-Treatment",
+          "desc": "Advanced solutions for stubborn stains and spills"
+        },
+        {
+          "icon": "Droplet",
+          "title": "Deep Cleaning",
+          "desc": "High-heat steam or low-moisture methods for deep cleaning"
+        },
+        {
+          "icon": "Wind",
+          "title": "Odor Removal",
+          "desc": "Elimination of odors caused by dirt, spills, or allergens"
+        },
+        {
+          "icon": "ShieldCheck",
+          "title": "Optional Protective Treatment ",
           "desc": "Application of protectants to resist future soiling"
         },
         {
