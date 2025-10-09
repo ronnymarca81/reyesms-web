@@ -31,7 +31,7 @@ export default function SafetyFeatures({ theme = 'light', safeties = [] }: Safet
         </header>
 
         {/* Safety Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-16">
           {safeties.map(({ title, icon, label, score, desc, backgroundImage }, index) => (
             <TaskCard
               key={index}

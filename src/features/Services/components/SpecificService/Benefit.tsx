@@ -33,9 +33,7 @@ export default function Benefit({ theme = "light", benefits }: BenefitProps) {
   };
 
   return (
-    <section
-      className={`relative z-10 py-12 px-6 ${currentTheme.container}`}
-    >
+    <section className={`relative z-10 py-12 px-6 ${currentTheme.container}`}>
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-Left mb-6">
@@ -46,9 +44,8 @@ export default function Benefit({ theme = "light", benefits }: BenefitProps) {
             Real-world benefits of professional cleaning
           </p>
         </div>
-
         {/* Benefit Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
           {benefits.map((benefit, index) => {
             const Icon = resolveIcon(benefit.icon);
             return (
@@ -65,14 +62,10 @@ export default function Benefit({ theme = "light", benefits }: BenefitProps) {
                 <div
                   className={`
                     ${currentTheme.card}
-                    p-6 rounded-xl transition-all duration-500
+                    p-6 rounded-xl transition-all duration-500 h-full flex flex-col justify-between
                     transform hover:scale-105 hover:-translate-y-4
                     ${currentTheme.hover}
-                    ${
-                      hovered === index
-                        ? "shadow-2xl ring-2 ring-indigo-400/40"
-                        : "shadow-md"
-                    }
+                    ${hovered === index ? 'shadow-2xl ring-2 ring-indigo-400/40' : 'shadow-md'}
                   `}
                 >
                   <div className="text-left">
@@ -87,35 +80,25 @@ export default function Benefit({ theme = "light", benefits }: BenefitProps) {
                     <div className="mb-4">
                       <div className="flex items-baseline gap-1">
                         {/* Stat */}
-                        <div
-                          className={`text-5xl font-bold mb-2 ${currentTheme.text}`}
-                        >
+                        <div className={`text-5xl font-bold mb-2 ${currentTheme.text}`}>
                           {benefit.stat}
                         </div>
                         {/* unit */}
-                        <div
-                          className={`text-2xl font-bold mb-2 ${currentTheme.text}`}
-                        >
+                        <div className={`text-2xl font-bold mb-2 ${currentTheme.text}`}>
                           {benefit.unit}
                         </div>
                       </div>
                     </div>
                     {/* Metric */}
-                    <div className="text-indigo-400 text-sm mb-4 font-medium">
-                      {benefit.metric}
-                    </div>
+                    <div className="text-indigo-400 text-sm mb-4 font-medium">{benefit.metric}</div>
 
                     {/* Title */}
-                    <h3
-                      className={`font-semibold text-lg mb-3 ${currentTheme.text}`}
-                    >
+                    <h3 className={`font-semibold text-lg mb-3 ${currentTheme.text}`}>
                       {benefit.title}
                     </h3>
 
                     {/* Description */}
-                    <p
-                      className={`text-sm leading-relaxed ${currentTheme.subtext}`}
-                    >
+                    <p className={`text-sm leading-relaxed ${currentTheme.subtext}`}>
                       {benefit.desc}
                     </p>
                   </div>
