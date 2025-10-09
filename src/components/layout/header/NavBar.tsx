@@ -25,9 +25,7 @@ export const NavBar: React.FC<NavBarProps> = ({ menuItems }) => {
 
   return (
     //<header className="bg-gradient-to-r from-blue-900 via-blue-600 to-blue-400 shadow-lg relative z-50">
-    <header
-      className={`bg-gradient-to-br from-[#1e3a5f] to-[#2c5282] text-white pt-10 md:pt-16`}
-    >
+    <header className={`bg-gradient-to-br from-[#1e3a5f] to-[#2c5282] text-white pt-10 md:pt-16`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
@@ -61,11 +59,7 @@ export const NavBar: React.FC<NavBarProps> = ({ menuItems }) => {
               onClick={toggleMobileMenu}
               className="text-white hover:text-cyan-400 focus:outline-none focus:text-cyan-400 transition-colors duration-200"
             >
-              {isMobileMenuOpen ? (
-                <X className="w-6 h-6" />
-              ) : (
-                <TextAlignEnd className="w-6 h-6" />
-              )}
+              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <TextAlignEnd className="w-6 h-6" />}
             </button>
           </div>
         </div>
@@ -74,28 +68,18 @@ export const NavBar: React.FC<NavBarProps> = ({ menuItems }) => {
         {isMobileMenuOpen && (
           <div className="lg:hidden border-t border-gray-700 py-4">
             <div className="flex flex-col space-y-4">
-              <NavMenu
-                items={menuItems}
-                isMobile={true}
-                onItemClick={closeMobileMenu}
-              />
+              <NavMenu items={menuItems} isMobile={true} onItemClick={closeMobileMenu} />
 
               {/* Mobile Action Buttons */}
               <div className="flex flex-col space-y-3 pt-4 border-t border-gray-700">
-                <Button
-                  variant="outline"
-                  size="md"
-                  className="w-full"
-                  href="/quote"
-                >
+                <Button variant="primary" size="md" className="w-full" onClick={handleMailClick}>
+                  <Mail className="w-4 h-4 mr-2" />
+                  {defaultContactInfo.email}
+                </Button>
+                <Button variant="outline" size="md" className="w-full" href="/quote">
                   GET A QUOTE
                 </Button>
-                <Button
-                  variant="phone"
-                  size="md"
-                  className="w-full"
-                  onClick={handlePhoneClick}
-                >
+                <Button variant="phone" size="md" className="w-full" onClick={handlePhoneClick}>
                   <Phone className="w-4 h-4 mr-2" />
                   {defaultContactInfo.phone}
                 </Button>
