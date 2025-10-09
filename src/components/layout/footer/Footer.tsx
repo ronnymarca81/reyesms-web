@@ -1,10 +1,15 @@
-import React from 'react';
-import { defaultContactInfo, defaultBrandName, defaultLastName } from '@myTypes/CompanyApi';
-import { menuItems } from '../../../myTypes/MenuApi';
-import Logo from '@components/layout/header/Logo';
-import { PhoneCall, Mail } from 'lucide-react';
-import { FacebookIcon } from '@components/layout/icons';
-import { Button } from '@components/common/Button';
+import React from "react";
+import {
+  defaultContactInfo,
+  defaultBrandName,
+  defaultLastName,
+  defaultFullName,
+} from "@myTypes/CompanyApi";
+import { menuItems } from "../../../myTypes/MenuApi";
+import Logo from "@components/layout/header/Logo";
+import { PhoneCall, Mail } from "lucide-react";
+import { FacebookIcon } from "@components/layout/icons";
+import { Button } from "@components/common/Button";
 
 interface FooterProps {
   className?: string;
@@ -28,7 +33,12 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
             <Logo />
           </div>
 
-          <p className="text-gray-200 leading-relaxed mt-3">{contact.companyCuenta}</p>
+          <p className="text-gray-200 leading-relaxed mt-3">
+            {contact.companyDescription}
+          </p>
+          <p className="text-gray-200 leading-relaxed mt-3">
+            {contact.companyCuenta}
+          </p>
           <Button
             variant="custom"
             size="md"
@@ -81,8 +91,11 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
             </div>
             <div className="flex items-center gap-3 flex-wrap">
               <Mail className="w-5 h-5 text-white" />
-              <a href={`mailto:${contact.email}`} className="text-gray-300 hover:text-blue-400">
-                {brandName}
+              <a
+                href={`mailto:${contact.email}`}
+                className="text-gray-300 hover:text-blue-400"
+              >
+                {contact.email}
               </a>
             </div>
             <div className="flex items-center gap-3 flex-wrap">
@@ -93,7 +106,7 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-blue-400"
               >
-                {brandName}
+                {defaultBrandName}
               </a>
             </div>
           </div>

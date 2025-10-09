@@ -5,7 +5,7 @@ import { Button } from "../../common/Button";
 import { NavMenu } from "./NavMenu";
 import { defaultContactInfo } from "@myTypes/CompanyApi";
 
-import { Phone, TextAlignEnd, X } from "lucide-react";
+import { Mail, Phone, TextAlignEnd, X } from "lucide-react";
 
 export const NavBar: React.FC<NavBarProps> = ({ menuItems }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -19,6 +19,9 @@ export const NavBar: React.FC<NavBarProps> = ({ menuItems }) => {
   };
   const handlePhoneClick = () =>
     (window.location.href = `tel:${defaultContactInfo.phone}`);
+  
+  const handleMailClick = () =>
+    (window.location.href = `mailto:${defaultContactInfo.email}`);
 
   return (
     //<header className="bg-gradient-to-r from-blue-900 via-blue-600 to-blue-400 shadow-lg relative z-50">
@@ -39,6 +42,10 @@ export const NavBar: React.FC<NavBarProps> = ({ menuItems }) => {
 
           {/* Desktop Action Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
+            <Button variant="primary" size="md" onClick={handleMailClick}>
+              <Mail className="w-4 h-4 mr-2 stroke-3" />
+              {defaultContactInfo.email}
+            </Button>
             <Button variant="outline" size="md" href="/quote">
               GET A QUOTE
             </Button>
