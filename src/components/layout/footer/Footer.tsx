@@ -2,7 +2,8 @@ import React from "react";
 import {
   defaultContactInfo,
   defaultBrandName,
-  defaultLastName
+  defaultLastName,
+  defaultFullName,
 } from "@myTypes/CompanyApi";
 import { menuItems } from "../../../myTypes/MenuApi";
 import Logo from "@components/layout/header/Logo";
@@ -103,7 +104,7 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
                 href={`mailto:${contact.email}`}
                 className="text-gray-300 hover:text-blue-400"
               >
-                {brandName}
+                {contact.email}
               </a>
             </div>
             <div className="flex items-center gap-3 flex-wrap">
@@ -114,7 +115,7 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-blue-400"
               >
-                {brandName}
+                {defaultBrandName}
               </a>
             </div>
           </div>

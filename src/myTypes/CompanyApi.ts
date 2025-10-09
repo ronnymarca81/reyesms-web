@@ -1,6 +1,7 @@
 import type{ ContactInfo } from './types' 
 export const defaultBrandName: string = "Reyes Maintenance";
 export const defaultLastName: string = "Service Inc"
+export const defaultFullName: string = `${defaultBrandName} ${defaultLastName}`;
 
 export const defaultContactInfo: ContactInfo = {
   address: "52 Antares Dr Suite #203, Ottawa, ON K2E 7V1",
@@ -11,7 +12,7 @@ export const defaultContactInfo: ContactInfo = {
   },
   webSite: "www.reyesms.ca",
   companyDescription:
-    `${defaultBrandName} is a locally owned company ` +
+    `${defaultFullName}. is a locally owned company ` +
     "with over 15 years of experience, delivering comprehensive commercial cleaning and maintenance " +
     "services in Ottawa.",
   companyCuenta:

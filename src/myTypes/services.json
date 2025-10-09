@@ -48,22 +48,22 @@
       ],
       "frequencies": {
         "daily": {
-          "price": "$150-200",
+          "price": "On request",
           "visits": "5x/week",
           "best": "High-traffic offices"
         },
         "weekly": {
-          "price": "$120-160",
+          "price": "On request",
           "visits": "1x/week",
           "best": "Medium-sized teams"
         },
         "biweekly": {
-          "price": "$100-140",
+          "price": "On request",
           "visits": "2x/month",
           "best": "Smaller offices"
         },
         "monthly": {
-          "price": "$80-120",
+          "price": "On request",
           "visits": "1x/month",
           "best": "Basic maintenance"
         },
@@ -143,17 +143,17 @@
       ],
       "frequencies": {
         "quarterly": {
-          "price": "$0.45–$0.65/sq ft",
+          "price": "On request",
           "visits": "Every 3 months",
           "best": "High-traffic areas like retail entrances, lobbies, and hallways"
         },
         "semiAnnual": {
-          "price": "$0.40–$0.60/sq ft",
+          "price": "On request",
           "visits": "Every 6 months",
           "best": "Standard office spaces, medical clinics, and shared commercial facilities"
         },
         "annual": {
-          "price": "$0.35–$0.55/sq ft",
+          "price": "On request",
           "visits": "Once a year",
           "best": "Low-traffic zones or facilities with routine maintenance programs"
         },
@@ -234,17 +234,17 @@
       ],
       "frequencies": {
         "quarterly": {
-          "price": "$250-350",
+          "price": "On request",
           "visits": "Every 3 months",
           "best": "High-traffic offices"
         },
         "biannually": {
-          "price": "$200-300",
+          "price": "On request",
           "visits": "2x/year",
           "best": "Medium-traffic areas"
         },
         "annually": {
-          "price": "$150-250",
+          "price": "On request",
           "visits": "1x/year",
           "best": "Low-traffic carpets"
         },
@@ -334,12 +334,12 @@
       ],
       "frequencies": {
         "biannually": {
-          "price": "$0.20–$0.60 per sq ft",
+          "price": "On request",
           "visits": "2x/year",
           "best": "Medium-traffic areas"
         },
         "annually": {
-          "price": "$0.15–$0.50 per sq ft",
+          "price": "On request",
           "visits": "1x/year",
           "best": "Low-traffic facilities and seasonal refreshes"
         },
@@ -378,6 +378,181 @@
           "icon": "Star",
           "title": "Extends Asset Life",
           "desc": "Proper maintenance preserves furniture and equipment value",
+          "stat": "40",
+          "unit": "%",
+          "metric": "Longer Lifespan"
+        }
+      ]
+    },
+    {
+      "name": "Minor Renovations and Demolitions",
+      "slug": "renovation",
+      "description": "Efficient Upgrades with Minimal Disruption. When your business requires light remodeling or careful removal of non‑structural elements, we deliver reliable, safe, and professional service with minimal interruptions.",
+      "paragraphs": [
+        "Efficient Upgrades with Minimal Disruption. When your business requires light remodeling or the careful removal of non‑structural elements, Reyes Maintenance Service Inc. provides reliable service that minimizes interruptions to your operations. Our minor renovation and demolition services in Ottawa are well‑suited for offices, retail locations, and commercial facilities that want to refresh their space without the expense or downtime of a full construction project. Every assignment is completed with a strong focus on safety, efficiency, and professionalism.", 
+        "Our Ottawa renovation and demolition solutions are designed to handle every stage of small‑scale improvements. Typical work includes removing fixtures and interior sections, patching walls, painting, and minor repairs, along with responsible debris removal and thorough site cleanup. By combining accuracy with efficiency, we deliver results that improve your space while maintaining a safe and orderly environment throughout the process. These services are ideal for businesses seeking quick, dependable upgrades without the need for large construction crews."],
+      "images": [
+        "/images/services/office-1.png",
+        "/images/services/office-2.png"
+      ],
+      "tasks": [
+        {
+          "icon": "Droplet",
+          "title": "Dusting",
+          "desc": "High and low dusting of vents, ledges, and baseboards to remove accumulated dust in overlooked areas"
+        },
+                {
+          "icon": "Building2",
+          "title": "Floor Maintenance",
+          "desc": "Professional vacuuming and mopping of all floor types"
+        },
+        {
+          "icon": "ShieldCheck",
+          "title": "Sanitation",
+          "desc": "Intensive cleaning of washrooms and common areas to maintain a hygienic and healthy environment"
+        },
+        {
+          "icon": "Window",
+          "title": "Window Cleaning",
+          "desc": "Interior window cleaning to enhance visibility and brighten your workspace"
+        },
+        {
+          "icon": "Brush",
+          "title": "Detail Work",
+          "desc": "Specialty cleaning tasks including fixtures, appliances, and areas often missed in routine maintenance"
+        },
+        {
+          "icon": "Star",
+          "title": "Custom Tasks",
+          "desc": "Additional specialty tasks performed upon request to meet your facility’s unique cleaning needs"
+        }
+      ],
+      "frequencies": {
+        "biannually": {
+          "price": "On request",
+          "visits": "2x/year",
+          "best": "Medium-traffic areas"
+        },
+        "annually": {
+          "price": "On request",
+          "visits": "1x/year",
+          "best": "Low-traffic facilities and seasonal refreshes"
+        },
+        "onDemand": {
+          "price": "On request",
+          "visits": "As needed",
+          "best": "High-traffic zones"
+        }
+      },
+      "benefits": [
+        {
+          "icon": "Leaf",
+          "title": "Improved Air Quality",
+          "desc": "Removes dust from vents, ledges, and baseboards",
+          "stat": "95",
+          "unit": "%",
+          "metric": "Cleaner Air"
+        },
+        {
+          "icon": "TrendingUp",
+          "title": "Boosts Productivity",
+          "desc": "Clean workspaces increase focus and employee satisfaction",
+          "stat": "23",
+          "unit": "%",
+          "metric": "Productivity Increase"
+        },
+        {
+          "icon": "Building2",
+          "title": "Professional Image",
+          "desc": "Impress clients and visitors with immaculate facilities",
+          "stat": "85",
+          "unit": "%",
+          "metric": "Client Satisfaction"
+        },
+        {
+          "icon": "Star",
+          "title": "Extends Asset Life",
+          "desc": "Proper maintenance preserves furniture and equipment value",
+          "stat": "40",
+          "unit": "%",
+          "metric": "Longer Lifespan"
+        }
+      ]
+    },
+    {
+      "name": "Light Maintenance and Bulb Replacement",
+      "slug": "light-maintenance",
+      "description": "Brighten your business with expert light maintenance and bulb replacement. Go beyond routine fixes to ensure a safe, polished, and professional space that welcomes every visitor with confidence",
+      "paragraphs": [
+        "Small Fixes, Big Impact. Even the smallest details matter when it comes to safety and professionalism. Our light maintenance and bulb replacement services in Ottawa ensure your workplace remains bright, functional, and welcoming. From replacing flickering bulbs to handling minor repairs, Reyes Maintenance Service Inc. provides dependable solutions that keep your facility operating smoothly while maintaining a polished appearance.", 
+        "Our Ottawa light maintenance services are designed to address the routine issues that can disrupt your business. We handle bulb and fixture replacement, minor touch-ups and repairs, and other on-demand maintenance tasks that help reduce downtime and safety risks. By taking care of these small but important details, we help your business project a professional image and create a safer environment for employees and visitors."],
+      "images": [
+        "/images/services/office-1.png",
+        "/images/services/office-2.png"
+      ],
+      "tasks": [
+        {
+          "icon": "Lightbulb",
+          "title": "Bulb & Fixture Replacement",
+          "desc": "Replace flickering or burnt-out bulbs and maintain fixtures for consistent lighting and safety"
+        },
+        {
+          "icon": "Hammer",
+          "title": "Minor Touch-Ups",
+          "desc": "Quick repairs for scuffs, loose fittings, and small damages to maintain a polished appearance"
+        },
+        {
+          "icon": "Tool",
+          "title": "On-Demand Maintenance",
+          "desc": "Responsive service for routine disruptions that reduce downtime and keep operations smooth"
+        }
+      ],
+      "frequencies": {
+        "biannually": {
+          "price": "On request",
+          "visits": "2x/year",
+          "best": "Medium-traffic facilities needing consistent lighting and upkeep"
+        },
+        "annually": {
+          "price": "On request",
+          "visits": "1x/year",
+          "best": "Low-traffic spaces or seasonal maintenance refreshes"
+        },
+        "onDemand": {
+          "price": "On request",
+          "visits": "As needed",
+          "best": "High-traffic zones or urgent lighting and repair needs"
+        }
+      },
+      "benefits": [
+        {
+          "icon": "ShieldCheck",
+          "title": "Enhanced Safety",
+          "desc": "Proper lighting and minor repairs reduce workplace hazards and accident risks",
+          "stat": "70",
+          "unit": "%",
+          "metric": "Risk Reduction"
+        },
+        {
+          "icon": "TrendingUp",
+          "title": "Boosts Productivity",
+          "desc": "Well-lit environments improve employee focus, morale, and overall performance",
+          "stat": "23",
+          "unit": "%",
+          "metric": "Productivity Increase"
+        },
+        {
+          "icon": "Building2",
+          "title": "Professional Image",
+          "desc": "Consistent lighting and upkeep reflect a polished, trustworthy brand",
+          "stat": "85",
+          "unit": "%",
+          "metric": "Client Satisfaction"
+        },
+        {
+          "icon": "Star",
+          "title": "Extends Fixture Life",
+          "desc": "Routine maintenance prevents premature wear and extends the lifespan of lighting systems",
           "stat": "40",
           "unit": "%",
           "metric": "Longer Lifespan"
