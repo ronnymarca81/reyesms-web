@@ -19,7 +19,7 @@ const contact = defaultContactInfo;
 const brandName = defaultBrandName;
 const brandLastName = defaultLastName;
 
-const Footer: React.FC<FooterProps> = ({ className = "" }) => {
+const Footer: React.FC<FooterProps> = ({ className = '' }) => {
   return (
     <footer
       className={`bg-gradient-to-br from-[#1e3a5f] to-[#2c5282] text-white pt-10 md:pt-16 ${className}`}
@@ -45,7 +45,7 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
             className="w-full mt-2 bg-red-600 text-white hover:bg-transparent hover:border-2"
             href="/quote"
           >
-            GET A QUOTE
+            GET A FREE QUOTE
           </Button>
         </div>
 
@@ -55,10 +55,7 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
           <ul className="space-y-3">
             {menuItems.map((item, index) => (
               <li key={index}>
-                <a
-                  href={item.href}
-                  className="text-gray-300 hover:text-blue-400"
-                >
+                <a href={item.href} className="text-gray-300 hover:text-blue-400">
                   {item.label}
                 </a>
               </li>
@@ -71,13 +68,10 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
           <h3 className="text-lg font-semibold mb-5">Our Services</h3>
           <ul className="space-y-3">
             {menuItems
-              .find((item) => item.href === "/services")
+              .find((item) => item.href === '/services')
               ?.subItems?.map((service, index) => (
                 <li key={index}>
-                  <a
-                    href={service.href}
-                    className="text-gray-300 hover:text-blue-400"
-                  >
+                  <a href={service.href} className="text-gray-300 hover:text-blue-400">
                     {service.label}
                   </a>
                 </li>
@@ -91,10 +85,7 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
           <div className="flex flex-col space-y-4">
             <div className="flex items-center gap-3 flex-wrap">
               <PhoneCall className="w-5 h-5 text-white" />
-              <a
-                href={`tel:${contact.phone}`}
-                className="text-gray-300 hover:text-blue-400"
-              >
+              <a href={`tel:${contact.phone}`} className="text-gray-300 hover:text-blue-400">
                 {contact.phone}
               </a>
             </div>
@@ -125,15 +116,12 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
       {/* Bottom */}
       <div className="border-t border-gray-700 py-5 text-center">
         <p className="text-sm text-gray-400 px-4">
-          © 2025 {brandName} {brandLastName} –{" "}
+          © 2025 {brandName} {brandLastName} –{' '}
           <a href="/web-design" className="text-blue-400 hover:text-blue-300">
             Web Design
-          </a>{" "}
-          Marlov –{" "}
-          <a
-            href="/privacy-policy"
-            className="text-blue-400 hover:text-blue-300"
-          >
+          </a>{' '}
+          Marlov –{' '}
+          <a href="/privacy-policy" className="text-blue-400 hover:text-blue-300">
             Privacy Policy
           </a>
         </p>

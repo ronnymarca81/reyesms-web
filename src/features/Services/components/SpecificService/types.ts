@@ -1,4 +1,5 @@
 import type { LucideIcon } from "lucide-react";
+import * as LucideIcons from 'lucide-react';
 
 export interface ThemeConfig {
   container: string;
@@ -14,12 +15,15 @@ export interface themeProps {
   theme?: "light" | "dark" | "gradient" | "cta";
 }
 
-export interface Task {
-  icon: LucideIcon;
+export interface TaskItem {
   title: string;
-  desc: string;
+  icon?: IconName;
+  label?: string; // e.g. "Guarantee"
+  score?: string; // e.g. "100%"
+  desc?: string;
   backgroundImage?: string;
 }
+export type IconName = keyof typeof LucideIcons;
 
 export interface FrequencyOption {
   price: string;

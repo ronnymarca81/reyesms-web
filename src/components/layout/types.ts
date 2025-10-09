@@ -3,15 +3,6 @@ export interface LogoProps {
   className?: string;
 }
 
-export interface ButtonProps {
-  children: React.ReactNode;
-  variant?: 'primary' | 'secondary' | 'outline' | 'phone' | 'contact' | 'custom';
-  size?: 'sm' | 'md' | 'lg';
-  onClick?: () => void;
-  className?: string;
-  href?: string;
-}
-
 export interface MenuItem {
   label: string;
   href: string;

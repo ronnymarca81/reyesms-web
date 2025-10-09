@@ -2,22 +2,25 @@ export interface HeaderProps {
   backgroundImage: string;
   title: string;
   description: string;
-  bottom?: React.ReactNode;
-  view?: "left" | "right" | "center" | "card";
+  button?: React.ReactNode;
+  view?: 'left' | 'right' | 'center' | 'card';
   height?: string;
 }
 
-interface ButtonProps {
-  label: string;
+export interface ButtonProps {
+  children: React.ReactNode;
+  variant?: 'primary' | 'secondary' | 'outline' | 'phone' | 'contact' | 'custom';
+  size?: 'sm' | 'md' | 'lg';
   onClick?: () => void;
-  variant?: "primary" | "secondary";
+  className?: string;
+  href?: string;
 }
 
 export interface ContentGaleryProps {
   title: string;
   paragraphs: string[];
   buttons: ButtonProps[];
-  images: string[]; // ✅ supports multiple
+  images: string | string[]; // ✅ supports one or multiple images
   reverse?: boolean; // false = content left | true = content right
   backgroundColor?: string;
 }

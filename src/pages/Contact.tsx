@@ -16,7 +16,6 @@ const App: React.FC = () => {
         highlightIndex={5}
         visible={false}
       />
-
       {/* Features Section */}
       <div className="max-w-7xl mx-auto px-4 mt-12 relative z-20">
         <div className="grid md:grid-cols-3 gap-2">

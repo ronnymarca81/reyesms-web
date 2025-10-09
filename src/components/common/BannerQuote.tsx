@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Button } from "./Button";
 
 interface BannerQuoteProps {
   // Accept CSS background classes or inline style
@@ -21,32 +21,23 @@ const BannerQuote: React.FC<BannerQuoteProps> = ({
   ctaText = "GET A FREE QUOTE",
   ctaPath = "/quote"
 }) => {
-  const navigate = useNavigate();
-
-  const handleEnquiryClick = () => {
-    navigate(ctaPath);
-  };
 
   return (
-    <section
-      className={`${backgroundClassName} text-center py-16 px-4`}
-      style={backgroundStyle}
-    >
+    <section className={`${backgroundClassName} text-center py-16 px-4`} style={backgroundStyle}>
       <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-semibold text-black mb-4">
           {subtitle} <span className="font-bold">{title}</span>
         </h2>
 
-        <p className="text-base md:text-lg text-black/80 max-w-2xl mx-auto my-8">
-          {description}
-        </p>
-
-        <button
-          className="bg-blue-600 text-white font-semibold px-8 py-3 rounded-full shadow-md hover:bg-blue-700 transition"
-          onClick={handleEnquiryClick}
+        <p className="text-base md:text-lg text-black/80 max-w-2xl mx-auto my-8">{description}</p>
+        <Button
+          href={ctaPath}
+          variant="primary"
+          size="md"
+          className="inline-flex items-center gap-2 px-8 py-3 rounded-full "
         >
           {ctaText}
-        </button>
+        </Button>
       </div>
     </section>
   );

@@ -1,15 +1,13 @@
-import Service from "../features/Services/components/Service";
-import { defaultServicesData } from "@myTypes/ServiceApi";
-import Values from "@features/Services/components/Values";
-import banner from "@assets/images/services-banner.png";
-import { useNavigate } from "react-router-dom";
+import Service from '../features/Services/components/Service';
+import { defaultServicesData } from '@myTypes/ServiceApi';
+import banner from '@assets/images/services-banner.png'
+import SafetyFeatures from '@features/Services/components/SafetyFeatures';
+import { safetyFeatures } from '@features/Services/types';
+
+
+
 
 export const Services = () => {
-  const navigate = useNavigate();
-  const handleServiceLearnMore = (serviceLink: string) => {
-    // Here you would typically navigate to a detailed service page
-    navigate(`${serviceLink}`);
-  };
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -24,26 +22,19 @@ export const Services = () => {
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4 text-black">
-              Our Services
-            </h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4 text-black">Our Services</h1>
             <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
-              Reyes Maintenance Service Inc. provides a meticulous approach to
-              commercial cleaning and maintenance, ensuring every aspect of your
-              Ottawa business environment is handled precisely and carefully.
-              Explore our key services below, each designed to keep workplaces
-              spotless, safe, and welcoming.
+              Reyes Maintenance Service Inc. provides a meticulous approach to commercial cleaning
+              and maintenance, ensuring every aspect of your Ottawa business environment is handled
+              precisely and carefully. Explore our key services below, each designed to keep
+              workplaces spotless, safe, and welcoming.
             </p>
           </div>
         </div>
       </div>
-
       {/* Services Section - Services component wraps Card components */}
-      <Service
-        services={defaultServicesData}
-        onServiceLearnMore={handleServiceLearnMore}
-      />
-      <Values />
+      <Service services={defaultServicesData} />
+      <SafetyFeatures theme="light" safeties={safetyFeatures} />
     </div>
   );
 };
