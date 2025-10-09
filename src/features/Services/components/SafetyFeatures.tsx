@@ -15,13 +15,13 @@ export default function SafetyFeatures({ theme = 'light', safeties = [] }: Safet
         {/* Header */}
         <header className="mb-12 text-center">
           <h2 className={`text-3xl font-bold mb-4 ${themeConfig.text}`}>
-            Our company's top priority is{' '}
+            Health and safety come first{' '}
             <span className="text-red-700 underline decoration-red decoration-4 underline-offset-8">
-              customer safety
+              always
             </span>
           </h2>
           <p className={`text-base leading-relaxed ${themeConfig.subtext}`}>
-            Every service includes these health and safety guarantees
+            We follow strict safety protocols to protect our clients and team
           </p>
           <div
             className={`inline-block mt-4 px-4 py-2 rounded-2xl text-emerald-100 font-bold ${themeConfig.accent} text-sm`}
