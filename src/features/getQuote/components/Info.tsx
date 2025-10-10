@@ -1,5 +1,5 @@
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
-import { defaultContactInfo } from "../../../components/layout/navbar/types.js";
+import { defaultContactInfo } from "@myTypes/CompanyApi";
 const GetInTouch: React.FC = () => {
   return (
     <div className="bg-white p-8 rounded-lg ">

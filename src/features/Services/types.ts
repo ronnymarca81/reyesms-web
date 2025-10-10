@@ -1,4 +1,13 @@
 import * as LucideIcons from 'lucide-react';
+
+export interface ServiceData {
+  id: number;
+  image: string;
+  title: string;
+  description: string;
+  href: string;
+}
+
 export interface SafetyFeature {
    title: string;
    icon?: IconName;
