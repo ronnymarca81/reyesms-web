@@ -2,7 +2,7 @@ import type {
   IconName,
   BenefitItem,
 } from '../features/Services/components/SpecificService/Benefit';
-import type { TaskItem } from '@features/Services/components/SpecificService/Task';
+import type { TaskItem } from '@features/Services/components/SpecificService/types';
 import * as LucideIcons from 'lucide-react';
 import type { FrequencyOption } from '@features/Services/components/SpecificService/types';
 
