@@ -8,7 +8,7 @@ export default defineConfig({
    build: {
     sourcemap: true
   },
-  plugins: [react(), tailwindcss()],
+  plugins: [react(), tailwindcss(), svgr()],
   resolve: {
     alias: {
       "@components": path.resolve(__dirname, "src/components"),
@@ -24,3 +24,9 @@ export default defineConfig({
     }
   }
 });
+
+
+function svgr(): import("vite").PluginOption {
+  throw new Error('Function not implemented.');
+}
+
