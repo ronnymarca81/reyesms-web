@@ -20,7 +20,7 @@ export type IconName = keyof typeof LucideIcons;
 
 
 export const safetyFeatures: SafetyFeature[] = [
-  { title: 'Sanitize and disinfect', icon: 'Check', label: 'Guarantee', score: '100%' },
+  { title: 'Disinfect all high-touch surfaces', icon: 'Check', label: 'Guarantee', score: '100%' },
   { title: 'Wear a mask', icon: 'Check', label: 'Guarantee', score: '100%' },
   { title: 'Wears gloves', icon: 'Check', label: 'Guarantee', score: '100%' },
   { title: 'Rinsing hands', icon: 'Check', label: 'Guarantee', score: '100%' },

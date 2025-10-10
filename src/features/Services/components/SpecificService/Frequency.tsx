@@ -27,7 +27,7 @@ export const Frequency = ({
             Flexible Scheduling
           </h2>
           <p className={`text-sm leading-relaxed ${t.subtext}`}>
-            Choose the perfect cleaning schedule for your business
+            Choose the perfect plan schedule for your business
           </p>
         </div>
 
@@ -61,7 +61,7 @@ export const Frequency = ({
           className={`p-8 rounded-2xl border text-center ${t.card} ${t.border}`}
         >
           <h4 className={`text-2xl font-bold mb-4 capitalize ${t.text}`}>
-            {activeFrequency} Cleaning
+            {activeFrequency} Plan
           </h4>
           <div
             className={`grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-6 ${t.text}`}

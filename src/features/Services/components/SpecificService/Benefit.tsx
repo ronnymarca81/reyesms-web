@@ -41,7 +41,7 @@ export default function Benefit({ theme = "light", benefits }: BenefitProps) {
             Business Impact Metrics
           </h2>
           <p className={`text-sm leading-relaxed ${currentTheme.subtext}`}>
-            Real-world benefits of professional cleaning
+            Real-world benefits of professional service
           </p>
         </div>
         {/* Benefit Cards */}
