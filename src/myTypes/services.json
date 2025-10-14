@@ -7,13 +7,11 @@
       "paragraphs": [
         "Maintain a Pristine Environment. Our meticulous office, commercial and post-construction cleaning services in Ottawa ensure your workplace is spotless, healthy, and welcoming every day. Whether you manage a small office, a large building, a retail store, a plaza, a restaurant, an event venue or any business, our professional team keeps your environment polished and ready to impress both staff and clients. As a locally owned Ottawa company with over 15 years of experience, Reyes Maintenance Service Inc. is trusted for delivering reliable, high-quality cleaning solutions that reflect your business’s professionalism.",
         "Our commercial cleaning programs in Ottawa are designed to handle every detail of your facility. Services include dusting and polishing surfaces, vacuuming and mopping floors, sanitizing washrooms and kitchens, cleaning interior glass and partitions, trash and recycling removal, and disinfecting high‑touch points such as door handles, and switches. Every plan is customized to match your facility’s size, traffic level, and operating schedule, ensuring consistent results that enhance productivity and create a healthier environment for employees and visitors alike. In addition to cleaning, we can also provide essential supplies such as paper products, hand soap, and sanitizers, ensuring your workplace is always fully stocked and ready for daily operations."
-    
       ],
       "images": [
-        "/images/services/service1/office-1.png",
-        "/images/services/service1/office-4.jpg",
-        "/images/services/service1/postconstruction.jpg"
-
+        "https://www.reyesms.ca/images/services/office/office-1.png",
+        "https://www.reyesms.ca/images/services/office/office-4.png",
+        "https://www.reyesms.ca/images/services/office/postconstruction.png"
       ],
       "tasks": [
         {
@@ -80,7 +78,7 @@
           "title": "Healthier Work Environment",
           "desc": "Reduces sick days by up to 30% and promotes overall wellness",
           "stat": "30",
-          "unit":"%",
+          "unit": "%",
           "metric": "Fewer Sick Days"
         },
         {
@@ -114,11 +112,10 @@
       "slug": "floor",
       "description": "Create a polished and professional space that reflects your brand’s commitment to excellence. Our floor stripping and waxing services restore shine, improve safety, and extend the life of your flooring.",
       "paragraphs": [
-        "Restore Shine and Protect your Floors.  High-traffic floors in offices, retail spaces, and commercial buildings quickly lose their luster from daily wear and buildup. At Reyes Maintenance Service Inc., we provide professional floor stripping and waxing services in Ottawa that restore brilliance, extend floor life, and protect your investment. Our team specializes in vinyl, laminate, and other common commercial flooring surfaces, ensuring a clean, polished, and safe environment for both employees and visitors.", 
-        "Our process begins with a full stripping of old wax and buildup, followed by a deep cleaning to remove dirt and contaminants. We then apply multiple coats of high-quality commercial wax, buffed and polished to create a durable, slip-resistant finish that enhances the appearance of your entire facility. Whether for an office, retail store, plaza, or any other business, this service not only improves aesthetics but also reduces long-term maintenance needs."],
-      "images": [
-        "/images/services/service2/floor-1.jpeg"
+        "Restore Shine and Protect your Floors.  High-traffic floors in offices, retail spaces, and commercial buildings quickly lose their luster from daily wear and buildup. At Reyes Maintenance Service Inc., we provide professional floor stripping and waxing services in Ottawa that restore brilliance, extend floor life, and protect your investment. Our team specializes in vinyl, laminate, and other common commercial flooring surfaces, ensuring a clean, polished, and safe environment for both employees and visitors.",
+        "Our process begins with a full stripping of old wax and buildup, followed by a deep cleaning to remove dirt and contaminants. We then apply multiple coats of high-quality commercial wax, buffed and polished to create a durable, slip-resistant finish that enhances the appearance of your entire facility. Whether for an office, retail store, plaza, or any other business, this service not only improves aesthetics but also reduces long-term maintenance needs."
       ],
+      "images": ["https://www.reyesms.ca/images/services/floor/floor-1.png"],
       "tasks": [
         {
           "icon": "Sparkles",
@@ -199,11 +196,10 @@
       "slug": "carpet",
       "description": "Revitalize your carpets and improve indoor air quality with our specialized cleaning solutions. We target deep-seated dirt and allergens to restore the freshness and appearance of your carpets.",
       "paragraphs": [
-        "Revitalize Carpets and Improve Indoor Air Quality. Our deep-cleaning methods remove dirt, allergens, and odors, helping businesses maintain a healthier, fresher, and more professional environment. Whether it is a small office, retail store, or large commercial facility, our locally owned company ensures your carpets look vibrant and extend their lifespan, protecting your investment.", 
-        "Our comprehensive commercial carpet cleaning process includes pre-treatment of stains and high-traffic areas, followed by deep steam extraction or low-moisture encapsulation, depending on your needs. We also provide odor neutralization, deodorizing, and optional protective treatments to resist future soiling. With rapid drying times, your workspace experiences minimal downtime, making our services ideal for busy offices, plazas, and event venues across Ottawa. Flexible scheduling options are available quarterly, semi-annually, annually, or on demand for spills and high-traffic areas"],
-      "images": [
-        "/images/services/service3/carpet.jpeg"
+        "Revitalize Carpets and Improve Indoor Air Quality. Our deep-cleaning methods remove dirt, allergens, and odors, helping businesses maintain a healthier, fresher, and more professional environment. Whether it is a small office, retail store, or large commercial facility, our locally owned company ensures your carpets look vibrant and extend their lifespan, protecting your investment.",
+        "Our comprehensive commercial carpet cleaning process includes pre-treatment of stains and high-traffic areas, followed by deep steam extraction or low-moisture encapsulation, depending on your needs. We also provide odor neutralization, deodorizing, and optional protective treatments to resist future soiling. With rapid drying times, your workspace experiences minimal downtime, making our services ideal for busy offices, plazas, and event venues across Ottawa. Flexible scheduling options are available quarterly, semi-annually, annually, or on demand for spills and high-traffic areas"
       ],
+      "images": ["https://www.reyesms.ca/images/services/carpet/carpet-2.png"],
       "tasks": [
         {
           "icon": "SprayCan",
@@ -293,11 +289,12 @@
       "slug": "spring-deep",
       "description": "Refresh your workspace with expert spring and deep cleaning. Go beyond routine upkeep to deliver a complete top‑to‑bottom refresh, ensuring a spotless, healthy, and welcoming environment.",
       "paragraphs": [
-        "Refresh your Workspace with Expert Spring/Deep Cleaning. Go beyond routine upkeep to deliver a complete top‑to‑bottom refresh. Ideal for seasonal cleaning, pre‑event preparation, or post‑construction projects, this service ensures your office, retail space, or commercial facility is spotless, healthy, and welcoming. At Reyes Maintenance Service Inc., we help businesses maintain a polished image while creating a cleaner, safer environment for employees and clients.", 
-        "Our deep cleaning programs are designed to reach areas often overlooked in daily maintenance. Services include high and low dusting of vents, ledges, and baseboards; vacuuming and mopping floors; intensive sanitation of washrooms, and common areas; interior window cleaning and detail work; plus specialty tasks plus specialty tasks as you request. By addressing these details, we restore freshness, extend the life of surfaces and fixtures, and ensure your Ottawa workspace is always ready to impress."],
+        "Refresh your Workspace with Expert Spring/Deep Cleaning. Go beyond routine upkeep to deliver a complete top‑to‑bottom refresh. Ideal for seasonal cleaning, pre‑event preparation, or post‑construction projects, this service ensures your office, retail space, or commercial facility is spotless, healthy, and welcoming. At Reyes Maintenance Service Inc., we help businesses maintain a polished image while creating a cleaner, safer environment for employees and clients.",
+        "Our deep cleaning programs are designed to reach areas often overlooked in daily maintenance. Services include high and low dusting of vents, ledges, and baseboards; vacuuming and mopping floors; intensive sanitation of washrooms, and common areas; interior window cleaning and detail work; plus specialty tasks plus specialty tasks as you request. By addressing these details, we restore freshness, extend the life of surfaces and fixtures, and ensure your Ottawa workspace is always ready to impress."
+      ],
       "images": [
-        "/images/services/office-1.png",
-        "/images/services/office-2.png"
+        "https://www.reyesms.ca/images/services/office/office-1.png",
+        "https://www.reyesms.ca/images/services/office/office-2.png"
       ],
       "tasks": [
         {
@@ -305,7 +302,7 @@
           "title": "Dusting",
           "desc": "High and low dusting of vents, ledges, and baseboards to remove accumulated dust in overlooked areas"
         },
-                {
+        {
           "icon": "Building2",
           "title": "Floor Maintenance",
           "desc": "Professional vacuuming and mopping of all floor types"
@@ -388,11 +385,12 @@
       "slug": "renovation",
       "description": "Efficient Upgrades with Minimal Disruption. When your business requires light remodeling or careful removal of non‑structural elements, we deliver reliable, safe, and professional service with minimal interruptions.",
       "paragraphs": [
-        "Efficient Upgrades with Minimal Disruption. When your business requires light remodeling or the careful removal of non‑structural elements, Reyes Maintenance Service Inc. provides reliable service that minimizes interruptions to your operations. Our minor renovation and demolition services in Ottawa are well‑suited for offices, retail locations, and commercial facilities that want to refresh their space without the expense or downtime of a full construction project. Every assignment is completed with a strong focus on safety, efficiency, and professionalism.", 
-        "Our Ottawa renovation and demolition solutions are designed to handle every stage of small‑scale improvements. Typical work includes removing fixtures and interior sections, patching walls, painting, and minor repairs, along with responsible debris removal and thorough site cleanup. By combining accuracy with efficiency, we deliver results that improve your space while maintaining a safe and orderly environment throughout the process. These services are ideal for businesses seeking quick, dependable upgrades without the need for large construction crews."],
+        "Efficient Upgrades with Minimal Disruption. When your business requires light remodeling or the careful removal of non‑structural elements, Reyes Maintenance Service Inc. provides reliable service that minimizes interruptions to your operations. Our minor renovation and demolition services in Ottawa are well‑suited for offices, retail locations, and commercial facilities that want to refresh their space without the expense or downtime of a full construction project. Every assignment is completed with a strong focus on safety, efficiency, and professionalism.",
+        "Our Ottawa renovation and demolition solutions are designed to handle every stage of small‑scale improvements. Typical work includes removing fixtures and interior sections, patching walls, painting, and minor repairs, along with responsible debris removal and thorough site cleanup. By combining accuracy with efficiency, we deliver results that improve your space while maintaining a safe and orderly environment throughout the process. These services are ideal for businesses seeking quick, dependable upgrades without the need for large construction crews."
+      ],
       "images": [
-        "/images/services/service5/renovations-1.jpg",
-        "/images/services/service5/renovations-2.jpg"
+        "https://www.reyesms.ca/images/services/renovation/renovations-1.jpg",
+        "https://www.reyesms.ca/images/services/renovation/renovations-2.jpg"
       ],
       "tasks": [
         {
@@ -400,7 +398,7 @@
           "title": "Dusting",
           "desc": "High and low dusting of vents, ledges, and baseboards to remove accumulated dust in overlooked areas"
         },
-                {
+        {
           "icon": "Building2",
           "title": "Floor Maintenance",
           "desc": "Professional vacuuming and mopping of all floor types"
@@ -483,11 +481,10 @@
       "slug": "light-maintenance",
       "description": "Brighten your business with expert light maintenance and bulb replacement. Go beyond routine fixes to ensure a safe, polished, and professional space that welcomes every visitor with confidence",
       "paragraphs": [
-        "Small Fixes, Big Impact. Even the smallest details matter when it comes to safety and professionalism. Our light maintenance and bulb replacement services in Ottawa ensure your workplace remains bright, functional, and welcoming. From replacing flickering bulbs to handling minor repairs, Reyes Maintenance Service Inc. provides dependable solutions that keep your facility operating smoothly while maintaining a polished appearance.", 
-        "Our Ottawa light maintenance services are designed to address the routine issues that can disrupt your business. We handle bulb and fixture replacement, minor touch-ups and repairs, and other on-demand maintenance tasks that help reduce downtime and safety risks. By taking care of these small but important details, we help your business project a professional image and create a safer environment for employees and visitors."],
-      "images": [
-        "/images/services/service6/bulb-1.jpg"
+        "Small Fixes, Big Impact. Even the smallest details matter when it comes to safety and professionalism. Our light maintenance and bulb replacement services in Ottawa ensure your workplace remains bright, functional, and welcoming. From replacing flickering bulbs to handling minor repairs, Reyes Maintenance Service Inc. provides dependable solutions that keep your facility operating smoothly while maintaining a polished appearance.",
+        "Our Ottawa light maintenance services are designed to address the routine issues that can disrupt your business. We handle bulb and fixture replacement, minor touch-ups and repairs, and other on-demand maintenance tasks that help reduce downtime and safety risks. By taking care of these small but important details, we help your business project a professional image and create a safer environment for employees and visitors."
       ],
+      "images": ["https://www.reyesms.ca/images/services/light-maintenance/bulb-1.jpg"],
       "tasks": [
         {
           "icon": "Lightbulb",
