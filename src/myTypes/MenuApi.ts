@@ -7,7 +7,7 @@ export const menuItems: MenuItem[] = [
     label: "Our Services",
     href: "/services",
     subItems: [
-      { label: "Office and Commercial Cleaning", href: "/services/office" },
+      { label: "Office, Commercial and Post-Construction Cleaning", href: "/services/office" },
       { label: "Floor Stripping and Waxing", href: "/services/floor" },
       { label: "Carpet Care", href: "/services/carpet" },
       { label: "Spring / Deep Cleaning", href: "/services/spring-deep" },

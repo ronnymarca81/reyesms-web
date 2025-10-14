@@ -4,9 +4,9 @@ export const defaultServicesData: ServiceData[] = [
   {
     id: 1,
     image: "https://images.pexels.com/photos/713297/pexels-photo-713297.jpeg",
-    title: "Office and Commercial Cleaning",
+    title: "Office, Commercial and Post-Construction Cleaning",
     description:
-      "Maintain a Pristine Environment. Our meticulous office and commercial cleaning services in Ottawa keep workplaces spotless, healthy, and welcoming. From small offices to large facilities, we deliver tailored solutions with eco‑friendly products and reliable staff, ensuring your business always reflects professionalism and care.",
+      "Maintain a Pristine Environment. Our meticulous office, commercial and post-construction cleaning services in Ottawa keep workplaces spotless, healthy, and welcoming. From small offices to large facilities, we deliver tailored solutions with eco‑friendly products and reliable staff, ensuring your business always reflects professionalism and care.",
     href: "/services/office"
   },
   {
