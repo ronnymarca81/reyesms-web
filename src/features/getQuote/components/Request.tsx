@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { type FormData, formFields } from '../types';
 import { useEmailSender } from '@hooks/useEmailSender';
 import { isValidEmail, isValidPhone, isWithinLimit } from '@utils/validators';
@@ -20,12 +20,34 @@ const initialFormData: FormData = {
 interface RequestProps {
   title?: string;
 }
+declare global {
+  interface Window {
+    grecaptcha: any;
+  }
+}
 
 const Request: React.FC<RequestProps> = ({ title = 'Request a Free Quote' }) => {
   const [formData, setFormData] = useState<FormData>(initialFormData);
   const [errors, setErrors] = useState<Partial<FormData>>({});
   const [submitted, setSubmitted] = useState(false);
   const { sendQuoteEmail, isSending, error: _error } = useEmailSender();
+  const [captchaToken, setCaptchaToken] = useState<string>('');
+  const siteKey = __RECAPTCHA_SITE_KEY__;
+
+  useEffect(() => {
+    const loadCaptcha = () => {
+      if (window.grecaptcha) {
+        window.grecaptcha.ready(() => {
+          window.grecaptcha.render('recaptcha-container', {
+            sitekey: siteKey,
+            callback: (token: string) => setCaptchaToken(token),
+          });
+        });
+      }
+    };
+
+    loadCaptcha();
+  }, []);
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
@@ -60,6 +82,10 @@ const Request: React.FC<RequestProps> = ({ title = 'Request a Free Quote' }) => 
     if (formData.honeypot) {
       newErrors.honeypot = 'Spam detected';
     }
+    
+    if (!captchaToken) {
+      newErrors.message = 'Please complete the CAPTCHA';
+    }
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -79,6 +105,8 @@ const Request: React.FC<RequestProps> = ({ title = 'Request a Free Quote' }) => 
       await sendQuoteEmail(enrichedData);
       setSubmitted(true);
       setFormData(initialFormData);
+      setCaptchaToken('');
+      window.grecaptcha.reset();
       setTimeout(() => setSubmitted(false), 5000);
     } catch {
       alert('Failed to send quote request.');
@@ -159,7 +187,9 @@ const Request: React.FC<RequestProps> = ({ title = 'Request a Free Quote' }) => 
               </div>
             );
           })}
-
+          {/* CAPTCHA Widget */}
+          <div id="recaptcha-container" className="mt-4" ></div>
+          {errors.message && <p className="text-red-600 text-sm mt-1">{errors.message}</p>}
           <button
             type="button"
             onClick={handleSubmit}

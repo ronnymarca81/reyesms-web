@@ -3,10 +3,26 @@ import { defaultContactInfo } from '@myTypes/CompanyApi';
 import Request from '@features/getQuote/components/Request';
 import HeroSection from '@features/Services/components/SpecificService/HeroSection';
 import { ContactBadge } from '@components/common/ContactBadge';
+import { Helmet } from 'react-helmet';
 
 const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50">
+      <Helmet>
+        <title>Contact Us – Reyes Maintenance Service Inc</title>
+        <meta
+          name="description"
+          content="Get in touch with Reyes Maintenance for a free quote or to schedule your next service."
+        />
+        <meta property="og:title" content="Contact Reyes Maintenance" />
+        <meta
+          property="og:description"
+          content="Reach out to our team for reliable and professional maintenance services in Ottawa."
+        />
+        <meta property="og:image" content="/assets/og-image.jpg" />
+        <meta property="og:url" content="https://www.reyesms.ca/contact" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
       <HeroSection
         serviceType="office"
         name="Let's Make Your Space Shine Contact Us"
