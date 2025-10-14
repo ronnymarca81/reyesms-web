@@ -10,9 +10,9 @@
     
       ],
       "images": [
-        "/images/services/office-1.png",
-        "/images/services/office-2.png",
-        "/images/services/office-3.png"
+        "/images/services/service1/office-1.png",
+        "/images/services/service1/office-2.png",
+        "/images/services/service1/office-3.png"
       ],
       "tasks": [
         {
@@ -116,7 +116,7 @@
         "Restore Shine and Protect your Floors.  High-traffic floors in offices, retail spaces, and commercial buildings quickly lose their luster from daily wear and buildup. At Reyes Maintenance Service Inc., we provide professional floor stripping and waxing services in Ottawa that restore brilliance, extend floor life, and protect your investment. Our team specializes in vinyl, laminate, and other common commercial flooring surfaces, ensuring a clean, polished, and safe environment for both employees and visitors.", 
         "Our process begins with a full stripping of old wax and buildup, followed by a deep cleaning to remove dirt and contaminants. We then apply multiple coats of high-quality commercial wax, buffed and polished to create a durable, slip-resistant finish that enhances the appearance of your entire facility. Whether for an office, retail store, plaza, or any other business, this service not only improves aesthetics but also reduces long-term maintenance needs."],
       "images": [
-        "/images/services/office-1.png",
+        "/images/services/service2office-1.png",
         "/images/services/office-2.png"
       ],
       "tasks": [
