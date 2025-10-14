@@ -3,7 +3,7 @@ import type { ServiceData } from "../features/Services/types";
 export const defaultServicesData: ServiceData[] = [
   {
     id: 1,
-    image: "https://images.pexels.com/photos/713297/pexels-photo-713297.jpeg",
+    image: "/images/services/service1/office-5.jpg",
     title: "Office, Commercial and Post-Construction Cleaning",
     description:
       "Maintain a Pristine Environment. Our meticulous office, commercial and post-construction cleaning services in Ottawa keep workplaces spotless, healthy, and welcoming. From small offices to large facilities, we deliver tailored solutions with eco‑friendly products and reliable staff, ensuring your business always reflects professionalism and care.",
@@ -28,7 +28,7 @@ export const defaultServicesData: ServiceData[] = [
   },
   {
     id: 4,
-    image: "https://images.pexels.com/photos/713297/pexels-photo-713297.jpeg",
+    image: "https://images.pexels.com/photos/4440529/pexels-photo-4440529.jpeg",
     title: "Spring and Deep Cleaning",
     description:
       "Refresh your Workspace with Expert Spring/Deep Cleaning. Our Ottawa services go beyond routine upkeep, delivering a complete top‑to‑bottom refresh. Ideal for seasonal cleaning, pre‑event preparation, or post‑construction projects, we ensure offices, retail spaces, and facilities remain spotless, healthy, and welcoming.",
@@ -36,7 +36,7 @@ export const defaultServicesData: ServiceData[] = [
   },
   {
     id: 5,
-    image: "https://images.pexels.com/photos/6195288/pexels-photo-6195288.jpeg",
+    image: "https://images.pexels.com/photos/2505120/pexels-photo-2505120.jpeg",
     title: "Minor Renovations and Demolitions",
     description:
       "Efficient Upgrades with Minimal Disruption. We provide safe, efficient solutions in Ottawa when your business needs light remodeling or non-structural removals. Our minor renovation and demolition services refresh offices, retail spaces, and facilities without the cost or downtime of full construction projects.",
@@ -45,7 +45,7 @@ export const defaultServicesData: ServiceData[] = [
   {
     id: 6,
     image:
-      "https://images.pexels.com/photos/38325/vacuum-cleaner-carpet-cleaner-housework-housekeeping-38325.jpeg",
+      "https://images.pexels.com/photos/1556704/pexels-photo-1556704.jpeg",
     title: "Light Maintenance and Bulb Replacement",
     description:
       "Small Fixes, Big Impact. Even the smallest details matter. Our Ottawa light maintenance and bulb replacement services keep workplaces bright, functional, and welcoming. From replacing flickering bulbs to handling minor repairs, we ensure your facility runs smoothly while maintaining a polished appearance.",
