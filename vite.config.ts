@@ -7,6 +7,9 @@ import svgr from 'vite-plugin-svgr';
 
 // https://vite.dev/config/
 export default defineConfig({
+  define: {
+    __RECAPTCHA_SITE_KEY__: JSON.stringify(process.env.VITE_RECAPTCHA_SITE_KEY || '')
+  },
   build: {
     sourcemap: true,
     minify: 'esbuild',

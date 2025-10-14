@@ -6,10 +6,26 @@ import pgImage from '@assets/images/about-image.png';
 import { HeroSection } from '@components/common/HeroSection';
 import ContentGalery from '@components/common/ContentGalery';
 import { Button } from '@components/common/Button';
+import { Helmet } from 'react-helmet';
 
 const About = () => {
   return (
     <>
+      <Helmet>
+        <title>About Us – Reyes Maintenance Service Inc</title>
+        <meta
+          name="description"
+          content="Learn about our trusted cleaning and maintenance services in Ottawa."
+        />
+        <meta property="og:title" content="About Reyes Maintenance" />
+        <meta
+          property="og:description"
+          content="Reliable facility care across Ottawa since 2008."
+        />
+        <meta property="og:image" content="/assets/og-image.jpg" />
+        <meta property="og:url" content="https://www.reyesms.ca/about" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
       {/* Header Section */}
       <HeroSection
         view="left"
