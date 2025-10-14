@@ -1,6 +1,6 @@
 import Process from '@features/getQuote/components/Process';
 
-export const Quote = () => {
+const Quote = () => {
   return (
     <div className="min-h-screen bg-white-100">
       <div>
@@ -9,3 +9,4 @@ export const Quote = () => {
     </div>
   );
 };
+export default Quote;

@@ -7,7 +7,7 @@ import { HeroSection } from '@components/common/HeroSection';
 import ContentGalery from '@components/common/ContentGalery';
 import { Button } from '@components/common/Button';
 
-export const About = () => {
+const About = () => {
   return (
     <>
       {/* Header Section */}
@@ -60,3 +60,4 @@ export const About = () => {
     </>
   );
 };
+export default About;

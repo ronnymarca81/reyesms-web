@@ -10,7 +10,7 @@ import { HeroSection } from '@components/common/HeroSection';
 import ContentGalery from '@components/common/ContentGalery';
 import { Button } from '@components/common/Button';
 
-export const Home = () => {
+const Home = () => {
   return (
     <>
       {/* Header Section */}
@@ -70,3 +70,5 @@ export const Home = () => {
     </>
   );
 };
+
+export default Home;

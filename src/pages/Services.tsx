@@ -4,7 +4,7 @@ import banner from '@assets/images/services-banner.png'
 import SafetyFeatures from '@features/Services/components/SafetyFeatures';
 import { safetyFeatures } from '@features/Services/types';
 
-export const Services = () => {
+const Services = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -35,3 +35,4 @@ export const Services = () => {
     </div>
   );
 };
+export default Services;

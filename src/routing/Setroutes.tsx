@@ -1,34 +1,25 @@
+// @routing/Setroutes.tsx
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Home } from '@pages/Home';
-import { About } from '@pages/About';
-import { Services } from '@pages/Services';
-import Footer from '@components/layout/footer/Footer';
-import NoFound from '@pages/NoFound';
-import Header from '@components/layout/header/Header';
-import { Quote } from '@pages/Quote';
-import Contact from '@pages/Contact';
-import CustomService from '@features/Services/components/CustomService';
+import { Suspense } from 'react';
+import { ServicesRoutes } from '@routing/modules/ServicesRoutes';
+import { MainLayout } from '@components/layout/MainLayout';
+import { Home, About, Contact, Quote, NoFound } from './LazyRoutes';
 
-
-export const Setroutes = () => {
-  return (
-    <BrowserRouter>
-      {/* Layout */}
-      <Header />
-      {/* Content routes   */}
-      <section>
+export const Setroutes = () => (
+  <BrowserRouter>
+    <Suspense fallback={<div>Loading...</div>}>
+      <MainLayout>
         <Routes>
-          <Route path="*" element={<NoFound />} />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/contact" element={<Contact />} />
           <Route path="/quote" element={<Quote />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/services/:slug" element={<CustomService />} />
+          {ServicesRoutes.map((route, index) => (
+            <Route key={index} path={route.path} element={route.element} />
+          ))}
+          <Route path="*" element={<NoFound />} />
         </Routes>
-      </section>
-      {/* Footer */}
-      <Footer />
-    </BrowserRouter>
-  );
-};
+      </MainLayout>
+    </Suspense>
+  </BrowserRouter>
+);
