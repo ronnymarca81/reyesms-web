@@ -14,18 +14,18 @@ export const defaultSteps: StepProps[] = [
   {
     icon: Users,
     number: "02",
-    title: "Custom Quote & Easy Scheduling",
+    title: "Custom Quote",
     description:
-      "Competitive quote along with a tailored service plan. Once approved, you simply pick the schedule that works best for you.",
+      "Competitive quote along with a tailored service plan.",
     color: "from-sky-50 to-sky-200",
     showArrow: true
   },
   {
     icon: Rocket,
     number: "03",
-    title: "Professional Cleaning",
+    title: "Easy Scheduling ",
     description:
-      "Our trained and insured team arrives fully equipped with eco-friendly products and commercial grade tools. ",
+      "Simply pick the schedule that works best for you.",
     color: "from-violet-50 to-violet-200",
     showArrow: true
   },

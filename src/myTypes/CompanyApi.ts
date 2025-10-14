@@ -16,6 +16,6 @@ export const defaultContactInfo: ContactInfo = {
     "with over 15 years of experience, delivering comprehensive commercial cleaning and maintenance " +
     "services in Ottawa.",
   companyCuenta:
-    "Discover our services or contact us to start now. " +
+    "Find our services or contact us to start now. " +
     "Always Satisfaction Guaranteed!"
 };
