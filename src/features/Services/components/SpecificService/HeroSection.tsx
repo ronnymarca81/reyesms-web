@@ -60,7 +60,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             <div className="flex items-center justify-center gap-2 mb-6">
               <Sparkles className="w-6 h-6 text-yellow-300" />
               <span className="text-yellow-300 font-semibold text-md">
-                Professional Cleaning Services
+                Professional Cleaning and Maintenance Services
               </span>
             </div>
 
