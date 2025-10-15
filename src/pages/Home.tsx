@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>About Us – Reyes Maintenance Service Inc</title>
+        <title>Reyes Maintenance Service Inc</title>
         <meta
           name="description"
           content="Professional cleaning and maintenance services in Ottawa. Trusted by businesses for over 15 years."
