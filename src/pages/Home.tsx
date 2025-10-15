@@ -1,6 +1,6 @@
 import BannerQuote from '@components/common/BannerQuote';
 import HeaderOne from '@components/common/HeaderOne';
-import Testimonial from '@components/ui/Testimonial/Testimonial';
+// import Testimonial from '@components/ui/Testimonial/Testimonial';
 import WhyChoose from '@components/ui/WhyChoose/WhyChoose';
 import Service from '@features/Services/components/Service';
 import { defaultServicesData } from '@myTypes/ServiceApi';

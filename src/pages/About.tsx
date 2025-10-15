@@ -1,5 +1,5 @@
 import bgImage from '@assets/images/about.png';
-import Testimonial from '@components/ui/Testimonial/Testimonial';
+// import Testimonial from '@components/ui/Testimonial/Testimonial';
 import BannerQuote from '@components/common/BannerQuote';
 import HowWeWork from '@features/getQuote/components/HowWeWork';
 import pgImage from '@assets/images/about-image.png';
