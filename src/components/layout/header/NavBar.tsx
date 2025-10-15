@@ -40,16 +40,16 @@ export const NavBar: React.FC<NavBarProps> = ({ menuItems }) => {
 
           {/* Desktop Action Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Button variant="primary" size="md" onClick={handleMailClick}>
-              <Mail className="w-4 h-4 mr-2 stroke-3" />
-              {defaultContactInfo.email}
-            </Button>
             <Button variant="outline" size="md" href="/quote">
               GET A QUOTE
             </Button>
             <Button variant="phone" size="md" onClick={handlePhoneClick}>
               <Phone className="w-4 h-4 mr-2 stroke-3" />
               {defaultContactInfo.phone}
+            </Button>
+            <Button variant="primary" size="md" onClick={handleMailClick}>
+              <Mail className="w-4 h-4 mr-2 stroke-3" />
+              {defaultContactInfo.email}
             </Button>
           </div>
 

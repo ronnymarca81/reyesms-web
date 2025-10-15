@@ -16,7 +16,7 @@ const BannerQuote: React.FC<BannerQuoteProps> = ({
   backgroundClassName = "bg-sky-200",
   backgroundStyle,
   title = "Comprehensive Cleaning and Maintenance Services",
-  subtitle = "Connect With Our",
+  subtitle = "Connect with our",
   description = `Trust Reyes Maintenance Service Inc. to keep your Ottawa business clean, safe, and welcoming. Our reliable team delivers tailored solutions that fit your needs and schedule. Request your free quote today and see the difference.`,
   ctaText = "GET A FREE QUOTE",
   ctaPath = "/quote"

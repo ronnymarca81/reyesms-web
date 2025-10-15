@@ -1,6 +1,6 @@
 import BannerQuote from '@components/common/BannerQuote';
 import HeaderOne from '@components/common/HeaderOne';
-import Testimonial from '@components/ui/Testimonial/Testimonial';
+// import Testimonial from '@components/ui/Testimonial/Testimonial';
 import WhyChoose from '@components/ui/WhyChoose/WhyChoose';
 import Service from '@features/Services/components/Service';
 import { defaultServicesData } from '@myTypes/ServiceApi';
@@ -81,7 +81,7 @@ const Home = () => {
         <Service services={defaultServicesData} />
       </div>
       <WhyChoose />
-      <Testimonial autoplay showStats />
+      {/* <Testimonial autoplay showStats /> */}
       <BannerQuote backgroundClassName="bg-gradient-to-r from-blue-100 to-gray-500 text-white" />
     </>
   );
