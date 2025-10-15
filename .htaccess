@@ -30,7 +30,7 @@ AddType font/woff2 .woff2
 # Security Headers
 # ----------------------------------------
 <IfModule mod_headers.c>
-  Header set Content-Security-Policy "default-src 'self'; font-src 'self' data:; script-src 'self' https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none';"
+ Header set Content-Security-Policy "default-src 'self'; script-src 'self' https://www.google.com https://www.gstatic.com; frame-src https://www.google.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://*.sentry.io;"
   Header set X-Content-Type-Options "nosniff"
   Header set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
 </IfModule>

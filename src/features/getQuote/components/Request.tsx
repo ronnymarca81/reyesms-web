@@ -81,7 +81,7 @@ const Request: React.FC<RequestProps> = ({ title = 'Request a Free Quote' }) => 
     if (formData.honeypot) {
       newErrors.honeypot = 'Spam detected';
     }
-    
+
     if (!captchaToken) {
       newErrors.message = 'Please complete the CAPTCHA';
     }
@@ -187,7 +187,7 @@ const Request: React.FC<RequestProps> = ({ title = 'Request a Free Quote' }) => 
             );
           })}
           {/* CAPTCHA Widget */}
-          <div id="recaptcha-container" className="mt-4" ></div>
+          <div id="recaptcha-container" className="mt-4"></div>
           {errors.message && <p className="text-red-600 text-sm mt-1">{errors.message}</p>}
           <button
             type="button"
