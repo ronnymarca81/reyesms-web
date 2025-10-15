@@ -1,6 +1,6 @@
 export interface GearProps {
   image: React.ReactNode;
-  color: 'blue' | 'darkBlue';
+  color: 'blue' | 'darkBlue' | string;
   linePosition?: 'top' | 'bottom' | 'left' | 'right';
 }
 

@@ -32,14 +32,13 @@ const Request: React.FC<RequestProps> = ({ title = 'Request a Free Quote' }) => 
   const [submitted, setSubmitted] = useState(false);
   const { sendQuoteEmail, isSending, error: _error } = useEmailSender();
   const [captchaToken, setCaptchaToken] = useState<string>('');
-  const siteKey = __RECAPTCHA_SITE_KEY__;
 
   useEffect(() => {
     const loadCaptcha = () => {
       if (window.grecaptcha) {
         window.grecaptcha.ready(() => {
           window.grecaptcha.render('recaptcha-container', {
-            sitekey: siteKey,
+            sitekey: import.meta.env.VITE_RECAPTCHA_SITE_KEY,
             callback: (token: string) => setCaptchaToken(token),
           });
         });
