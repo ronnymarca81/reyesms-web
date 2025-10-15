@@ -81,7 +81,7 @@ const Home = () => {
         <Service services={defaultServicesData} />
       </div>
       <WhyChoose />
-      <Testimonial autoplay showStats />
+      {/* <Testimonial autoplay showStats /> */}
       <BannerQuote backgroundClassName="bg-gradient-to-r from-blue-100 to-gray-500 text-white" />
     </>
   );

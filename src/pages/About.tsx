@@ -71,7 +71,7 @@ const About = () => {
         backgroundColor="bg-sky-100"
       />
       <HowWeWork background="bg-gradient-to-br from-blue-950 via-sky-900 to-gray-900" />
-      <Testimonial layout="grid" theme="light" showStats />
+      {/* <Testimonial layout="grid" theme="light" showStats /> */}
       <BannerQuote backgroundClassName="bg-gradient-to-r from-orange-100 to-orange-400 text-white" />
     </>
   );
