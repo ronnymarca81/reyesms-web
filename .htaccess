@@ -20,7 +20,9 @@ AddType font/woff2 .woff2
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+  # Prevent direct access to index.html
   RewriteRule ^index\.html$ - [L]
+  # Redirect all non-file/non-directory requests to index.html
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule . /index.html [L]
@@ -29,11 +31,7 @@ AddType font/woff2 .woff2
 # ----------------------------------------
 # Security Headers
 # ----------------------------------------
-<IfModule mod_headers.c>
- Header set Content-Security-Policy "default-src 'self'; script-src 'self' https://www.google.com https://www.gstatic.com; frame-src https://www.google.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://*.sentry.io;"
-  Header set X-Content-Type-Options "nosniff"
-  Header set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
-</IfModule>
+<IfModule mod_headers.c> Header set Content-Security-Policy "default-src 'self'; script-src 'self' https://www.google.com https://www.gstatic.com; frame-src 'self' https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.google.com https://www.gstatic.com; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://*.sentry.io https://www.google.com https://www.gstatic.com;" Header set X-Content-Type-Options "nosniff" Header set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS </IfModule>
 
 # ----------------------------------------
 # Disable Directory Listing
@@ -46,4 +44,5 @@ Options -Indexes
 <FilesMatch "\.(ico|jpg|jpeg|png|gif|js|css|svg|woff|woff2|ttf|eot)$">
   Header set Cache-Control "max-age=31536000, public"
 </FilesMatch>
+
 

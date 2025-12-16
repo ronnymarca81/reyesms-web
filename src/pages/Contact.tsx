@@ -1,11 +1,47 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { defaultContactInfo } from '@myTypes/CompanyApi';
 import Request from '@features/getQuote/components/Request';
 import HeroSection from '@features/Services/components/SpecificService/HeroSection';
 import { ContactBadge } from '@components/common/ContactBadge';
 import { Helmet } from 'react-helmet';
+import { useCleanupEvents } from '@hooks/useCleanupEvents';
 
-const App: React.FC = () => {
+const Contact: React.FC = () => {
+  const [formData, setFormData] = useState('');
+
+  // Restore draft when component mounts
+  useEffect(() => {
+    const savedDraft = localStorage.getItem('draftForm');
+    if (savedDraft) {
+      setFormData(savedDraft);
+    }
+  }, []);
+
+  // Cleanup events: save draft when page hides or unloads
+  useCleanupEvents(
+    (event) => {
+      switch (event.type) {
+        case 'pagehide':
+          console.log('Page is being hidden or unloaded.', event.event);
+          localStorage.setItem('draftForm', formData);
+          break;
+
+        case 'visibilitychange':
+          if (event.state === 'hidden') {
+            console.log('Page hidden — saving draft form data.');
+            localStorage.setItem('draftForm', formData);
+          }
+          break;
+
+        case 'beforeunload':
+          console.log('User is attempting to leave the page.', event.event);
+          localStorage.setItem('draftForm', formData);
+          break;
+      }
+    },
+    { warnOnExit: true }
+  );
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50">
       <Helmet>
@@ -23,6 +59,7 @@ const App: React.FC = () => {
         <meta property="og:url" content="https://www.reyesms.ca/contact" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
+
       <HeroSection
         serviceType="office"
         name="Let's Make Your Space Shine Contact Us"
@@ -50,11 +87,20 @@ const App: React.FC = () => {
           />
         </div>
       </div>
+
       <div className="max-w-7xl mx-auto px-4 pb-20 mt-16">
         <Request title="Ready to Get Started?" />
+
+        {/* Example input bound to formData */}
+        <textarea
+          className="w-full mt-6 p-4 border rounded-md"
+          placeholder="Write your message..."
+          value={formData}
+          onChange={(e) => setFormData(e.target.value)}
+        />
       </div>
     </div>
   );
 };
 
-export default App;
+export default Contact;
